@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C2665B6603D6A7EBA3A0C28 /* Pods_InventoryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E61A19303A0E5671FEE8B6B /* Pods_InventoryApp.framework */; };
 		DCDB90782B4B93FC0047E52C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB90772B4B93FC0047E52C /* AppDelegate.swift */; };
 		DCDB907C2B4B93FC0047E52C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB907B2B4B93FC0047E52C /* LoginViewController.swift */; };
 		DCDB90812B4B93FC0047E52C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDB90802B4B93FC0047E52C /* Assets.xcassets */; };
@@ -20,9 +21,14 @@
 		DCDB909D2B4BD3F10047E52C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB909C2B4BD3F10047E52C /* OnboardingViewController.swift */; };
 		DCDB909F2B4BD52E0047E52C /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB909E2B4BD52E0047E52C /* UIViewController+Utils.swift */; };
 		DCDB90A22B4BD84C0047E52C /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB90A12B4BD84C0047E52C /* RecipeViewController.swift */; };
+		DCDB90AF2B4C726E0047E52C /* AuthenticationButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB90AE2B4C726E0047E52C /* AuthenticationButtonsView.swift */; };
+		DCDB90B12B4C89B20047E52C /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB90B02B4C89B20047E52C /* DividerView.swift */; };
+		DCDB90B32B4CB81E0047E52C /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = DCDB90B22B4CB81E0047E52C /* GoogleService-Info (1).plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		011B375B72824242E259AB77 /* Pods-InventoryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InventoryApp.debug.xcconfig"; path = "Target Support Files/Pods-InventoryApp/Pods-InventoryApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4E61A19303A0E5671FEE8B6B /* Pods_InventoryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InventoryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDB90742B4B93FC0047E52C /* InventoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDB90772B4B93FC0047E52C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCDB907B2B4B93FC0047E52C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +44,10 @@
 		DCDB909C2B4BD3F10047E52C /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		DCDB909E2B4BD52E0047E52C /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		DCDB90A12B4BD84C0047E52C /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		DCDB90AE2B4C726E0047E52C /* AuthenticationButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthenticationButtonsView.swift; path = ../../../../../../.Trash/InventoryApp/InventoryApp/InventoryApp/Login/AuthenticationButtonsView.swift; sourceTree = "<group>"; };
+		DCDB90B02B4C89B20047E52C /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DividerView.swift; path = ../../../../../../.Trash/InventoryApp/InventoryApp/InventoryApp/Login/DividerView.swift; sourceTree = "<group>"; };
+		DCDB90B22B4CB81E0047E52C /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		E0E3C27978BC456607E62A37 /* Pods-InventoryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InventoryApp.release.xcconfig"; path = "Target Support Files/Pods-InventoryApp/Pods-InventoryApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +55,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2665B6603D6A7EBA3A0C28 /* Pods_InventoryApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DE7D06B3A315E2558A7540D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E61A19303A0E5671FEE8B6B /* Pods_InventoryApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D45BFDF3A1FD97C39A39D4F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				011B375B72824242E259AB77 /* Pods-InventoryApp.debug.xcconfig */,
+				E0E3C27978BC456607E62A37 /* Pods-InventoryApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DCDB906B2B4B93FB0047E52C = {
 			isa = PBXGroup;
 			children = (
 				DCDB90762B4B93FC0047E52C /* InventoryApp */,
 				DCDB90752B4B93FC0047E52C /* Products */,
+				D45BFDF3A1FD97C39A39D4F9 /* Pods */,
+				5DE7D06B3A315E2558A7540D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +119,7 @@
 				DCDB90802B4B93FC0047E52C /* Assets.xcassets */,
 				DCDB90822B4B93FC0047E52C /* LaunchScreen.storyboard */,
 				DCDB90852B4B93FC0047E52C /* Info.plist */,
+				DCDB90B22B4CB81E0047E52C /* GoogleService-Info (1).plist */,
 			);
 			name = Files;
 			sourceTree = "<group>";
@@ -98,6 +130,8 @@
 				DCDB907B2B4B93FC0047E52C /* LoginViewController.swift */,
 				DCDB908D2B4B97400047E52C /* LoginView.swift */,
 				DCDB908F2B4BA45B0047E52C /* DummyViewController.swift */,
+				DCDB90AE2B4C726E0047E52C /* AuthenticationButtonsView.swift */,
+				DCDB90B02B4C89B20047E52C /* DividerView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -143,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCDB90882B4B93FC0047E52C /* Build configuration list for PBXNativeTarget "InventoryApp" */;
 			buildPhases = (
+				FEE5781D1DB7E77F6B63EAF5 /* [CP] Check Pods Manifest.lock */,
 				DCDB90702B4B93FC0047E52C /* Sources */,
 				DCDB90712B4B93FC0047E52C /* Frameworks */,
 				DCDB90722B4B93FC0047E52C /* Resources */,
+				DD5AE33915559DCE8A7A0826 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,11 +231,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCDB90842B4B93FC0047E52C /* LaunchScreen.storyboard in Resources */,
+				DCDB90B32B4CB81E0047E52C /* GoogleService-Info (1).plist in Resources */,
 				DCDB90812B4B93FC0047E52C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD5AE33915559DCE8A7A0826 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InventoryApp/Pods-InventoryApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InventoryApp/Pods-InventoryApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InventoryApp/Pods-InventoryApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEE5781D1DB7E77F6B63EAF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InventoryApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCDB90702B4B93FC0047E52C /* Sources */ = {
@@ -214,9 +293,11 @@
 				DCDB90A22B4BD84C0047E52C /* RecipeViewController.swift in Sources */,
 				DCDB90952B4BD21A0047E52C /* MainViewController.swift in Sources */,
 				DCDB90782B4B93FC0047E52C /* AppDelegate.swift in Sources */,
+				DCDB90AF2B4C726E0047E52C /* AuthenticationButtonsView.swift in Sources */,
 				DCDB90902B4BA45B0047E52C /* DummyViewController.swift in Sources */,
 				DCDB909D2B4BD3F10047E52C /* OnboardingViewController.swift in Sources */,
 				DCDB909B2B4BD3D20047E52C /* OnboardingContainerViewController.swift in Sources */,
+				DCDB90B12B4C89B20047E52C /* DividerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +436,7 @@
 		};
 		DCDB90892B4B93FC0047E52C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 011B375B72824242E259AB77 /* Pods-InventoryApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,6 +464,7 @@
 		};
 		DCDB908A2B4B93FC0047E52C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E3C27978BC456607E62A37 /* Pods-InventoryApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

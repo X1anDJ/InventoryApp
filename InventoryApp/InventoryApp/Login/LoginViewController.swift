@@ -22,18 +22,15 @@ class LoginViewController: UIViewController {
     let subtitleLabel = UILabel()
     
     let loginView = LoginView()
-    let signInButton = UIButton(type: .system)
-    let errorMessageLabel = UILabel()
+    let continueButton = UIButton(type: .system)
+    let divider = DividerView()
+    let authButtonsView = AuthenticationButtonsView()
     
     weak var delegate: LoginViewControllerDelegate?
-    
-    var username: String? {
-        return loginView.usernameTextField.text
-    }
-
-    var password: String? {
-        return loginView.passwordTextField.text
-    }
+//    
+//    var emailAddress: String? {
+//        return loginView.emailTextField.text
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +40,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        signInButton.configuration?.showsActivityIndicator = false
+        continueButton.configuration?.showsActivityIndicator = false
     }
 }
 
@@ -67,92 +64,105 @@ extension LoginViewController {
 
         loginView.translatesAutoresizingMaskIntoConstraints = false
 
-        signInButton.translatesAutoresizingMaskIntoConstraints = false
-        signInButton.configuration = .filled()
-        signInButton.configuration?.imagePadding = 8 // for indicator spacing
-        signInButton.setTitle("登录", for: [])
-        signInButton.addTarget(self, action: #selector(signInTapped), for: .primaryActionTriggered)
+        continueButton.translatesAutoresizingMaskIntoConstraints = false
+        continueButton.configuration = .filled()
+        continueButton.configuration?.imagePadding = 8 // for indicator spacing
+        continueButton.setTitle("使用手机登录", for: [])
+        continueButton.heightAnchor.constraint(equalToConstant: continueButton.frame.height + 50).isActive = true
+        continueButton.layer.cornerRadius = 25
+        continueButton.clipsToBounds = true
+        continueButton.tintColor = UIColor { (traitCollection: UITraitCollection) -> UIColor in
+            switch traitCollection.userInterfaceStyle {
+                case .dark:
+                    return .white  // White color in dark mode
+                default:
+                    return .black  // Black color in light mode
+            }
+        }
+        continueButton.addTarget(self, action: #selector(signInTapped), for: .primaryActionTriggered)
         
-        errorMessageLabel.translatesAutoresizingMaskIntoConstraints = false
-        errorMessageLabel.textAlignment = .center
-        errorMessageLabel.textColor = .systemRed
-        errorMessageLabel.numberOfLines = 0
-        errorMessageLabel.isHidden = true
+        divider.translatesAutoresizingMaskIntoConstraints = false
+        
+        authButtonsView.translatesAutoresizingMaskIntoConstraints = false
+
     }
     
     private func layout() {
         view.addSubview(titleLabel)
         view.addSubview(subtitleLabel)
-        view.addSubview(loginView)
-        view.addSubview(signInButton)
-        view.addSubview(errorMessageLabel)
+//        view.addSubview(loginView)
+        view.addSubview(continueButton)
+        view.addSubview(divider)
+        view.addSubview(authButtonsView)
+        // view.addSubview(errorMessageLabel)
 
         // Title
         NSLayoutConstraint.activate([
-            subtitleLabel.topAnchor.constraint(equalToSystemSpacingBelow: titleLabel.bottomAnchor, multiplier: 3),
+            titleLabel.topAnchor.constraint(equalToSystemSpacingBelow: view.safeAreaLayoutGuide.topAnchor, multiplier: 20),
             titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
         
         // Subtitle
         NSLayoutConstraint.activate([
-            loginView.topAnchor.constraint(equalToSystemSpacingBelow: subtitleLabel.bottomAnchor, multiplier: 3),
-            subtitleLabel.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
-            subtitleLabel.trailingAnchor.constraint(equalTo: loginView.trailingAnchor)
+            subtitleLabel.topAnchor.constraint(equalToSystemSpacingBelow: titleLabel.bottomAnchor, multiplier: 3),
+            subtitleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            subtitleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            subtitleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
         
-        // LoginView
+        // AuthButtonsView - Anchored to the bottom
         NSLayoutConstraint.activate([
-            loginView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 2),
-            view.trailingAnchor.constraint(equalToSystemSpacingAfter: loginView.trailingAnchor, multiplier: 2),
-            view.centerYAnchor.constraint(equalTo: loginView.centerYAnchor),
+            authButtonsView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            authButtonsView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            authButtonsView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            authButtonsView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
+        ])
+
+        // Divider - Above AuthButtonsView
+        NSLayoutConstraint.activate([
+            divider.bottomAnchor.constraint(equalTo: authButtonsView.topAnchor, constant: -20),
+            divider.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            divider.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            divider.heightAnchor.constraint(equalToConstant: 20)
+        ])
+
+        // Continue Button - Above Divider
+        NSLayoutConstraint.activate([
+            continueButton.bottomAnchor.constraint(equalTo: divider.topAnchor, constant: -20),
+            continueButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            continueButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
         ])
         
-        // Button
-        NSLayoutConstraint.activate([
-            signInButton.topAnchor.constraint(equalToSystemSpacingBelow: loginView.bottomAnchor, multiplier: 2),
-            signInButton.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
-            signInButton.trailingAnchor.constraint(equalTo: loginView.trailingAnchor),
-        ])
-        
-        // Error message
-        NSLayoutConstraint.activate([
-            errorMessageLabel.topAnchor.constraint(equalToSystemSpacingBelow: signInButton.bottomAnchor, multiplier: 2),
-            errorMessageLabel.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
-            errorMessageLabel.trailingAnchor.constraint(equalTo: loginView.trailingAnchor)
-        ])
+//        // LoginView - Above Continue Button
+//        NSLayoutConstraint.activate([
+//            loginView.bottomAnchor.constraint(equalTo: continueButton.topAnchor, constant: -20),
+//            loginView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+//            loginView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
+//        ])
     }
+
 }
 
 // MARK: Actions
 extension LoginViewController {
     @objc func signInTapped(sender: UIButton) {
-        errorMessageLabel.isHidden = true
+        //errorMessageLabel.isHidden = true
         login()
     }
     
     private func login() {
-        guard let username = username, let password = password else {
-            assertionFailure("Username / password should never be nil")
-            return
-        }
 
-        // Temporarily turn off this check
-//        if username.isEmpty || password.isEmpty {
-//            configureView(withMessage: "Username / password cannot be blank")
-//            return
-//        }
         
-        if username == "" && password == "" {
-            signInButton.configuration?.showsActivityIndicator = true
-            delegate?.didLogin()
-        } else {
-            configureView(withMessage: "Incorrect username / password")
-        }
+//        if emailAddress == "" {
+//            continueButton.configuration?.showsActivityIndicator = true
+//            delegate?.didLogin()
+//        } else {
+//            configureView(withMessage: "Incorrect username / password")
+//        }
     }
     
     private func configureView(withMessage message: String) {
-        errorMessageLabel.isHidden = false
-        errorMessageLabel.text = message
+        print(message)
     }
 }
 

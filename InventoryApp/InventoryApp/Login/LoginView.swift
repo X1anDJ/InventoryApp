@@ -11,9 +11,9 @@ import UIKit
 class LoginView: UIView {
     
     let stackView = UIStackView()
-    let usernameTextField = UITextField()
-    let passwordTextField = UITextField()
-    let dividerView = UIView()
+    let emailTextField = UITextField()
+    //let passwordTextField = UITextField()
+    //let dividerView = UIView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -40,26 +40,26 @@ extension LoginView {
         stackView.axis = .vertical
         stackView.spacing = 8
         
-        usernameTextField.translatesAutoresizingMaskIntoConstraints = false
-        usernameTextField.placeholder = "Username"
-        usernameTextField.delegate = self
-
-        dividerView.translatesAutoresizingMaskIntoConstraints = false
-        dividerView.backgroundColor = .secondarySystemFill
-
-        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
-        passwordTextField.placeholder = "Password"
-        passwordTextField.isSecureTextEntry = true
-        passwordTextField.delegate = self
-                
+        emailTextField.translatesAutoresizingMaskIntoConstraints = false
+        emailTextField.placeholder = "Email"
+        emailTextField.delegate = self
+//
+//        dividerView.translatesAutoresizingMaskIntoConstraints = false
+//        dividerView.backgroundColor = .secondarySystemFill
+//
+//        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
+//        passwordTextField.placeholder = "Password"
+//        passwordTextField.isSecureTextEntry = true
+//        passwordTextField.delegate = self
+//                
         layer.cornerRadius = 5
         clipsToBounds = true
     }
     
     private func layout() {
-        stackView.addArrangedSubview(usernameTextField)
-        stackView.addArrangedSubview(dividerView)
-        stackView.addArrangedSubview(passwordTextField)
+        stackView.addArrangedSubview(emailTextField)
+        //stackView.addArrangedSubview(dividerView)
+        //stackView.addArrangedSubview(passwordTextField)
 
         addSubview(stackView)
         
@@ -71,7 +71,7 @@ extension LoginView {
             bottomAnchor.constraint(equalToSystemSpacingBelow: stackView.bottomAnchor, multiplier: 1)
         ])
         
-        dividerView.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        //dividerView.heightAnchor.constraint(equalToConstant: 1).isActive = true
     }
 }
 
@@ -79,8 +79,8 @@ extension LoginView {
 extension LoginView: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        usernameTextField.endEditing(true)
-        passwordTextField.endEditing(true)
+        emailTextField.endEditing(true)
+        //passwordTextField.endEditing(true)
         return true
     }
     
