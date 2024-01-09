@@ -4,30 +4,41 @@
 //
 //  Created by Dajun Xian on 2024/1/7.
 //
-
+import FirebaseAuth
+import FirebaseCore
 import UIKit
 
 let appColor: UIColor = .systemGray
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
     let loginViewController = LoginViewController()
+    
     let onboardingViewController = OnboardingContainerViewController()
     let mainViewController = MainViewController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:
                      [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+        FirebaseApp.configure()
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
         
-        loginViewController.delegate = self
-        onboardingViewController.delegate = self
+//        loginViewController.delegate = self
+//        onboardingViewController.delegate = self
+//        
+//        window?.rootViewController = loginViewController
         
-        window?.rootViewController = loginViewController
+        let navigationController = UINavigationController(rootViewController: loginViewController)
+        window?.rootViewController = navigationController
+        
+        if Auth.auth().currentUser == nil {
+            window?.rootViewController = navigationController
+        } else {
+            window?.rootViewController = mainViewController
+        }
         
         return true
     }

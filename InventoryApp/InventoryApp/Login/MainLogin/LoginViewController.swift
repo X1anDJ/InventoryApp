@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
     let subtitleLabel = UILabel()
     
     let loginView = LoginView()
-    let continueButton = UIButton(type: .system)
+    let phoneSignButton = UIButton(type: .system)
     let divider = DividerView()
     let authButtonsView = AuthenticationButtonsView()
     
@@ -40,7 +40,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        continueButton.configuration?.showsActivityIndicator = false
+        phoneSignButton.configuration?.showsActivityIndicator = false
     }
 }
 
@@ -64,14 +64,14 @@ extension LoginViewController {
 
         loginView.translatesAutoresizingMaskIntoConstraints = false
 
-        continueButton.translatesAutoresizingMaskIntoConstraints = false
-        continueButton.configuration = .filled()
-        continueButton.configuration?.imagePadding = 8 // for indicator spacing
-        continueButton.setTitle("使用手机登录", for: [])
-        continueButton.heightAnchor.constraint(equalToConstant: continueButton.frame.height + 50).isActive = true
-        continueButton.layer.cornerRadius = 25
-        continueButton.clipsToBounds = true
-        continueButton.tintColor = UIColor { (traitCollection: UITraitCollection) -> UIColor in
+        phoneSignButton.translatesAutoresizingMaskIntoConstraints = false
+        phoneSignButton.configuration = .filled()
+        phoneSignButton.configuration?.imagePadding = 8 // for indicator spacing
+        phoneSignButton.setTitle("使用手机登录", for: [])
+        phoneSignButton.heightAnchor.constraint(equalToConstant: phoneSignButton.frame.height + 50).isActive = true
+        phoneSignButton.layer.cornerRadius = 25
+        phoneSignButton.clipsToBounds = true
+        phoneSignButton.tintColor = UIColor { (traitCollection: UITraitCollection) -> UIColor in
             switch traitCollection.userInterfaceStyle {
                 case .dark:
                     return .white  // White color in dark mode
@@ -79,7 +79,7 @@ extension LoginViewController {
                     return .black  // Black color in light mode
             }
         }
-        continueButton.addTarget(self, action: #selector(signInTapped), for: .primaryActionTriggered)
+        phoneSignButton.addTarget(self, action: #selector(phoneButtonTapped), for: .primaryActionTriggered)
         
         divider.translatesAutoresizingMaskIntoConstraints = false
         
@@ -91,7 +91,7 @@ extension LoginViewController {
         view.addSubview(titleLabel)
         view.addSubview(subtitleLabel)
 //        view.addSubview(loginView)
-        view.addSubview(continueButton)
+        view.addSubview(phoneSignButton)
         view.addSubview(divider)
         view.addSubview(authButtonsView)
         // view.addSubview(errorMessageLabel)
@@ -128,37 +128,25 @@ extension LoginViewController {
 
         // Continue Button - Above Divider
         NSLayoutConstraint.activate([
-            continueButton.bottomAnchor.constraint(equalTo: divider.topAnchor, constant: -20),
-            continueButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            continueButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
+            phoneSignButton.bottomAnchor.constraint(equalTo: divider.topAnchor, constant: -20),
+            phoneSignButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            phoneSignButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
         ])
-        
-//        // LoginView - Above Continue Button
-//        NSLayoutConstraint.activate([
-//            loginView.bottomAnchor.constraint(equalTo: continueButton.topAnchor, constant: -20),
-//            loginView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-//            loginView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
-//        ])
+
     }
 
 }
 
 // MARK: Actions
 extension LoginViewController {
-    @objc func signInTapped(sender: UIButton) {
-        //errorMessageLabel.isHidden = true
-        login()
+    @objc func phoneButtonTapped(sender: UIButton) {
+        let phoneViewController = PhoneViewController()
+        print("144")
+        self.navigationController?.pushViewController(phoneViewController, animated: true)
     }
     
     private func login() {
 
-        
-//        if emailAddress == "" {
-//            continueButton.configuration?.showsActivityIndicator = true
-//            delegate?.didLogin()
-//        } else {
-//            configureView(withMessage: "Incorrect username / password")
-//        }
     }
     
     private func configureView(withMessage message: String) {
