@@ -14,6 +14,24 @@
 		DC245CE92B4CCFBC005A3280 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245CE82B4CCFBC005A3280 /* PhoneViewController.swift */; };
 		DC245CEB2B4CD193005A3280 /* SMSCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245CEA2B4CD193005A3280 /* SMSCodeViewController.swift */; };
 		DC245CED2B4D1ACA005A3280 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC245CEC2B4D1ACA005A3280 /* GoogleService-Info.plist */; };
+		DC245D3A2B4E856C005A3280 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D1D2B4E856C005A3280 /* Country.swift */; };
+		DC245D3B2B4E856C005A3280 /* PhoneNumberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D202B4E856C005A3280 /* PhoneNumberController.swift */; };
+		DC245D3C2B4E856C005A3280 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D212B4E856C005A3280 /* PhoneNumberViewController.swift */; };
+		DC245D3D2B4E856C005A3280 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D222B4E856C005A3280 /* MainTabBarController.swift */; };
+		DC245D3E2B4E856C005A3280 /* VerificationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D242B4E856C005A3280 /* VerificationCodeViewController.swift */; };
+		DC245D3F2B4E856C005A3280 /* VerificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D252B4E856C005A3280 /* VerificationController.swift */; };
+		DC245D402B4E856C005A3280 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D272B4E856C005A3280 /* ProfileViewController.swift */; };
+		DC245D412B4E856C005A3280 /* CountryCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D292B4E856C005A3280 /* CountryCodeViewController.swift */; };
+		DC245D422B4E856C005A3280 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D2B2B4E856C005A3280 /* ViewExtensions.swift */; };
+		DC245D432B4E856C005A3280 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D2C2B4E856C005A3280 /* Utilities.swift */; };
+		DC245D442B4E856C005A3280 /* TableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D2D2B4E856C005A3280 /* TableViewCellExtensions.swift */; };
+		DC245D452B4E856C005A3280 /* MethodExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D2E2B4E856C005A3280 /* MethodExtensions.swift */; };
+		DC245D462B4E856C005A3280 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D302B4E856C005A3280 /* ThemeManager.swift */; };
+		DC245D472B4E856C005A3280 /* PhoneNumberViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D332B4E856C005A3280 /* PhoneNumberViewContainer.swift */; };
+		DC245D482B4E856C005A3280 /* VerificationViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D352B4E856C005A3280 /* VerificationViewContainer.swift */; };
+		DC245D492B4E856C005A3280 /* ProfileViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D372B4E856C005A3280 /* ProfileViewContainer.swift */; };
+		DC245D4A2B4E856C005A3280 /* DataGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D392B4E856C005A3280 /* DataGlobal.swift */; };
+		DC245D4C2B4E85A7005A3280 /* CallingCodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC245D4B2B4E85A6005A3280 /* CallingCodes.plist */; };
 		DCDB90782B4B93FC0047E52C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB90772B4B93FC0047E52C /* AppDelegate.swift */; };
 		DCDB907C2B4B93FC0047E52C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB907B2B4B93FC0047E52C /* LoginViewController.swift */; };
 		DCDB90812B4B93FC0047E52C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDB90802B4B93FC0047E52C /* Assets.xcassets */; };
@@ -38,6 +56,24 @@
 		DC245CE82B4CCFBC005A3280 /* PhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
 		DC245CEA2B4CD193005A3280 /* SMSCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSCodeViewController.swift; sourceTree = "<group>"; };
 		DC245CEC2B4D1ACA005A3280 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DC245D1D2B4E856C005A3280 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		DC245D202B4E856C005A3280 /* PhoneNumberController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberController.swift; sourceTree = "<group>"; };
+		DC245D212B4E856C005A3280 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
+		DC245D222B4E856C005A3280 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		DC245D242B4E856C005A3280 /* VerificationCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationCodeViewController.swift; sourceTree = "<group>"; };
+		DC245D252B4E856C005A3280 /* VerificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationController.swift; sourceTree = "<group>"; };
+		DC245D272B4E856C005A3280 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DC245D292B4E856C005A3280 /* CountryCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCodeViewController.swift; sourceTree = "<group>"; };
+		DC245D2B2B4E856C005A3280 /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		DC245D2C2B4E856C005A3280 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		DC245D2D2B4E856C005A3280 /* TableViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellExtensions.swift; sourceTree = "<group>"; };
+		DC245D2E2B4E856C005A3280 /* MethodExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodExtensions.swift; sourceTree = "<group>"; };
+		DC245D302B4E856C005A3280 /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		DC245D332B4E856C005A3280 /* PhoneNumberViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewContainer.swift; sourceTree = "<group>"; };
+		DC245D352B4E856C005A3280 /* VerificationViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationViewContainer.swift; sourceTree = "<group>"; };
+		DC245D372B4E856C005A3280 /* ProfileViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewContainer.swift; sourceTree = "<group>"; };
+		DC245D392B4E856C005A3280 /* DataGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGlobal.swift; sourceTree = "<group>"; };
+		DC245D4B2B4E85A6005A3280 /* CallingCodes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CallingCodes.plist; sourceTree = "<group>"; };
 		DCDB90742B4B93FC0047E52C /* InventoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDB90772B4B93FC0047E52C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCDB907B2B4B93FC0047E52C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -100,11 +136,132 @@
 		DC245CE72B4CC8B7005A3280 /* PhoneLogin */ = {
 			isa = PBXGroup;
 			children = (
+				DC245D312B4E856C005A3280 /* Containers */,
+				DC245D1E2B4E856C005A3280 /* Controllers */,
+				DC245D382B4E856C005A3280 /* Database */,
+				DC245D2A2B4E856C005A3280 /* Extensions */,
+				DC245D2F2B4E856C005A3280 /* Managers */,
+				DC245D1C2B4E856C005A3280 /* Models */,
 				DC245CE42B4CC886005A3280 /* AuthManager.swift */,
 				DC245CE82B4CCFBC005A3280 /* PhoneViewController.swift */,
 				DC245CEA2B4CD193005A3280 /* SMSCodeViewController.swift */,
 			);
 			path = PhoneLogin;
+			sourceTree = "<group>";
+		};
+		DC245D1C2B4E856C005A3280 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC245D1D2B4E856C005A3280 /* Country.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DC245D1E2B4E856C005A3280 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC245D1F2B4E856C005A3280 /* PhoneNumber */,
+				DC245D222B4E856C005A3280 /* MainTabBarController.swift */,
+				DC245D232B4E856C005A3280 /* Verification */,
+				DC245D262B4E856C005A3280 /* Profile */,
+				DC245D282B4E856C005A3280 /* Country */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DC245D1F2B4E856C005A3280 /* PhoneNumber */ = {
+			isa = PBXGroup;
+			children = (
+				DC245D202B4E856C005A3280 /* PhoneNumberController.swift */,
+				DC245D212B4E856C005A3280 /* PhoneNumberViewController.swift */,
+			);
+			path = PhoneNumber;
+			sourceTree = "<group>";
+		};
+		DC245D232B4E856C005A3280 /* Verification */ = {
+			isa = PBXGroup;
+			children = (
+				DC245D242B4E856C005A3280 /* VerificationCodeViewController.swift */,
+				DC245D252B4E856C005A3280 /* VerificationController.swift */,
+			);
+			path = Verification;
+			sourceTree = "<group>";
+		};
+		DC245D262B4E856C005A3280 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DC245D272B4E856C005A3280 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DC245D282B4E856C005A3280 /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				DC245D292B4E856C005A3280 /* CountryCodeViewController.swift */,
+			);
+			path = Country;
+			sourceTree = "<group>";
+		};
+		DC245D2A2B4E856C005A3280 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DC245D2B2B4E856C005A3280 /* ViewExtensions.swift */,
+				DC245D2C2B4E856C005A3280 /* Utilities.swift */,
+				DC245D2D2B4E856C005A3280 /* TableViewCellExtensions.swift */,
+				DC245D2E2B4E856C005A3280 /* MethodExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DC245D2F2B4E856C005A3280 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DC245D302B4E856C005A3280 /* ThemeManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DC245D312B4E856C005A3280 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				DC245D322B4E856C005A3280 /* PhoneNumber */,
+				DC245D342B4E856C005A3280 /* Verification */,
+				DC245D362B4E856C005A3280 /* Profile */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		DC245D322B4E856C005A3280 /* PhoneNumber */ = {
+			isa = PBXGroup;
+			children = (
+				DC245D332B4E856C005A3280 /* PhoneNumberViewContainer.swift */,
+			);
+			path = PhoneNumber;
+			sourceTree = "<group>";
+		};
+		DC245D342B4E856C005A3280 /* Verification */ = {
+			isa = PBXGroup;
+			children = (
+				DC245D352B4E856C005A3280 /* VerificationViewContainer.swift */,
+			);
+			path = Verification;
+			sourceTree = "<group>";
+		};
+		DC245D362B4E856C005A3280 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DC245D372B4E856C005A3280 /* ProfileViewContainer.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DC245D382B4E856C005A3280 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				DC245D392B4E856C005A3280 /* DataGlobal.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 		DCDB906B2B4B93FB0047E52C = {
@@ -145,6 +302,7 @@
 			children = (
 				DCDB90802B4B93FC0047E52C /* Assets.xcassets */,
 				DCDB90822B4B93FC0047E52C /* LaunchScreen.storyboard */,
+				DC245D4B2B4E85A6005A3280 /* CallingCodes.plist */,
 				DCDB90852B4B93FC0047E52C /* Info.plist */,
 				DC245CEC2B4D1ACA005A3280 /* GoogleService-Info.plist */,
 			);
@@ -254,6 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC245D4C2B4E85A7005A3280 /* CallingCodes.plist in Resources */,
 				DCDB90842B4B93FC0047E52C /* LaunchScreen.storyboard in Resources */,
 				DC245CED2B4D1ACA005A3280 /* GoogleService-Info.plist in Resources */,
 				DCDB90812B4B93FC0047E52C /* Assets.xcassets in Resources */,
@@ -311,20 +470,37 @@
 			files = (
 				DCDB90982B4BD2D90047E52C /* InventoryViewController.swift in Sources */,
 				DC245CE52B4CC886005A3280 /* AuthManager.swift in Sources */,
+				DC245D3D2B4E856C005A3280 /* MainTabBarController.swift in Sources */,
 				DCDB908E2B4B97400047E52C /* LoginView.swift in Sources */,
+				DC245D492B4E856C005A3280 /* ProfileViewContainer.swift in Sources */,
+				DC245D432B4E856C005A3280 /* Utilities.swift in Sources */,
+				DC245D3B2B4E856C005A3280 /* PhoneNumberController.swift in Sources */,
 				DC245CEB2B4CD193005A3280 /* SMSCodeViewController.swift in Sources */,
+				DC245D3E2B4E856C005A3280 /* VerificationCodeViewController.swift in Sources */,
 				DCDB90932B4BD1D80047E52C /* LocalState.swift in Sources */,
+				DC245D412B4E856C005A3280 /* CountryCodeViewController.swift in Sources */,
+				DC245D472B4E856C005A3280 /* PhoneNumberViewContainer.swift in Sources */,
 				DCDB907C2B4B93FC0047E52C /* LoginViewController.swift in Sources */,
+				DC245D482B4E856C005A3280 /* VerificationViewContainer.swift in Sources */,
+				DC245D442B4E856C005A3280 /* TableViewCellExtensions.swift in Sources */,
 				DCDB909F2B4BD52E0047E52C /* UIViewController+Utils.swift in Sources */,
+				DC245D3F2B4E856C005A3280 /* VerificationController.swift in Sources */,
+				DC245D4A2B4E856C005A3280 /* DataGlobal.swift in Sources */,
+				DC245D452B4E856C005A3280 /* MethodExtensions.swift in Sources */,
 				DC245CE92B4CCFBC005A3280 /* PhoneViewController.swift in Sources */,
 				DCDB90A22B4BD84C0047E52C /* RecipeViewController.swift in Sources */,
+				DC245D3A2B4E856C005A3280 /* Country.swift in Sources */,
 				DCDB90952B4BD21A0047E52C /* MainViewController.swift in Sources */,
+				DC245D402B4E856C005A3280 /* ProfileViewController.swift in Sources */,
+				DC245D3C2B4E856C005A3280 /* PhoneNumberViewController.swift in Sources */,
+				DC245D422B4E856C005A3280 /* ViewExtensions.swift in Sources */,
 				DCDB90782B4B93FC0047E52C /* AppDelegate.swift in Sources */,
 				DC245CE12B4CC6CA005A3280 /* AuthenticationButtonsView.swift in Sources */,
 				DCDB90902B4BA45B0047E52C /* DummyViewController.swift in Sources */,
 				DCDB909D2B4BD3F10047E52C /* OnboardingViewController.swift in Sources */,
 				DCDB909B2B4BD3D20047E52C /* OnboardingContainerViewController.swift in Sources */,
 				DC245CE32B4CC6FC005A3280 /* DividerView.swift in Sources */,
+				DC245D462B4E856C005A3280 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

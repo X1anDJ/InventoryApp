@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let onboardingViewController = OnboardingContainerViewController()
     let mainViewController = MainViewController()
     
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:
                      [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
@@ -37,7 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if Auth.auth().currentUser == nil {
             window?.rootViewController = navigationController
         } else {
-            window?.rootViewController = mainViewController
+            //window?.rootViewController = mainViewController
+            window?.rootViewController = navigationController
         }
         
         return true

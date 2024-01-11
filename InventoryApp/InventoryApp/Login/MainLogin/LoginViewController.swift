@@ -140,7 +140,8 @@ extension LoginViewController {
 // MARK: Actions
 extension LoginViewController {
     @objc func phoneButtonTapped(sender: UIButton) {
-        let phoneViewController = PhoneViewController()
+        //let phoneViewController = PhoneViewController()
+        let phoneViewController = PhoneNumberController()
         print("144")
         self.navigationController?.pushViewController(phoneViewController, animated: true)
     }
