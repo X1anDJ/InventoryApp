@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     let loginViewController = LoginViewController()
-    
+    let smsController = VerificationController()
     let onboardingViewController = OnboardingContainerViewController()
     let mainViewController = MainViewController()
     
@@ -36,10 +36,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = navigationController
         
         if Auth.auth().currentUser == nil {
-            window?.rootViewController = navigationController
+            //window?.rootViewController = navigationController
+            window?.rootViewController = smsController
         } else {
             //window?.rootViewController = mainViewController
-            window?.rootViewController = navigationController
+            //window?.rootViewController = navigationController
+            window?.rootViewController = smsController
         }
         
         return true

@@ -1,7 +1,7 @@
 import UIKit
 import FirebaseAuth
 
-class VerificationCodeViewController: UIViewController {
+class VerificationCodeViewController: UIViewController, UITextFieldDelegate {
     
     let verificationContainerView = VerificationViewContainer()
 
@@ -13,6 +13,12 @@ class VerificationCodeViewController: UIViewController {
         verificationContainerView.frame = view.bounds
         verificationContainerView.resend.addTarget(self, action: #selector(sendSMSConfirmation), for: .touchUpInside)
         verificationContainerView.verificationCodeController = self
+        for textField in verificationContainerView.codeTextFields as? [CustomTextField] ?? [] {
+            textField.emptyBackspaceDelegate = self
+        }
+        for textField in verificationContainerView.codeTextFields {
+            textField.delegate = self
+        }
         configureNavigationBar()
     }
     
@@ -30,6 +36,58 @@ class VerificationCodeViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = leftBarButton
     }
     
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let currentText = textField.text ?? ""
+        
+        guard let stringRange = Range(range, in: currentText) else { return false }
+        
+        let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
+        
+//        // Handle backspace when the current text field is empty
+//        if string.isEmpty && currentText.isEmpty {
+//            if let previousField = view.viewWithTag(textField.tag - 1) as? UITextField {
+//                previousField.becomeFirstResponder()
+//                previousField.text = "" // Clear the previous text field
+//            }
+//            return false
+//        }
+        
+        
+        // Check if backspace was pressed on an empty text field
+        if string.isEmpty && currentText.isEmpty {
+            if textField.tag > 0 {
+                // Move focus to the previous text field
+                if let previousField = view.viewWithTag(textField.tag - 1) as? UITextField {
+                    previousField.becomeFirstResponder()
+                    return false
+                }
+            }
+        }
+        // Allow only a single character in the text field
+        if updatedText.count > 1 {
+            return false
+        }
+        
+        // Automatically move to the next field after a character is inputted
+        if !string.isEmpty {
+            textField.text = string
+            if let nextField = view.viewWithTag(textField.tag + 1) as? UITextField {
+                nextField.becomeFirstResponder()
+            } else {
+                textField.resignFirstResponder()
+                // Optionally, initiate the code verification here
+            }
+        }
+        
+        // Update the border color after a short delay to allow the text change to be applied
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            self.verificationContainerView.updateBorderColor(for: textField)
+        }
+        
+        return false
+    }
+
+
     //here
     @objc fileprivate func sendSMSConfirmation () {
         
@@ -66,37 +124,17 @@ class VerificationCodeViewController: UIViewController {
         
     }
     
-    func changeNumber () {
-        verificationContainerView.verificationCode.resignFirstResponder()
-        let verificationID = UserDefaults.standard.string(forKey: "ChangeNumberAuthVerificationID")
-        let verificationCode = verificationContainerView.verificationCode.text!
-        
-        print("verification code:", verificationCode)
-        
-        if verificationID == nil {
-            self.verificationContainerView.verificationCode.shake()
-            return
-        }
-        
-        if currentReachabilityStatus == .notReachable {
-            basicErrorAlertWith(title: "No internet connection", message: noInternetError, controller: self)
-            return
-        }
-    }
+
     
     func authenticate() {
-        verificationContainerView.verificationCode.resignFirstResponder()
+        //verificationContainerView.verificationCode.resignFirstResponder()
         if currentReachabilityStatus == .notReachable {
             basicErrorAlertWith(title: "No internet connection", message: noInternetError, controller: self)
             return
         }
         
-        let verificationCode = verificationContainerView.verificationCode.text!
-        
-        if currentReachabilityStatus == .notReachable {
-            basicErrorAlertWith(title: "No internet connection", message: noInternetError, controller: self)
-        }
-        
+        //let verificationCode = verificationContainerView.verificationCode.text!
+        let verificationCode = verificationContainerView.fullVerificationCode
         AuthManager.shared.verifyCode(smsCode: verificationCode ) { [weak self] success in
             guard success else { return }
             DispatchQueue.main.async {
@@ -107,18 +145,45 @@ class VerificationCodeViewController: UIViewController {
             
         }
         
-//
-//        let destination = ProfileViewController()
-//        destination.userProfileViewContainer.phone.text = self.verificationContainerView.titleNumber.text
-//        
-//        if !(self.navigationController!.topViewController!.isKind(of: ProfileViewController.self)) {
-//            self.navigationController?.pushViewController(destination, animated: true)
-//        }
-//    
-//        print("verification code - authenticate:", verificationCode)
     }
     
     func backPhoneNumber() {
         
+    }
+}
+//
+//extension VerificationCodeViewController: EmptyBackspaceDelegate {
+//    
+//    func textFieldDidDeleteBackward(_ textField: UITextField) {
+//        if textField.tag > 0 {
+//            if let previousField = view.viewWithTag(textField.tag - 1) as? UITextField {
+//                previousField.becomeFirstResponder()
+//                previousField.text = "" // Clear the previous text field if needed
+//            }
+//        }
+//    }
+//
+//}
+
+
+extension VerificationCodeViewController: EmptyBackspaceDelegate {
+    
+    func textFieldDidDeleteBackward(_ textField: UITextField) {
+        print("Backspace detected in text field with tag: \(textField.tag)")
+        
+        if textField.tag > 0 && textField.text?.isEmpty == true {
+            // Move to the previous field only if the current field is empty
+            if let previousField = view.viewWithTag(textField.tag - 1) as? UITextField {
+                previousField.text = ""
+                previousField.becomeFirstResponder()
+            }
+        }
+        
+//        if textField.tag > 0 && textField.text?.isEmpty == true{
+//            // If it's not the first text field, move to the previous field
+//            guard let previousField = view.viewWithTag(textField.tag - 1) as? UITextField else { return }
+//            previousField.text = ""
+//            previousField.becomeFirstResponder()
+//        }
     }
 }

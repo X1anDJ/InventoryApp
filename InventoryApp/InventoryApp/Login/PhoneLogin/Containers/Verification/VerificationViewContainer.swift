@@ -2,6 +2,12 @@ import UIKit
 
 class VerificationViewContainer: UIView {
     
+    var codeTextFields: [UITextField] = []
+    
+    var fullVerificationCode: String {
+        return codeTextFields.compactMap { $0.text }.joined()
+    }
+    
     let titleNumber: UILabel = {
         let titleNumber = UILabel()
         titleNumber.translatesAutoresizingMaskIntoConstraints = false
@@ -22,24 +28,6 @@ class VerificationViewContainer: UIView {
         subtitleText.text = "我们已经发送了验证码"
         
         return subtitleText
-    }()
-    
-    let verificationCode: UITextField = {
-        let verificationCode = UITextField()
-        verificationCode.font = UIFont.systemFont(ofSize: 20)
-        verificationCode.translatesAutoresizingMaskIntoConstraints = false
-        verificationCode.textAlignment = .center
-        verificationCode.keyboardType = .numberPad
-        verificationCode.textColor = ThemeManager.currentTheme().mainTitleColor
-        verificationCode.keyboardAppearance = ThemeManager.currentTheme().keyboardAppearance
-        verificationCode.backgroundColor = .clear
-        verificationCode.layer.cornerRadius = 25
-        verificationCode.layer.borderWidth = 1
-        verificationCode.attributedPlaceholder = NSAttributedString(string: "验证码", attributes: [NSAttributedString.Key.foregroundColor:
-            ThemeManager.currentTheme().mainSubTitleColor])
-        verificationCode.layer.borderColor = ThemeManager.currentTheme().borderColor.cgColor
-        
-        return verificationCode
     }()
     
     let resend: UIButton = {
@@ -77,9 +65,53 @@ class VerificationViewContainer: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        for index in 0..<6 {
+            let textField = CustomTextField()
+            textField.translatesAutoresizingMaskIntoConstraints = false
+            textField.textAlignment = .center
+            textField.keyboardType = .numberPad
+            textField.font = UIFont.systemFont(ofSize: 22)
+            textField.layer.borderWidth = 1.5
+            textField.layer.borderColor = UIColor.gray.cgColor
+            textField.layer.cornerRadius = 12
+            textField.backgroundColor = UIColor.white
+            textField.textAlignment = .center
+            textField.isSecureTextEntry = false // Set to true if you want to hide the input
+            textField.tag = index // Set the tag to identify the text field
+            codeTextFields.append(textField)
+            
+            let heightConstraint = textField.heightAnchor.constraint(equalToConstant: 50) // Adjust this value as needed
+            heightConstraint.isActive = true
+        }
+        
+        setupSubviews()
+        
+        for textField in codeTextFields {
+            textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        }
+        
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)!
+    }
+    
+    private func setupSubviews() {
+        // Add and configure all other subviews (e.g., titleNumber, subtitleText) here
+        // ...
+        
+        // Create a UIStackView and add your text fields to it
+        let stackView = UIStackView(arrangedSubviews: codeTextFields)
+        stackView.axis = .horizontal
+        stackView.distribution = .fillEqually
+        stackView.alignment = .center
+        stackView.spacing = 8 // Adjust the spacing as needed
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        
         addSubview(titleNumber)
         addSubview(subtitleText)
-        addSubview(verificationCode)
+        addSubview(stackView)
+        
         addSubview(resend)
         addSubview(timerLabel)
         
@@ -87,7 +119,6 @@ class VerificationViewContainer: UIView {
         let rightConstant: CGFloat = -20
         let heightConstant: CGFloat = 50
         let spacingConstant: CGFloat = 20
-        
         NSLayoutConstraint.activate([
             titleNumber.topAnchor.constraint(equalTo: topAnchor, constant: 150),
             titleNumber.leadingAnchor.constraint(equalTo: leadingAnchor),
@@ -99,12 +130,12 @@ class VerificationViewContainer: UIView {
             subtitleText.trailingAnchor.constraint(equalTo: trailingAnchor),
             subtitleText.heightAnchor.constraint(equalToConstant: spacingConstant),
             
-            verificationCode.topAnchor.constraint(equalTo: subtitleText.bottomAnchor, constant: spacingConstant),
-            verificationCode.leadingAnchor.constraint(equalTo: leadingAnchor, constant: leftConstant),
-            verificationCode.trailingAnchor.constraint(equalTo: trailingAnchor, constant: rightConstant),
-            verificationCode.heightAnchor.constraint(equalToConstant: heightConstant),
+            stackView.topAnchor.constraint(equalTo: subtitleText.bottomAnchor, constant: 20),
+            stackView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            stackView.heightAnchor.constraint(equalToConstant: 100), // Adjust as needed
+            stackView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.8), // Adjust as needed
             
-            resend.topAnchor.constraint(equalTo: verificationCode.bottomAnchor, constant: 5),
+            resend.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 5),
             resend.leadingAnchor.constraint(equalTo: leadingAnchor),
             resend.trailingAnchor.constraint(equalTo: trailingAnchor),
             resend.heightAnchor.constraint(equalToConstant: heightConstant),
@@ -114,14 +145,25 @@ class VerificationViewContainer: UIView {
             timerLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: rightConstant),
             timerLabel.heightAnchor.constraint(equalToConstant: heightConstant)
             ])
+        
     }
     
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)!
-    }
 }
 
 extension VerificationViewContainer {
+    
+    // Method to update the text field's border color
+    func updateBorderColor(for textField: UITextField) {
+        if let text = textField.text, text.isEmpty {
+            textField.layer.borderColor = UIColor.gray.cgColor // Default color
+        } else {
+            textField.layer.borderColor = UIColor.systemGreen.cgColor // Color when not empty
+        }
+    }
+    
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        updateBorderColor(for: textField)
+    }
     
     typealias CompletionHandler = (_ success: Bool) -> Void
     

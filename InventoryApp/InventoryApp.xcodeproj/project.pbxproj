@@ -45,6 +45,7 @@
 		DCDB909D2B4BD3F10047E52C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB909C2B4BD3F10047E52C /* OnboardingViewController.swift */; };
 		DCDB909F2B4BD52E0047E52C /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB909E2B4BD52E0047E52C /* UIViewController+Utils.swift */; };
 		DCDB90A22B4BD84C0047E52C /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB90A12B4BD84C0047E52C /* RecipeViewController.swift */; };
+		DCE0C5CB2B509D1C00068DC3 /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE0C5CA2B509D1C00068DC3 /* UITextFieldExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		DCDB909C2B4BD3F10047E52C /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		DCDB909E2B4BD52E0047E52C /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		DCDB90A12B4BD84C0047E52C /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		DCE0C5CA2B509D1C00068DC3 /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
 		E0E3C27978BC456607E62A37 /* Pods-InventoryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InventoryApp.release.xcconfig"; path = "Target Support Files/Pods-InventoryApp/Pods-InventoryApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -210,6 +212,7 @@
 				DC245D2C2B4E856C005A3280 /* Utilities.swift */,
 				DC245D2D2B4E856C005A3280 /* TableViewCellExtensions.swift */,
 				DC245D2E2B4E856C005A3280 /* MethodExtensions.swift */,
+				DCE0C5CA2B509D1C00068DC3 /* UITextFieldExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				DCDB907C2B4B93FC0047E52C /* LoginViewController.swift in Sources */,
 				DC245D482B4E856C005A3280 /* VerificationViewContainer.swift in Sources */,
 				DC245D442B4E856C005A3280 /* TableViewCellExtensions.swift in Sources */,
+				DCE0C5CB2B509D1C00068DC3 /* UITextFieldExtensions.swift in Sources */,
 				DCDB909F2B4BD52E0047E52C /* UIViewController+Utils.swift in Sources */,
 				DC245D3F2B4E856C005A3280 /* VerificationController.swift in Sources */,
 				DC245D4A2B4E856C005A3280 /* DataGlobal.swift in Sources */,
