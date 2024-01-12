@@ -9,12 +9,23 @@ import Foundation
 // AuthenticationButtonsView.swift
 import UIKit
 
-class AuthenticationButtonsView: UIView {
+protocol AuthenticationButtonsViewDelegate: AnyObject {
+    func googleSignInButtonTapped()
+    func wechatSignInButtonTapped()
+    func facebookSignInButtonTapped()
+    func appleSignInButtonTapped()
+}
 
-    let googleSignInButton = UIButton(type: .custom)
-    let wechatSignInButton = UIButton(type: .custom)
-    let facebookSignInButton = UIButton(type: .custom)
-    let appleSignInButton = UIButton(type: .system) // Using .system for SF Symbols
+
+class AuthenticationButtonsView: UIView {
+    
+    weak var delegate: AuthenticationButtonsViewDelegate?
+
+
+    let googleSignInButton = CustomButton(type: .custom)
+    let wechatSignInButton = CustomButton(type: .custom)
+    let facebookSignInButton = CustomButton(type: .custom)
+    let appleSignInButton = CustomButton(type: .system) // Using .system for SF Symbols
     
     let stackView = UIStackView()
     
@@ -30,7 +41,7 @@ class AuthenticationButtonsView: UIView {
 
     private func setupButtons() {
         // Configure each button with the appropriate image
-        googleSignInButton.setImage(UIImage(named: "google"), for: .normal)
+        googleSignInButton.setImage(UIImage(named: "google-2"), for: .normal)
         wechatSignInButton.setImage(UIImage(named: "wechat"), for: .normal)
         facebookSignInButton.setImage(UIImage(named: "facebook"), for: .normal)
         if let appleLogo = UIImage(systemName: "applelogo") {
@@ -50,8 +61,15 @@ class AuthenticationButtonsView: UIView {
             button.translatesAutoresizingMaskIntoConstraints = false
             stackView.addArrangedSubview(button)
         }
-
         appleSignInButton.backgroundColor = .black
+        
+        // Set button target
+        googleSignInButton.addTarget(self, action: #selector(googleButtonTapped), for: .touchUpInside)
+        wechatSignInButton.addTarget(self, action: #selector(wechatButtonTapped), for: .touchUpInside)
+        facebookSignInButton.addTarget(self, action: #selector(facebookButtonTapped), for: .touchUpInside)
+        appleSignInButton.addTarget(self, action: #selector(appleButtonTapped), for: .touchUpInside)
+        
+        
         stackView.axis = .horizontal
         stackView.distribution = .equalSpacing
         stackView.alignment = .center
@@ -84,5 +102,46 @@ class AuthenticationButtonsView: UIView {
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16), // Padding from the leading edge of the view
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16) // Padding from the trailing edge of the view
         ])
+    }
+    
+    
+}
+
+extension AuthenticationButtonsView {
+    
+    @objc private func googleButtonTapped() {
+        delegate?.googleSignInButtonTapped()
+    }
+
+    @objc private func wechatButtonTapped() {
+        delegate?.wechatSignInButtonTapped()
+    }
+
+    @objc private func facebookButtonTapped() {
+        delegate?.facebookSignInButtonTapped()
+    }
+
+    @objc private func appleButtonTapped() {
+        delegate?.appleSignInButtonTapped()
+    }
+}
+
+
+class CustomButton: UIButton {
+    var touchAreaPadding: CGFloat = 22.0
+    var imageInset: CGFloat = 0.0 {
+        didSet {
+            self.imageEdgeInsets = UIEdgeInsets(
+                top: imageInset,
+                left: imageInset,
+                bottom: imageInset,
+                right: imageInset
+            )
+        }
+    }
+
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        let largerArea = self.bounds.insetBy(dx: -touchAreaPadding, dy: -touchAreaPadding)
+        return largerArea.contains(point)
     }
 }

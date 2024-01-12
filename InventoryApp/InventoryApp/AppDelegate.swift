@@ -6,6 +6,7 @@
 //
 import FirebaseAuth
 import FirebaseCore
+import GoogleSignIn
 import UIKit
 
 let appColor: UIColor = .systemGray
@@ -23,12 +24,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:
                      [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        
+        //Google sign-in instance
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return false }
+        
+        // Create Google Sign In configuration object.
+        let config = GIDConfiguration(clientID: clientID)
+        GIDSignIn.sharedInstance.configuration = config
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
         
-//        loginViewController.delegate = self
-//        onboardingViewController.delegate = self
+        loginViewController.delegate = self
+        onboardingViewController.delegate = self
 //        
 //        window?.rootViewController = loginViewController
         
@@ -65,6 +74,13 @@ extension AppDelegate {
                           options: .transitionCrossDissolve,
                           animations: nil,
                           completion: nil)
+    }
+    
+    //Google login
+    func application(_ app: UIApplication,
+                     open url: URL,
+                     options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+      return GIDSignIn.sharedInstance.handle(url)
     }
 }
 

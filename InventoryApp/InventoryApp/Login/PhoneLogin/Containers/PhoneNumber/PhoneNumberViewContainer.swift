@@ -7,7 +7,7 @@ class PhoneNumberViewContainer: UIView {
         title.translatesAutoresizingMaskIntoConstraints = false
         title.textAlignment = .center
         title.text = "手机号码"
-        title.textColor = ThemeManager.currentTheme().mainTitleColor
+        title.textColor = .label
         title.font = UIFont.systemFont(ofSize: 32, weight: .bold)
         title.sizeToFit()
         
@@ -18,8 +18,9 @@ class PhoneNumberViewContainer: UIView {
         let instructions = UILabel()
         instructions.translatesAutoresizingMaskIntoConstraints = false
         instructions.textAlignment = .center
+        instructions.text = "输入您的手机号码"
         instructions.numberOfLines = 2
-        instructions.textColor = ThemeManager.currentTheme().mainTitleColor
+        instructions.textColor = .tertiaryLabel
         instructions.font = UIFont.systemFont(ofSize: 18)
         instructions.sizeToFit()
         
@@ -30,8 +31,9 @@ class PhoneNumberViewContainer: UIView {
         let terms = UILabel()
         terms.translatesAutoresizingMaskIntoConstraints = false
         terms.textAlignment = .left
+        terms.text = "登录则代表同意我们将您的信息卖给第三方"
         terms.numberOfLines = 5
-        terms.textColor = ThemeManager.currentTheme().mainTitleColor
+        terms.textColor = .tertiaryLabel
         terms.font = UIFont.systemFont(ofSize: 14)
         terms.sizeToFit()
         
@@ -41,14 +43,14 @@ class PhoneNumberViewContainer: UIView {
     let selectCountry: UIButton = {
         let selectCountry = UIButton()
         selectCountry.translatesAutoresizingMaskIntoConstraints = false
-        selectCountry.setTitle("Kazahstan", for: .normal)
+        selectCountry.setTitle("United States", for: .normal)
         selectCountry.setTitleColor(ThemeManager.currentTheme().buttonTitleColor, for: .normal)
         selectCountry.contentHorizontalAlignment = .center
         selectCountry.contentVerticalAlignment = .center
         selectCountry.titleLabel?.sizeToFit()
         selectCountry.backgroundColor = ThemeManager.currentTheme().buttonColor
         selectCountry.layer.cornerRadius = 25
-        selectCountry.titleEdgeInsets = UIEdgeInsets(top: 0, left: 10.0, bottom: 0.0, right: 10.0)
+       // selectCountry.titleEdgeInsets = UIEdgeInsets(top: 0, left: 10.0, bottom: 0.0, right: 10.0)
         selectCountry.titleLabel?.font = UIFont.systemFont(ofSize: 20)
         selectCountry.addTarget(self, action: #selector(PhoneNumberController.openCountryCodesList), for: .touchUpInside)
         
@@ -58,7 +60,7 @@ class PhoneNumberViewContainer: UIView {
     var countryCode: UILabel = {
         var countryCode = UILabel()
         countryCode.translatesAutoresizingMaskIntoConstraints = false
-        countryCode.text = "+7"
+        countryCode.text = "+1"
         countryCode.textAlignment = .center
         countryCode.textColor = ThemeManager.currentTheme().mainTitleColor
         countryCode.font = UIFont.systemFont(ofSize: 18)

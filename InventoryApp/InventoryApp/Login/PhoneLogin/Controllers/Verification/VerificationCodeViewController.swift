@@ -8,7 +8,8 @@ class VerificationCodeViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = ThemeManager.currentTheme().mainBackgroundColor
+        view.backgroundColor = .systemBackground
+        verificationContainerView.backgroundColor = .systemBackground
         view.addSubview(verificationContainerView)
         configureVerificationContainerView()
         configureNavigationBar()
@@ -22,25 +23,35 @@ class VerificationCodeViewController: UIViewController, UITextFieldDelegate {
             textField.emptyBackspaceDelegate = self
             textField.delegate = self
         }
-//        for textField in verificationContainerView.codeTextFields {
-//            
-//        }
+        verificationContainerView.codeTextFields[0].becomeFirstResponder()
     }
     
     fileprivate func configureNavigationBar () {
-        self.navigationItem.hidesBackButton = true
+        //self.navigationItem.hidesBackButton = true
+        updateRightBarButtonStatus()
+    }
+    
+    func updateRightBarButtonStatus() {
+        let allFieldsFilled = verificationContainerView.codeTextFields.map {
+            print("TextField \($0.tag): '\($0.text ?? "nil")'") // Debug print
+            return $0.text?.isEmpty == false
+        }.reduce(true) { $0 && $1 }
+
+        print("All fields filled: \(allFieldsFilled)") // Debug print
+        self.navigationItem.rightBarButtonItem?.isEnabled = allFieldsFilled
     }
     
     func setRightBarButton(with title: String) {
         let rightBarButton = UIBarButtonItem(title: title, style: .done, target: self, action: #selector(rightBarButtonDidTap))
+        rightBarButton.isEnabled = false
         self.navigationItem.rightBarButtonItem = rightBarButton
     }
     
-    func setLeftBarButton(with title: String) {
-        let leftBarButton = UIBarButtonItem(title: title, style: .done, target: self, action: #selector(leftBarButtonDidTap))
-        self.navigationItem.leftBarButtonItem = leftBarButton
-    }
-    
+//    func setLeftBarButton(with title: String) {
+//        let leftBarButton = UIBarButtonItem(title: title, style: .done, target: self, action: #selector(leftBarButtonDidTap))
+//        self.navigationItem.leftBarButtonItem = leftBarButton
+//    }
+//    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let currentText = textField.text ?? ""
         
@@ -50,41 +61,34 @@ class VerificationCodeViewController: UIViewController, UITextFieldDelegate {
         
         // Allow only a single character in the text field
         if updatedText.count > 1 {
+            updateRightBarButtonStatus()
             return false
         }
         
-        // Automatically move to the next field after a character is inputted
+        // Go to the next box when current is filled
         if !string.isEmpty {
             textField.text = string
-            if let nextField = view.viewWithTag(textField.tag + 1) as? UITextField {
-                nextField.becomeFirstResponder()
-                return false
-            } else {
-                return true
-            }
-        }
-        
-        // Check if backspace was pressed on an empty text field
-        if !string.isEmpty {
-            textField.text = string
-            if textField.tag == 5 { // Check if it's the last text field
+            if textField.tag == 6 { // Check if it's the last text field
                 textField.resignFirstResponder()
             } else if let nextField = view.viewWithTag(textField.tag + 1) as? UITextField {
                 nextField.becomeFirstResponder()
             }
         }
         
-        // Update the border color after a short delay to allow the text change to be applied
+        // Update the border color after a short delay to make it looks cool
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             self.verificationContainerView.updateBorderColor(for: textField)
+            self.updateRightBarButtonStatus()
         }
-        return false
+        
+        print("Code: \(String(describing: updatedText))")
+        updateRightBarButtonStatus()
+        return true
     }
 
 
-    //here
+    //For resending the SMS code
     @objc fileprivate func sendSMSConfirmation () {
-        
         if currentReachabilityStatus == .notReachable {
             basicErrorAlertWith(title: "No internet connection", message: noInternetError, controller: self)
             return
@@ -101,11 +105,9 @@ class VerificationCodeViewController: UIViewController, UITextFieldDelegate {
         PhoneAuthProvider.provider()
           .verifyPhoneNumber(phoneNumber!, uiDelegate: nil) { verificationID, error in
               if let error = error {
-                //self.showMessagePrompt(error.localizedDescription)
+                print("error\(error)")
                 return
               }
-              // Sign in using the verificationID and the code sent to the user
-              // ...
           }
         
     }
@@ -131,6 +133,7 @@ class VerificationCodeViewController: UIViewController, UITextFieldDelegate {
         let verificationCode = verificationContainerView.fullVerificationCode
         AuthManager.shared.verifyCode(smsCode: verificationCode ) { [weak self] success in
             guard success else { return }
+            // Phone log-in sucess!
             DispatchQueue.main.async {
                 let vc = MainViewController()
                 vc.modalPresentationStyle = .fullScreen
@@ -145,19 +148,6 @@ class VerificationCodeViewController: UIViewController, UITextFieldDelegate {
         
     }
 }
-//
-//extension VerificationCodeViewController: EmptyBackspaceDelegate {
-//    
-//    func textFieldDidDeleteBackward(_ textField: UITextField) {
-//        if textField.tag > 0 {
-//            if let previousField = view.viewWithTag(textField.tag - 1) as? UITextField {
-//                previousField.becomeFirstResponder()
-//                previousField.text = "" // Clear the previous text field if needed
-//            }
-//        }
-//    }
-//
-//}
 
 
 extension VerificationCodeViewController: EmptyBackspaceDelegate {
@@ -166,15 +156,20 @@ extension VerificationCodeViewController: EmptyBackspaceDelegate {
         print("Backspace detected in text field with tag: \(textField.tag)")
         
         // Move to the previous field only if the current field is empty
-        if textField.tag > 0 && textField.text?.isEmpty == true {
+        print("textField.tag = \(textField.tag), textField.text.isEmpty = \(String(describing: textField.text?.isEmpty))")
+        
+        if textField.tag > 1 && textField.text?.isEmpty == true {
             if let previousField = view.viewWithTag(textField.tag - 1) as? UITextField {
+                print("149 yes!")
                 previousField.text = ""
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                    self.verificationContainerView.updateBorderColor(for: textField)
+                    self.verificationContainerView.updateBorderColor(for: previousField)
+                    self.updateRightBarButtonStatus()
                 }
                 previousField.becomeFirstResponder()
             }
         }
+        
 
     }
 }

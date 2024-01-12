@@ -20,7 +20,6 @@
 		DC245D3D2B4E856C005A3280 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D222B4E856C005A3280 /* MainTabBarController.swift */; };
 		DC245D3E2B4E856C005A3280 /* VerificationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D242B4E856C005A3280 /* VerificationCodeViewController.swift */; };
 		DC245D3F2B4E856C005A3280 /* VerificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D252B4E856C005A3280 /* VerificationController.swift */; };
-		DC245D402B4E856C005A3280 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D272B4E856C005A3280 /* ProfileViewController.swift */; };
 		DC245D412B4E856C005A3280 /* CountryCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D292B4E856C005A3280 /* CountryCodeViewController.swift */; };
 		DC245D422B4E856C005A3280 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D2B2B4E856C005A3280 /* ViewExtensions.swift */; };
 		DC245D432B4E856C005A3280 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D2C2B4E856C005A3280 /* Utilities.swift */; };
@@ -63,7 +62,6 @@
 		DC245D222B4E856C005A3280 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		DC245D242B4E856C005A3280 /* VerificationCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationCodeViewController.swift; sourceTree = "<group>"; };
 		DC245D252B4E856C005A3280 /* VerificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationController.swift; sourceTree = "<group>"; };
-		DC245D272B4E856C005A3280 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DC245D292B4E856C005A3280 /* CountryCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCodeViewController.swift; sourceTree = "<group>"; };
 		DC245D2B2B4E856C005A3280 /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		DC245D2C2B4E856C005A3280 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -75,6 +73,7 @@
 		DC245D372B4E856C005A3280 /* ProfileViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewContainer.swift; sourceTree = "<group>"; };
 		DC245D392B4E856C005A3280 /* DataGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGlobal.swift; sourceTree = "<group>"; };
 		DC245D4B2B4E85A6005A3280 /* CallingCodes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CallingCodes.plist; sourceTree = "<group>"; };
+		DC484FD12B51CDAA00D6BB1C /* InventoryApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InventoryApp.entitlements; sourceTree = "<group>"; };
 		DCDB90742B4B93FC0047E52C /* InventoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDB90772B4B93FC0047E52C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCDB907B2B4B93FC0047E52C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -165,7 +164,6 @@
 				DC245D1F2B4E856C005A3280 /* PhoneNumber */,
 				DC245D222B4E856C005A3280 /* MainTabBarController.swift */,
 				DC245D232B4E856C005A3280 /* Verification */,
-				DC245D262B4E856C005A3280 /* Profile */,
 				DC245D282B4E856C005A3280 /* Country */,
 			);
 			path = Controllers;
@@ -187,14 +185,6 @@
 				DC245D252B4E856C005A3280 /* VerificationController.swift */,
 			);
 			path = Verification;
-			sourceTree = "<group>";
-		};
-		DC245D262B4E856C005A3280 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				DC245D272B4E856C005A3280 /* ProfileViewController.swift */,
-			);
-			path = Profile;
 			sourceTree = "<group>";
 		};
 		DC245D282B4E856C005A3280 /* Country */ = {
@@ -305,6 +295,7 @@
 			children = (
 				DCDB90802B4B93FC0047E52C /* Assets.xcassets */,
 				DCDB90822B4B93FC0047E52C /* LaunchScreen.storyboard */,
+				DC484FD12B51CDAA00D6BB1C /* InventoryApp.entitlements */,
 				DC245D4B2B4E85A6005A3280 /* CallingCodes.plist */,
 				DCDB90852B4B93FC0047E52C /* Info.plist */,
 				DC245CEC2B4D1ACA005A3280 /* GoogleService-Info.plist */,
@@ -495,7 +486,6 @@
 				DCDB90A22B4BD84C0047E52C /* RecipeViewController.swift in Sources */,
 				DC245D3A2B4E856C005A3280 /* Country.swift in Sources */,
 				DCDB90952B4BD21A0047E52C /* MainViewController.swift in Sources */,
-				DC245D402B4E856C005A3280 /* ProfileViewController.swift in Sources */,
 				DC245D3C2B4E856C005A3280 /* PhoneNumberViewController.swift in Sources */,
 				DC245D422B4E856C005A3280 /* ViewExtensions.swift in Sources */,
 				DCDB90782B4B93FC0047E52C /* AppDelegate.swift in Sources */,
@@ -647,6 +637,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InventoryApp/InventoryApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZGPM5R49KX;
@@ -656,6 +647,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -675,6 +667,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InventoryApp/InventoryApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZGPM5R49KX;
@@ -684,6 +677,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

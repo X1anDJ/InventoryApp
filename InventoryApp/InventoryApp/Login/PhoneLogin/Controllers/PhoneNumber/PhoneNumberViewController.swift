@@ -9,7 +9,7 @@ class PhoneNumberViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = ThemeManager.currentTheme().mainBackgroundColor
+        view.backgroundColor = .systemBackground
         configurePhoneNumberContainerView()
         configureNavigationBar()
         setCountry()
@@ -76,12 +76,8 @@ class PhoneNumberViewController: UIViewController {
         AuthManager.shared.startAuth(phoneNumber: number) { [weak self] success in
             guard success else { return }
             DispatchQueue.main.async {
-//                let vc = SMSCodeViewController()
-//                vc.title = "Enter Code"
-//                self?.navigationController?.pushViewController(vc, animated: true)
                 let destination = VerificationController()
                 destination.verificationContainerView.titleNumber.text = number
-//                destination.verificationContainerView.titleNumber.text = phoneNumberViewContainer.countryCode.text! + phoneNumberViewContainer.phoneNumber.text!
                 self?.navigationController?.pushViewController(destination, animated: true)
             }
             

@@ -4,8 +4,8 @@ class VerificationController: VerificationCodeViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setRightBarButton(with: "Next")
-        setLeftBarButton(with: "Back")
+        setRightBarButton(with: "Submit")
+//        setLeftBarButton(with: "Back")
     }
     
     override func rightBarButtonDidTap() {
