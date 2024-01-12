@@ -10,16 +10,21 @@ class VerificationCodeViewController: UIViewController, UITextFieldDelegate {
         
         view.backgroundColor = ThemeManager.currentTheme().mainBackgroundColor
         view.addSubview(verificationContainerView)
+        configureVerificationContainerView()
+        configureNavigationBar()
+    }
+    
+    func configureVerificationContainerView() {
         verificationContainerView.frame = view.bounds
         verificationContainerView.resend.addTarget(self, action: #selector(sendSMSConfirmation), for: .touchUpInside)
         verificationContainerView.verificationCodeController = self
         for textField in verificationContainerView.codeTextFields as? [CustomTextField] ?? [] {
             textField.emptyBackspaceDelegate = self
-        }
-        for textField in verificationContainerView.codeTextFields {
             textField.delegate = self
         }
-        configureNavigationBar()
+//        for textField in verificationContainerView.codeTextFields {
+//            
+//        }
     }
     
     fileprivate func configureNavigationBar () {
@@ -43,26 +48,6 @@ class VerificationCodeViewController: UIViewController, UITextFieldDelegate {
         
         let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
         
-//        // Handle backspace when the current text field is empty
-//        if string.isEmpty && currentText.isEmpty {
-//            if let previousField = view.viewWithTag(textField.tag - 1) as? UITextField {
-//                previousField.becomeFirstResponder()
-//                previousField.text = "" // Clear the previous text field
-//            }
-//            return false
-//        }
-        
-        
-        // Check if backspace was pressed on an empty text field
-        if string.isEmpty && currentText.isEmpty {
-            if textField.tag > 0 {
-                // Move focus to the previous text field
-                if let previousField = view.viewWithTag(textField.tag - 1) as? UITextField {
-                    previousField.becomeFirstResponder()
-                    return false
-                }
-            }
-        }
         // Allow only a single character in the text field
         if updatedText.count > 1 {
             return false
@@ -73,9 +58,19 @@ class VerificationCodeViewController: UIViewController, UITextFieldDelegate {
             textField.text = string
             if let nextField = view.viewWithTag(textField.tag + 1) as? UITextField {
                 nextField.becomeFirstResponder()
+                return false
             } else {
+                return true
+            }
+        }
+        
+        // Check if backspace was pressed on an empty text field
+        if !string.isEmpty {
+            textField.text = string
+            if textField.tag == 5 { // Check if it's the last text field
                 textField.resignFirstResponder()
-                // Optionally, initiate the code verification here
+            } else if let nextField = view.viewWithTag(textField.tag + 1) as? UITextField {
+                nextField.becomeFirstResponder()
             }
         }
         
@@ -83,7 +78,6 @@ class VerificationCodeViewController: UIViewController, UITextFieldDelegate {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             self.verificationContainerView.updateBorderColor(for: textField)
         }
-        
         return false
     }
 
@@ -171,19 +165,16 @@ extension VerificationCodeViewController: EmptyBackspaceDelegate {
     func textFieldDidDeleteBackward(_ textField: UITextField) {
         print("Backspace detected in text field with tag: \(textField.tag)")
         
+        // Move to the previous field only if the current field is empty
         if textField.tag > 0 && textField.text?.isEmpty == true {
-            // Move to the previous field only if the current field is empty
             if let previousField = view.viewWithTag(textField.tag - 1) as? UITextField {
                 previousField.text = ""
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    self.verificationContainerView.updateBorderColor(for: textField)
+                }
                 previousField.becomeFirstResponder()
             }
         }
-        
-//        if textField.tag > 0 && textField.text?.isEmpty == true{
-//            // If it's not the first text field, move to the previous field
-//            guard let previousField = view.viewWithTag(textField.tag - 1) as? UITextField else { return }
-//            previousField.text = ""
-//            previousField.becomeFirstResponder()
-//        }
+
     }
 }

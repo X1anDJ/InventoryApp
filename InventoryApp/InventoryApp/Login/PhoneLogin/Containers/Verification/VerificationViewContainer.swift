@@ -76,11 +76,9 @@ class VerificationViewContainer: UIView {
             textField.layer.cornerRadius = 12
             textField.backgroundColor = UIColor.white
             textField.textAlignment = .center
-            textField.isSecureTextEntry = false // Set to true if you want to hide the input
             textField.tag = index // Set the tag to identify the text field
             codeTextFields.append(textField)
-            
-            let heightConstraint = textField.heightAnchor.constraint(equalToConstant: 50) // Adjust this value as needed
+            let heightConstraint = textField.heightAnchor.constraint(equalToConstant: 50)
             heightConstraint.isActive = true
         }
         
