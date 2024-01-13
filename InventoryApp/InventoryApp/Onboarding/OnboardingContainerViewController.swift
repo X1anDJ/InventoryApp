@@ -24,9 +24,9 @@ class OnboardingContainerViewController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         self.pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         
-        let page1 = OnboardingViewController(heroImageName: "delorean", titleText: "Bankey is faster, easier to use, and has a brand new look and feel that will make you feel like you are back in the 80s.")
-        let page2 = OnboardingViewController(heroImageName: "world", titleText: "Move your money around the world quickly and securely.")
-        let page3 = OnboardingViewController(heroImageName: "thumbs", titleText: "Learn more at www.bankey.com.")
+        let page1 = OnboardingViewController(heroImageName: "全新的输入方式", titleText: "采用前沿的机器学习模型，根据一张照片，识别所有物品并自动分类")
+        let page2 = OnboardingViewController(heroImageName: "更适合家庭的库存管理理念", titleText: "我们会更想知道“在冰箱放多久了？”，而不是掐准保质期。App根据入库时间和食品种类，自动设置提醒时间")
+        let page3 = OnboardingViewController(heroImageName: "AI菜谱管理", titleText: "推荐菜谱+食品库存+AI管理。你再也不用头疼今天吃啥！")
 
         pages.append(page1)
         pages.append(page2)

@@ -31,9 +31,16 @@
 		DC245D492B4E856C005A3280 /* ProfileViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D372B4E856C005A3280 /* ProfileViewContainer.swift */; };
 		DC245D4A2B4E856C005A3280 /* DataGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC245D392B4E856C005A3280 /* DataGlobal.swift */; };
 		DC245D4C2B4E85A7005A3280 /* CallingCodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC245D4B2B4E85A6005A3280 /* CallingCodes.plist */; };
+		DC484FD52B52507900D6BB1C /* productModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC484FD42B52507900D6BB1C /* productModel.swift */; };
+		DC484FD92B52557B00D6BB1C /* ProductCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC484FD82B52557B00D6BB1C /* ProductCardViewController.swift */; };
+		DC484FDB2B5255E300D6BB1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC484FDA2B5255E300D6BB1C /* Assets.xcassets */; };
+		DC484FDD2B52574E00D6BB1C /* FrontCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC484FDC2B52574E00D6BB1C /* FrontCardView.swift */; };
+		DC484FDF2B52575800D6BB1C /* BackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC484FDE2B52575800D6BB1C /* BackCardView.swift */; };
+		DC484FE12B52585300D6BB1C /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC484FE02B52585300D6BB1C /* CardViewModel.swift */; };
+		DC484FE32B52630B00D6BB1C /* FrontCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC484FE22B52630B00D6BB1C /* FrontCardViewController.swift */; };
+		DC484FE52B52656000D6BB1C /* BackCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC484FE42B52656000D6BB1C /* BackCardViewController.swift */; };
 		DCDB90782B4B93FC0047E52C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB90772B4B93FC0047E52C /* AppDelegate.swift */; };
 		DCDB907C2B4B93FC0047E52C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB907B2B4B93FC0047E52C /* LoginViewController.swift */; };
-		DCDB90812B4B93FC0047E52C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDB90802B4B93FC0047E52C /* Assets.xcassets */; };
 		DCDB90842B4B93FC0047E52C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDB90822B4B93FC0047E52C /* LaunchScreen.storyboard */; };
 		DCDB908E2B4B97400047E52C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB908D2B4B97400047E52C /* LoginView.swift */; };
 		DCDB90902B4BA45B0047E52C /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB908F2B4BA45B0047E52C /* DummyViewController.swift */; };
@@ -74,10 +81,17 @@
 		DC245D392B4E856C005A3280 /* DataGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGlobal.swift; sourceTree = "<group>"; };
 		DC245D4B2B4E85A6005A3280 /* CallingCodes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CallingCodes.plist; sourceTree = "<group>"; };
 		DC484FD12B51CDAA00D6BB1C /* InventoryApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InventoryApp.entitlements; sourceTree = "<group>"; };
+		DC484FD42B52507900D6BB1C /* productModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productModel.swift; sourceTree = "<group>"; };
+		DC484FD82B52557B00D6BB1C /* ProductCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardViewController.swift; sourceTree = "<group>"; };
+		DC484FDA2B5255E300D6BB1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC484FDC2B52574E00D6BB1C /* FrontCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCardView.swift; sourceTree = "<group>"; };
+		DC484FDE2B52575800D6BB1C /* BackCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCardView.swift; sourceTree = "<group>"; };
+		DC484FE02B52585300D6BB1C /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		DC484FE22B52630B00D6BB1C /* FrontCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCardViewController.swift; sourceTree = "<group>"; };
+		DC484FE42B52656000D6BB1C /* BackCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCardViewController.swift; sourceTree = "<group>"; };
 		DCDB90742B4B93FC0047E52C /* InventoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDB90772B4B93FC0047E52C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCDB907B2B4B93FC0047E52C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		DCDB90802B4B93FC0047E52C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCDB90832B4B93FC0047E52C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCDB90852B4B93FC0047E52C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCDB908D2B4B97400047E52C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -257,6 +271,27 @@
 			path = Database;
 			sourceTree = "<group>";
 		};
+		DC484FD32B52506400D6BB1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC484FD42B52507900D6BB1C /* productModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC484FD72B52555A00D6BB1C /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				DC484FD82B52557B00D6BB1C /* ProductCardViewController.swift */,
+				DC484FDC2B52574E00D6BB1C /* FrontCardView.swift */,
+				DC484FDE2B52575800D6BB1C /* BackCardView.swift */,
+				DC484FE02B52585300D6BB1C /* CardViewModel.swift */,
+				DC484FE22B52630B00D6BB1C /* FrontCardViewController.swift */,
+				DC484FE42B52656000D6BB1C /* BackCardViewController.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
 		DCDB906B2B4B93FB0047E52C = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +313,8 @@
 		DCDB90762B4B93FC0047E52C /* InventoryApp */ = {
 			isa = PBXGroup;
 			children = (
+				DC484FD72B52555A00D6BB1C /* Card */,
+				DC484FD32B52506400D6BB1C /* Model */,
 				DCDB908C2B4B97250047E52C /* Login */,
 				DCDB90992B4BD3B60047E52C /* Onboarding */,
 				DCDB90962B4BD2BC0047E52C /* Inventory */,
@@ -293,9 +330,9 @@
 		DCDB908B2B4B96FC0047E52C /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				DCDB90802B4B93FC0047E52C /* Assets.xcassets */,
 				DCDB90822B4B93FC0047E52C /* LaunchScreen.storyboard */,
 				DC484FD12B51CDAA00D6BB1C /* InventoryApp.entitlements */,
+				DC484FDA2B5255E300D6BB1C /* Assets.xcassets */,
 				DC245D4B2B4E85A6005A3280 /* CallingCodes.plist */,
 				DCDB90852B4B93FC0047E52C /* Info.plist */,
 				DC245CEC2B4D1ACA005A3280 /* GoogleService-Info.plist */,
@@ -408,8 +445,8 @@
 			files = (
 				DC245D4C2B4E85A7005A3280 /* CallingCodes.plist in Resources */,
 				DCDB90842B4B93FC0047E52C /* LaunchScreen.storyboard in Resources */,
+				DC484FDB2B5255E300D6BB1C /* Assets.xcassets in Resources */,
 				DC245CED2B4D1ACA005A3280 /* GoogleService-Info.plist in Resources */,
-				DCDB90812B4B93FC0047E52C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +508,7 @@
 				DC245D3B2B4E856C005A3280 /* PhoneNumberController.swift in Sources */,
 				DC245CEB2B4CD193005A3280 /* SMSCodeViewController.swift in Sources */,
 				DC245D3E2B4E856C005A3280 /* VerificationCodeViewController.swift in Sources */,
+				DC484FE52B52656000D6BB1C /* BackCardViewController.swift in Sources */,
 				DCDB90932B4BD1D80047E52C /* LocalState.swift in Sources */,
 				DC245D412B4E856C005A3280 /* CountryCodeViewController.swift in Sources */,
 				DC245D472B4E856C005A3280 /* PhoneNumberViewContainer.swift in Sources */,
@@ -478,6 +516,7 @@
 				DC245D482B4E856C005A3280 /* VerificationViewContainer.swift in Sources */,
 				DC245D442B4E856C005A3280 /* TableViewCellExtensions.swift in Sources */,
 				DCE0C5CB2B509D1C00068DC3 /* UITextFieldExtensions.swift in Sources */,
+				DC484FDF2B52575800D6BB1C /* BackCardView.swift in Sources */,
 				DCDB909F2B4BD52E0047E52C /* UIViewController+Utils.swift in Sources */,
 				DC245D3F2B4E856C005A3280 /* VerificationController.swift in Sources */,
 				DC245D4A2B4E856C005A3280 /* DataGlobal.swift in Sources */,
@@ -487,11 +526,16 @@
 				DC245D3A2B4E856C005A3280 /* Country.swift in Sources */,
 				DCDB90952B4BD21A0047E52C /* MainViewController.swift in Sources */,
 				DC245D3C2B4E856C005A3280 /* PhoneNumberViewController.swift in Sources */,
+				DC484FE32B52630B00D6BB1C /* FrontCardViewController.swift in Sources */,
 				DC245D422B4E856C005A3280 /* ViewExtensions.swift in Sources */,
 				DCDB90782B4B93FC0047E52C /* AppDelegate.swift in Sources */,
+				DC484FE12B52585300D6BB1C /* CardViewModel.swift in Sources */,
+				DC484FD52B52507900D6BB1C /* productModel.swift in Sources */,
 				DC245CE12B4CC6CA005A3280 /* AuthenticationButtonsView.swift in Sources */,
 				DCDB90902B4BA45B0047E52C /* DummyViewController.swift in Sources */,
+				DC484FD92B52557B00D6BB1C /* ProductCardViewController.swift in Sources */,
 				DCDB909D2B4BD3F10047E52C /* OnboardingViewController.swift in Sources */,
+				DC484FDD2B52574E00D6BB1C /* FrontCardView.swift in Sources */,
 				DCDB909B2B4BD3D20047E52C /* OnboardingContainerViewController.swift in Sources */,
 				DC245CE32B4CC6FC005A3280 /* DividerView.swift in Sources */,
 				DC245D462B4E856C005A3280 /* ThemeManager.swift in Sources */,

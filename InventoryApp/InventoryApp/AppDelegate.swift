@@ -19,16 +19,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let smsController = VerificationController()
     let onboardingViewController = OnboardingContainerViewController()
     let mainViewController = MainViewController()
+    let productCardController = ProductCardViewController()
+    var cardViewModel: CardViewModel!
+    var frontCardViewController: FrontCardViewController!
     
-    
+    /*
+     
+     
+     */
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:
                      [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         
-        //Google sign-in instance
+        //Google sign-in instance and configuration
         guard let clientID = FirebaseApp.app()?.options.clientID else { return false }
-        
-        // Create Google Sign In configuration object.
         let config = GIDConfiguration(clientID: clientID)
         GIDSignIn.sharedInstance.configuration = config
         
@@ -38,8 +42,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         loginViewController.delegate = self
         onboardingViewController.delegate = self
-//        
 //        window?.rootViewController = loginViewController
+        
+        //===============Front card testing=================
+        let product = Product() // Initialize your product model
+        cardViewModel = CardViewModel(product: product)
+        // Fetch product data
+        cardViewModel.fetchProductData()
+        
+        // Initialize and configure child view controllers
+        frontCardViewController = FrontCardViewController(viewModel: cardViewModel)
+        //================================
         
         let navigationController = UINavigationController(rootViewController: loginViewController)
         window?.rootViewController = navigationController
@@ -49,8 +62,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             //window?.rootViewController = smsController
         } else {
             //window?.rootViewController = mainViewController
-            window?.rootViewController = navigationController
+            //window?.rootViewController = navigationController
             //window?.rootViewController = smsController
+            window?.rootViewController = frontCardViewController
         }
         
         return true
