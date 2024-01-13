@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let productCardController = ProductCardViewController()
     var cardViewModel: CardViewModel!
     var frontCardViewController: FrontCardViewController!
+    var backCardViewController: BackCardViewController!
+    let storageController = StorageCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
     
     /*
      
@@ -52,6 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Initialize and configure child view controllers
         frontCardViewController = FrontCardViewController(viewModel: cardViewModel)
+        backCardViewController  = BackCardViewController(viewModel: cardViewModel)
         //================================
         
         let navigationController = UINavigationController(rootViewController: loginViewController)
@@ -64,7 +67,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             //window?.rootViewController = mainViewController
             //window?.rootViewController = navigationController
             //window?.rootViewController = smsController
-            window?.rootViewController = frontCardViewController
+            //window?.rootViewController = frontCardViewController
+            //window?.rootViewController = backCardViewController
+            window?.rootViewController = storageController
+            //window?.rootViewController = productCardController
         }
         
         return true

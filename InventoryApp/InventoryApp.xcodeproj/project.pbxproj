@@ -39,6 +39,8 @@
 		DC484FE12B52585300D6BB1C /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC484FE02B52585300D6BB1C /* CardViewModel.swift */; };
 		DC484FE32B52630B00D6BB1C /* FrontCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC484FE22B52630B00D6BB1C /* FrontCardViewController.swift */; };
 		DC484FE52B52656000D6BB1C /* BackCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC484FE42B52656000D6BB1C /* BackCardViewController.swift */; };
+		DC5FE5062B52AB20006BABAF /* StorageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5FE5052B52AB20006BABAF /* StorageCollectionViewCell.swift */; };
+		DC5FE5082B52AB47006BABAF /* StorageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5FE5072B52AB47006BABAF /* StorageCollectionViewController.swift */; };
 		DCDB90782B4B93FC0047E52C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB90772B4B93FC0047E52C /* AppDelegate.swift */; };
 		DCDB907C2B4B93FC0047E52C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB907B2B4B93FC0047E52C /* LoginViewController.swift */; };
 		DCDB90842B4B93FC0047E52C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDB90822B4B93FC0047E52C /* LaunchScreen.storyboard */; };
@@ -89,6 +91,8 @@
 		DC484FE02B52585300D6BB1C /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		DC484FE22B52630B00D6BB1C /* FrontCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCardViewController.swift; sourceTree = "<group>"; };
 		DC484FE42B52656000D6BB1C /* BackCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCardViewController.swift; sourceTree = "<group>"; };
+		DC5FE5052B52AB20006BABAF /* StorageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCollectionViewCell.swift; sourceTree = "<group>"; };
+		DC5FE5072B52AB47006BABAF /* StorageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCollectionViewController.swift; sourceTree = "<group>"; };
 		DCDB90742B4B93FC0047E52C /* InventoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDB90772B4B93FC0047E52C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCDB907B2B4B93FC0047E52C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -292,6 +296,15 @@
 			path = Card;
 			sourceTree = "<group>";
 		};
+		DC5FE5042B52AB0A006BABAF /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				DC5FE5072B52AB47006BABAF /* StorageCollectionViewController.swift */,
+				DC5FE5052B52AB20006BABAF /* StorageCollectionViewCell.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		DCDB906B2B4B93FB0047E52C = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +326,7 @@
 		DCDB90762B4B93FC0047E52C /* InventoryApp */ = {
 			isa = PBXGroup;
 			children = (
+				DC5FE5042B52AB0A006BABAF /* Storage */,
 				DC484FD72B52555A00D6BB1C /* Card */,
 				DC484FD32B52506400D6BB1C /* Model */,
 				DCDB908C2B4B97250047E52C /* Login */,
@@ -528,6 +542,8 @@
 				DC245D3C2B4E856C005A3280 /* PhoneNumberViewController.swift in Sources */,
 				DC484FE32B52630B00D6BB1C /* FrontCardViewController.swift in Sources */,
 				DC245D422B4E856C005A3280 /* ViewExtensions.swift in Sources */,
+				DC5FE5062B52AB20006BABAF /* StorageCollectionViewCell.swift in Sources */,
+				DC5FE5082B52AB47006BABAF /* StorageCollectionViewController.swift in Sources */,
 				DCDB90782B4B93FC0047E52C /* AppDelegate.swift in Sources */,
 				DC484FE12B52585300D6BB1C /* CardViewModel.swift in Sources */,
 				DC484FD52B52507900D6BB1C /* productModel.swift in Sources */,

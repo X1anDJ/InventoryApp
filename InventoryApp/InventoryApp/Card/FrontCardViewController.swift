@@ -11,6 +11,7 @@ class FrontCardViewController: UIViewController {
     var frontCardView: FrontCardView!
     var viewModel: CardViewModel!
     
+    
     init(viewModel: CardViewModel) {
         super.init(nibName: nil, bundle: nil)
         self.viewModel = viewModel
@@ -21,7 +22,7 @@ class FrontCardViewController: UIViewController {
     }
     
     override func loadView() {
-        // Instantiate and assign your custom view as the view controller's view
+        // Instantiate and assign custom view as the view controller's view
         frontCardView = FrontCardView()
         view = frontCardView
     }
