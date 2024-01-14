@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-class InventoryViewController: UIViewController {
+class InventoryViewController: UIViewController, UIScrollViewDelegate {
     let scrollView = UIScrollView()
     let inventoryStackView = UIStackView()
     let inventoryLabel = UILabel()
@@ -15,6 +15,7 @@ class InventoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView.delegate = self
 
         // Create SectionViewControllers and add them to the array
         for _ in 1...2 {
@@ -26,6 +27,8 @@ class InventoryViewController: UIViewController {
         layout() // Layout the UI elements
         addSectionViewControllers() // Add SectionViewControllers to the stack view
     }
+    
+    
 
     func style() {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -92,4 +95,29 @@ class InventoryViewController: UIViewController {
             sectionViewController.didMove(toParent: self)
         }
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+            let offset = scrollView.contentOffset.y
+            if offset > 50 { // Trigger point for showing the navigation bar
+                showNavigationBar(true)
+            } else {
+                showNavigationBar(false)
+            }
+        }
+
+    private func showNavigationBar(_ show: Bool) {
+        guard let navigationBar = navigationController?.navigationBar else { return }
+
+        UIView.animate(withDuration: 0.3, animations: {
+            navigationBar.alpha = show ? 1.0 : 0.0
+        }) { _ in
+            navigationBar.isHidden = !show
+            if show {
+                navigationBar.isTranslucent = false
+                navigationBar.barTintColor = UIColor.systemBackground  // Replace with your desired color
+                self.navigationItem.title = "我的库存" // Set the title when the bar is shown
+            }
+        }
+    }
+
 }
