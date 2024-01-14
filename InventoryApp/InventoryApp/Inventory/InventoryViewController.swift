@@ -4,82 +4,89 @@
 //
 //  Created by Dajun Xian on 2024/1/7.
 //
-
 import Foundation
 import UIKit
+
 class InventoryViewController: UIViewController {
-    let stackView = UIStackView()
-    let label = UILabel()
-    var sectionViewControllers: [SectionViewController] = [] // Instance of SectionViewController
-    
+    let scrollView = UIScrollView()
+    let inventoryStackView = UIStackView()
+    let inventoryLabel = UILabel()
+    var sectionViewControllers: [SectionViewController] = [] // Array of SectionViewController instances
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        // Create SectionViewControllers and add them to the array
         for _ in 1...2 {
             let sectionViewController = SectionViewController()
             sectionViewControllers.append(sectionViewController)
         }
         
-        style()
-        layout()
-        addSectionViewControllers() // Call the function to add the SectionViewController
+        style() // Setup styles for the UI elements
+        layout() // Layout the UI elements
+        addSectionViewControllers() // Add SectionViewControllers to the stack view
     }
-}
 
-extension InventoryViewController {
     func style() {
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
-        stackView.spacing = 0
-        
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "我的库存"
-        label.font = UIFont.preferredFont(forTextStyle: .largeTitle)
-        
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+
+        inventoryStackView.translatesAutoresizingMaskIntoConstraints = false
+        inventoryStackView.axis = .vertical
+        inventoryStackView.spacing = 0
+
+        inventoryLabel.translatesAutoresizingMaskIntoConstraints = false
+        inventoryLabel.text = "我的库存"
+        inventoryLabel.font = UIFont.preferredFont(forTextStyle: .largeTitle)
     }
     
     func layout() {
-        // Horizontal stack view
+        view.addSubview(scrollView)
+
+        // Constraints for UIScrollView
+        NSLayoutConstraint.activate([
+            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+
+        scrollView.addSubview(inventoryStackView)
+
+        // Constraints for InventoryStackView inside UIScrollView
+        NSLayoutConstraint.activate([
+            inventoryStackView.topAnchor.constraint(equalTo: scrollView.topAnchor),
+            inventoryStackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+            inventoryStackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+            inventoryStackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            inventoryStackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
+        ])
+
+        // Layout for the label inside a horizontal stack view
         let horizontalStackView = UIStackView()
         horizontalStackView.translatesAutoresizingMaskIntoConstraints = false
         horizontalStackView.axis = .horizontal
 
-        // Create a spacer view for the margin
         let spacerView = UIView()
         spacerView.translatesAutoresizingMaskIntoConstraints = false
         spacerView.widthAnchor.constraint(equalToConstant: 10).isActive = true
 
-        // Add the spacer view and label to the horizontal stack view
         horizontalStackView.addArrangedSubview(spacerView)
-        horizontalStackView.addArrangedSubview(label)
+        horizontalStackView.addArrangedSubview(inventoryLabel)
 
-        // Add the horizontal stack view to the main vertical stack view
-        stackView.addArrangedSubview(horizontalStackView)
-        
-        // Add the main stack view to the view
-        view.addSubview(stackView)
-
-        // Set the constraints for the main stack view
-        NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: view.topAnchor),
-            stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
+        inventoryStackView.addArrangedSubview(horizontalStackView)
     }
 
-    
     func addSectionViewControllers() {
         for sectionViewController in sectionViewControllers {
-            // Add each SectionViewController as a child
             addChild(sectionViewController)
-            stackView.addArrangedSubview(sectionViewController.view)
+            inventoryStackView.addArrangedSubview(sectionViewController.view)
             sectionViewController.view.translatesAutoresizingMaskIntoConstraints = false
 
             NSLayoutConstraint.activate([
-                sectionViewController.view.leadingAnchor.constraint(equalTo: stackView.leadingAnchor),
-                sectionViewController.view.trailingAnchor.constraint(equalTo: stackView.trailingAnchor)
-                // No height constraint is set; it's assumed the content sizes itself
+                sectionViewController.view.leadingAnchor.constraint(equalTo: inventoryStackView.leadingAnchor),
+                sectionViewController.view.trailingAnchor.constraint(equalTo: inventoryStackView.trailingAnchor),
+                sectionViewController.view.heightAnchor.constraint(equalToConstant: 450)
+                // Height constraint is not set, assuming the content sizes itself
             ])
 
             sectionViewController.didMove(toParent: self)
