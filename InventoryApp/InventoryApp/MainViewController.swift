@@ -18,8 +18,8 @@ class MainViewController: UITabBarController {
         let inventoryVC = InventoryViewController()
         let recipeVC = RecipeViewController()
 
-        inventoryVC.setTabBarImage(imageName: "list.dash.header.rectangle", title: "Inventory")
-        recipeVC.setTabBarImage(imageName: "frying.pan", title: "Recipe")
+        inventoryVC.setTabBarImage(imageName: "list.dash.header.rectangle", title: "我的库存")
+        recipeVC.setTabBarImage(imageName: "frying.pan", title: "菜谱管理")
         
         let inventoryNC = UINavigationController(rootViewController: inventoryVC)
         let recipeNC = UINavigationController(rootViewController: recipeVC)

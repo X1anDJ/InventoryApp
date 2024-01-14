@@ -64,12 +64,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.rootViewController = navigationController
             //window?.rootViewController = smsController
         } else {
-            //window?.rootViewController = mainViewController
+            window?.rootViewController = mainViewController
             //window?.rootViewController = navigationController
             //window?.rootViewController = smsController
             //window?.rootViewController = frontCardViewController
             //window?.rootViewController = backCardViewController
-            window?.rootViewController = storageController
+            //window?.rootViewController = storageController
             //window?.rootViewController = productCardController
         }
         

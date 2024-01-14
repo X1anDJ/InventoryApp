@@ -54,9 +54,9 @@ class ProductCardViewController: UIViewController {
         containerView.layer.cornerRadius = 10
         containerView.layer.shadowColor = UIColor.black.cgColor
         containerView.layer.shadowOffset = CGSize(width: 0, height: 0)
-        containerView.layer.shadowRadius = 3
-        containerView.layer.shadowOpacity = 0.2
-        containerView.clipsToBounds = true
+        containerView.layer.shadowRadius = 4
+        containerView.layer.shadowOpacity = 0.1
+        containerView.clipsToBounds = false
         self.view.addSubview(containerView)
     }
     
@@ -72,7 +72,7 @@ class ProductCardViewController: UIViewController {
         
         // Set the frame for backCardViewController
         // Set a smaller frame for backCardViewController to create a floating effect
-        let scale: CGFloat = 0.98
+        let scale: CGFloat = 0.99
         let smallerFrame = self.view.bounds.insetBy(dx: containerView.bounds.width * (1 - scale) / 2,
                                                         dy: containerView.bounds.height * (1 - scale) / 2)
         backCardViewController.view.frame = smallerFrame
@@ -107,7 +107,7 @@ class ProductCardViewController: UIViewController {
         let transitionOptions: UIView.AnimationOptions = isFrontCardVisible ? [.transitionFlipFromLeft, .showHideTransitionViews] : [.transitionFlipFromRight, .showHideTransitionViews]
 //        let transitionOptions: UIView.AnimationOptions = [.transitionFlipFromRight, .showHideTransitionViews]
 
-        UIView.transition(with: self.view, duration: 0.3, options: transitionOptions, animations: {
+        UIView.transition(with: self.view, duration: 0.2, options: transitionOptions, animations: {
             // Flip the visibility of the front and back card views
             self.frontCardViewController.view.isHidden = !self.frontCardViewController.view.isHidden
             self.backCardViewController.view.isHidden = !self.backCardViewController.view.isHidden

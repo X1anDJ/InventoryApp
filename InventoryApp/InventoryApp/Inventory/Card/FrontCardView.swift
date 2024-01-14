@@ -87,7 +87,7 @@ class FrontCardView: UIView {
 
         
         // Constants for layout
-        let circleDiameter: CGFloat = 40
+        let circleDiameter: CGFloat = 35
         let separatorHeight: CGFloat = 1
         let labelHeight: CGFloat = 40
         let overlap: CGFloat = circleDiameter / 2

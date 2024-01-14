@@ -66,8 +66,12 @@ class BackCardView: UIView {
     
     private func setupButton(_ button: UIButton, title: String) {
         button.setTitle(title, for: .normal)
-        button.backgroundColor = .lightGray
+        button.setTitleColor(UIColor.systemGray, for: .normal)
+        button.backgroundColor = UIColor.systemBackground
         button.layer.cornerRadius = 15
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.systemGray4.cgColor
+        
         button.clipsToBounds = true
         button.translatesAutoresizingMaskIntoConstraints = false
     }

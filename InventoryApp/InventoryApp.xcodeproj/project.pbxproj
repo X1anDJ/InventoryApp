@@ -41,6 +41,7 @@
 		DC484FE52B52656000D6BB1C /* BackCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC484FE42B52656000D6BB1C /* BackCardViewController.swift */; };
 		DC5FE5062B52AB20006BABAF /* StorageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5FE5052B52AB20006BABAF /* StorageCollectionViewCell.swift */; };
 		DC5FE5082B52AB47006BABAF /* StorageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5FE5072B52AB47006BABAF /* StorageCollectionViewController.swift */; };
+		DC5FE50B2B53738B006BABAF /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5FE50A2B53738B006BABAF /* SectionViewController.swift */; };
 		DCDB90782B4B93FC0047E52C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB90772B4B93FC0047E52C /* AppDelegate.swift */; };
 		DCDB907C2B4B93FC0047E52C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDB907B2B4B93FC0047E52C /* LoginViewController.swift */; };
 		DCDB90842B4B93FC0047E52C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDB90822B4B93FC0047E52C /* LaunchScreen.storyboard */; };
@@ -93,6 +94,7 @@
 		DC484FE42B52656000D6BB1C /* BackCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCardViewController.swift; sourceTree = "<group>"; };
 		DC5FE5052B52AB20006BABAF /* StorageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC5FE5072B52AB47006BABAF /* StorageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCollectionViewController.swift; sourceTree = "<group>"; };
+		DC5FE50A2B53738B006BABAF /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		DCDB90742B4B93FC0047E52C /* InventoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDB90772B4B93FC0047E52C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCDB907B2B4B93FC0047E52C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -287,11 +289,11 @@
 			isa = PBXGroup;
 			children = (
 				DC484FD82B52557B00D6BB1C /* ProductCardViewController.swift */,
+				DC484FE22B52630B00D6BB1C /* FrontCardViewController.swift */,
 				DC484FDC2B52574E00D6BB1C /* FrontCardView.swift */,
+				DC484FE42B52656000D6BB1C /* BackCardViewController.swift */,
 				DC484FDE2B52575800D6BB1C /* BackCardView.swift */,
 				DC484FE02B52585300D6BB1C /* CardViewModel.swift */,
-				DC484FE22B52630B00D6BB1C /* FrontCardViewController.swift */,
-				DC484FE42B52656000D6BB1C /* BackCardViewController.swift */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -303,6 +305,14 @@
 				DC5FE5052B52AB20006BABAF /* StorageCollectionViewCell.swift */,
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		DC5FE5092B537367006BABAF /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				DC5FE50A2B53738B006BABAF /* SectionViewController.swift */,
+			);
+			path = Section;
 			sourceTree = "<group>";
 		};
 		DCDB906B2B4B93FB0047E52C = {
@@ -326,8 +336,6 @@
 		DCDB90762B4B93FC0047E52C /* InventoryApp */ = {
 			isa = PBXGroup;
 			children = (
-				DC5FE5042B52AB0A006BABAF /* Storage */,
-				DC484FD72B52555A00D6BB1C /* Card */,
 				DC484FD32B52506400D6BB1C /* Model */,
 				DCDB908C2B4B97250047E52C /* Login */,
 				DCDB90992B4BD3B60047E52C /* Onboarding */,
@@ -375,6 +383,9 @@
 		DCDB90962B4BD2BC0047E52C /* Inventory */ = {
 			isa = PBXGroup;
 			children = (
+				DC5FE5092B537367006BABAF /* Section */,
+				DC5FE5042B52AB0A006BABAF /* Storage */,
+				DC484FD72B52555A00D6BB1C /* Card */,
 				DCDB90972B4BD2D90047E52C /* InventoryViewController.swift */,
 			);
 			path = Inventory;
@@ -535,6 +546,7 @@
 				DC245D3F2B4E856C005A3280 /* VerificationController.swift in Sources */,
 				DC245D4A2B4E856C005A3280 /* DataGlobal.swift in Sources */,
 				DC245D452B4E856C005A3280 /* MethodExtensions.swift in Sources */,
+				DC5FE50B2B53738B006BABAF /* SectionViewController.swift in Sources */,
 				DC245CE92B4CCFBC005A3280 /* PhoneViewController.swift in Sources */,
 				DCDB90A22B4BD84C0047E52C /* RecipeViewController.swift in Sources */,
 				DC245D3A2B4E856C005A3280 /* Country.swift in Sources */,
