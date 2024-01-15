@@ -195,7 +195,7 @@ struct ThemeManager {
 }
 
 struct AppPalette {
-    static let white = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+    static let white = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     static let black = #colorLiteral(red: 0.1607843137, green: 0.168627451, blue: 0.2, alpha: 1)
     static let blue = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
     static let red = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)

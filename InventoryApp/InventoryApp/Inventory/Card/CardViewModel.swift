@@ -46,6 +46,11 @@ class CardViewModel {
         self.product = product
     }
     
+    init() {
+        let mockProduct = Product(productID: "12345", productName: "香蕉", productPicture: "新鲜香蕉", quantity: 10, remainingDay: 5)
+        self.product = mockProduct
+    }
+    
     func updateProduct(remainingDay: Int, quantity: Int) {
         product.remainingDay = remainingDay
         product.quantity = quantity
@@ -56,7 +61,7 @@ class CardViewModel {
         // Simulate a network delay
         DispatchQueue.global().asyncAfter(deadline: .now() + 0.1) { [weak self] in
             // Simulate fetched product data
-            let mockProduct = Product(productID: "12345", productName: "香蕉", productPicture: "新鲜香蕉", quantity: 10, remainingDay: 5)
+            let mockProduct = Product(productID: "12345", productName: "恩佐法拉利牌新鲜非洲香蕉", productPicture: "新鲜香蕉", quantity: 99, remainingDay: 9)
 
             // Update the product on the main thread
             DispatchQueue.main.async {
@@ -70,6 +75,24 @@ class CardViewModel {
         return product
     }
     
+    func decreaseDays() {
+        product.remainingDay -= 1
+        onProductUpdated?(product)
+    }
+    func increaseDays() {
+        product.remainingDay += 1
+        onProductUpdated?(product)
+    }
+    func decreaseQuantity() {
+        product.quantity -= 1
+        onProductUpdated?(product)
+    }
+    func increaseQuantity() {
+        product.quantity -= 1
+        onProductUpdated?(product)
+    }
+    
+
     func updateRemainingDays(_ days: Int) {
         product.remainingDay = days
         // Notify observers about the update

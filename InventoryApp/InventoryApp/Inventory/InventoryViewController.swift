@@ -18,7 +18,7 @@ class InventoryViewController: UIViewController, UIScrollViewDelegate {
         scrollView.delegate = self
 
         // Create SectionViewControllers and add them to the array
-        for _ in 1...2 {
+        for _ in 0...2 {
             let sectionViewController = SectionViewController()
             sectionViewControllers.append(sectionViewController)
         }
@@ -26,6 +26,16 @@ class InventoryViewController: UIViewController, UIScrollViewDelegate {
         style() // Setup styles for the UI elements
         layout() // Layout the UI elements
         addSectionViewControllers() // Add SectionViewControllers to the stack view
+        
+        if let barBackgroundView = navigationController?.navigationBar.subviews.first(where: { String(describing: type(of: $0)) == "_UIBarBackground" }) {
+            if let backgroundImageView = barBackgroundView.subviews.first(where: { $0 is UIImageView }) as? UIImageView {
+                // Now you have a reference to the UIImageView
+                // Apply your custom modifications here, for example:
+                backgroundImageView.alpha = 0.5 // Set to 50% transparency
+            }
+        }
+        
+        
     }
     
     
@@ -39,15 +49,17 @@ class InventoryViewController: UIViewController, UIScrollViewDelegate {
 
         inventoryLabel.translatesAutoresizingMaskIntoConstraints = false
         inventoryLabel.text = "我的库存"
-        inventoryLabel.font = UIFont.preferredFont(forTextStyle: .largeTitle)
+        // Change to use system font with semi-bold weight
+        inventoryLabel.font = UIFont.systemFont(ofSize: UIFont.preferredFont(forTextStyle: .largeTitle).pointSize, weight: .semibold)
     }
+
     
     func layout() {
         view.addSubview(scrollView)
 
         // Constraints for UIScrollView
         NSLayoutConstraint.activate([
-            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
+            scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
@@ -88,7 +100,7 @@ class InventoryViewController: UIViewController, UIScrollViewDelegate {
             NSLayoutConstraint.activate([
                 sectionViewController.view.leadingAnchor.constraint(equalTo: inventoryStackView.leadingAnchor),
                 sectionViewController.view.trailingAnchor.constraint(equalTo: inventoryStackView.trailingAnchor),
-                sectionViewController.view.heightAnchor.constraint(equalToConstant: 450)
+                sectionViewController.view.heightAnchor.constraint(equalToConstant: 430)
                 // Height constraint is not set, assuming the content sizes itself
             ])
 

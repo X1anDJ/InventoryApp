@@ -23,14 +23,14 @@ class BackCardViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    var daysValue: Int = 0 {
-        didSet { backCardView.daysValue = daysValue }
-    }
-    
-    var quantityValue: Int = 0 {
-        didSet { backCardView.quantityValue = quantityValue }
-    }
-    
+//    var daysValue: Int = 0 {
+//        didSet { backCardView.daysValue = daysValue }
+//    }
+//    
+//    var quantityValue: Int = 0 {
+//        didSet { backCardView.quantityValue = quantityValue }
+//    }
+//    
     override func loadView() {
         backCardView = BackCardView()
         view = backCardView
@@ -38,6 +38,13 @@ class BackCardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Set up a listener for ViewModel updates
+        viewModel.onProductUpdated = { [weak self] _ in
+            DispatchQueue.main.async {
+                self?.configure(with: self?.viewModel ?? CardViewModel(product: Product()))
+            }
+        }
         
         // Assign actions to buttons
         backCardView.decreaseDaysButton.addTarget(self, action: #selector(decreaseDays), for: .touchUpInside)
@@ -47,30 +54,26 @@ class BackCardViewController: UIViewController {
     }
     
     @objc private func decreaseDays() {
-        daysValue = max(0, daysValue - 1)
-        viewModel.updateRemainingDays(daysValue)
+        viewModel.decreaseDays()
     }
 
     @objc private func increaseDays() {
-        daysValue += 1
-        viewModel.updateRemainingDays(daysValue)
+        viewModel.increaseDays()
     }
 
     @objc private func decreaseQuantity() {
-        quantityValue = max(0, quantityValue - 1)
-        viewModel.updateQuantity(quantityValue)
+        viewModel.decreaseQuantity()
     }
 
     @objc private func increaseQuantity() {
-        quantityValue += 1
-        viewModel.updateQuantity(quantityValue)
+        viewModel.increaseQuantity()
     }
 
     
     // Method to configure the view with current product values
     func configure(with viewModel:
                    CardViewModel) {
-        daysValue = viewModel.remainingDaysInNumber 
-        quantityValue = viewModel.quantityInNumber 
+        backCardView?.configure(with: viewModel)
+        
     }
 }

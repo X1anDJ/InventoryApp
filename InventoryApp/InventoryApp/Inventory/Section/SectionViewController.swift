@@ -33,7 +33,7 @@ extension SectionViewController {
     func style() {
         sectionStackView.translatesAutoresizingMaskIntoConstraints = false
         sectionStackView.axis = .vertical
-        sectionStackView.spacing = 2
+        sectionStackView.spacing = 5
         
         titleStackView.translatesAutoresizingMaskIntoConstraints = false
         titleStackView.axis = .horizontal

@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>0C3394EA-1ED9-4016-93FE-F43BA255A160</key>
+		<key>03FC42BE-B0F3-422C-BED8-CA9E0E59560A</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,91 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>0C3394EA-1ED9-4016-93FE-F43BA255A160.xcactivitylog</string>
+			<string>03FC42BE-B0F3-422C-BED8-CA9E0E59560A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>46</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>726990646.16985595</real>
+			<key>timeStoppedRecording</key>
+			<real>726990646.88082504</real>
+			<key>title</key>
+			<string>Build InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>03FC42BE-B0F3-422C-BED8-CA9E0E59560A</string>
+		</dict>
+		<key>0BEC74F0-24B0-4D5F-B134-479E8A2D90F5</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0BEC74F0-24B0-4D5F-B134-479E8A2D90F5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>53</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>726988490.83728397</real>
+			<key>timeStoppedRecording</key>
+			<real>726988494.03604901</real>
+			<key>title</key>
+			<string>Build InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>0BEC74F0-24B0-4D5F-B134-479E8A2D90F5</string>
+		</dict>
+		<key>0D9FDEA4-775A-4CC6-9D62-B52CD6571F74</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0D9FDEA4-775A-4CC6-9D62-B52CD6571F74.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,15 +124,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726912576.64611995</real>
+			<real>726981483.88821399</real>
 			<key>timeStoppedRecording</key>
-			<real>726912577.57811201</real>
+			<real>726981484.97545505</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>0C3394EA-1ED9-4016-93FE-F43BA255A160</string>
+			<string>0D9FDEA4-775A-4CC6-9D62-B52CD6571F74</string>
 		</dict>
-		<key>0DD573E1-53BF-46E2-A98D-8F4F71BD1FBB</key>
+		<key>120DF0BC-CB9E-44D5-9B3F-E8997BBB02D0</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -57,7 +141,49 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>0DD573E1-53BF-46E2-A98D-8F4F71BD1FBB.xcactivitylog</string>
+			<string>120DF0BC-CB9E-44D5-9B3F-E8997BBB02D0.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>57</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>726993253.71321702</real>
+			<key>timeStoppedRecording</key>
+			<real>726993255.01992404</real>
+			<key>title</key>
+			<string>Build InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>120DF0BC-CB9E-44D5-9B3F-E8997BBB02D0</string>
+		</dict>
+		<key>1375050A-E291-4698-ACAE-B32A01CD11CA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1375050A-E291-4698-ACAE-B32A01CD11CA.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,15 +208,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726899975.91616297</real>
+			<real>726993348.31156003</real>
 			<key>timeStoppedRecording</key>
-			<real>726899976.89757502</real>
+			<real>726993349.61110497</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>0DD573E1-53BF-46E2-A98D-8F4F71BD1FBB</string>
+			<string>1375050A-E291-4698-ACAE-B32A01CD11CA</string>
 		</dict>
-		<key>12C72126-1DD6-4C35-BA4C-7C7B502105BE</key>
+		<key>1FB36C5C-E647-4996-88E8-38CA87544156</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -99,7 +225,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>12C72126-1DD6-4C35-BA4C-7C7B502105BE.xcactivitylog</string>
+			<string>1FB36C5C-E647-4996-88E8-38CA87544156.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -113,7 +239,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
+				<integer>46</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -124,15 +250,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726914628.19603503</real>
+			<real>726990524.87118304</real>
 			<key>timeStoppedRecording</key>
-			<real>726914629.11816096</real>
+			<real>726990525.94312</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>12C72126-1DD6-4C35-BA4C-7C7B502105BE</string>
+			<string>1FB36C5C-E647-4996-88E8-38CA87544156</string>
 		</dict>
-		<key>14F4040A-354E-4AFE-9E88-A6F9A5EEBAAB</key>
+		<key>2B1CF800-6617-4DC8-B73A-C81222C818F9</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -141,301 +267,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>14F4040A-354E-4AFE-9E88-A6F9A5EEBAAB.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726915159.63719904</real>
-			<key>timeStoppedRecording</key>
-			<real>726915160.71448195</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>14F4040A-354E-4AFE-9E88-A6F9A5EEBAAB</string>
-		</dict>
-		<key>1EC2302E-AE2E-40BD-BF02-30F36B9EEC1C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>1EC2302E-AE2E-40BD-BF02-30F36B9EEC1C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>1</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>48</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726911523.04231906</real>
-			<key>timeStoppedRecording</key>
-			<real>726911523.76371801</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>1EC2302E-AE2E-40BD-BF02-30F36B9EEC1C</string>
-		</dict>
-		<key>1FAC980D-B47C-4D93-8284-C34AB0393C1A</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>1FAC980D-B47C-4D93-8284-C34AB0393C1A.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726910430.25649202</real>
-			<key>timeStoppedRecording</key>
-			<real>726910431.15625703</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>1FAC980D-B47C-4D93-8284-C34AB0393C1A</string>
-		</dict>
-		<key>2159A2E1-96C6-467E-91E7-BB39239068EA</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>2159A2E1-96C6-467E-91E7-BB39239068EA.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>2</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>48</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726912651.98663497</real>
-			<key>timeStoppedRecording</key>
-			<real>726912652.52639103</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>2159A2E1-96C6-467E-91E7-BB39239068EA</string>
-		</dict>
-		<key>2CCD6729-905F-446D-8717-38322329072D</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>2CCD6729-905F-446D-8717-38322329072D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726912658.55922401</real>
-			<key>timeStoppedRecording</key>
-			<real>726912659.51716995</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>2CCD6729-905F-446D-8717-38322329072D</string>
-		</dict>
-		<key>3A476B10-0FCA-424A-9ED0-638C6EEB4758</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>3A476B10-0FCA-424A-9ED0-638C6EEB4758.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726914865.94924295</real>
-			<key>timeStoppedRecording</key>
-			<real>726914866.98813403</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>3A476B10-0FCA-424A-9ED0-638C6EEB4758</string>
-		</dict>
-		<key>4091483B-96AC-4530-A19F-AA52E9FDC39C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>4091483B-96AC-4530-A19F-AA52E9FDC39C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>1</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>48</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726914960.98931098</real>
-			<key>timeStoppedRecording</key>
-			<real>726914961.54418504</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>4091483B-96AC-4530-A19F-AA52E9FDC39C</string>
-		</dict>
-		<key>4C7EEFAD-84EE-4E5F-89E7-A0061823AAFF</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>4C7EEFAD-84EE-4E5F-89E7-A0061823AAFF.xcactivitylog</string>
+			<string>2B1CF800-6617-4DC8-B73A-C81222C818F9.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -460,15 +292,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726910234.80907595</real>
+			<real>726997030.75083601</real>
 			<key>timeStoppedRecording</key>
-			<real>726910238.30919695</real>
+			<real>726997032.18354404</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>4C7EEFAD-84EE-4E5F-89E7-A0061823AAFF</string>
+			<string>2B1CF800-6617-4DC8-B73A-C81222C818F9</string>
 		</dict>
-		<key>4C96D939-0D04-4E61-951E-564FA8F82235</key>
+		<key>2BFA6582-3092-4420-93F7-DC2660C9527D</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -477,7 +309,49 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>4C96D939-0D04-4E61-951E-564FA8F82235.xcactivitylog</string>
+			<string>2BFA6582-3092-4420-93F7-DC2660C9527D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>57</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>726993673.60610294</real>
+			<key>timeStoppedRecording</key>
+			<real>726993674.72582901</real>
+			<key>title</key>
+			<string>Build InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>2BFA6582-3092-4420-93F7-DC2660C9527D</string>
+		</dict>
+		<key>383EFE33-58A5-42E8-84F5-A903536B568B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>383EFE33-58A5-42E8-84F5-A903536B568B.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -502,15 +376,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726914232.24440098</real>
+			<real>726981190.50871801</real>
 			<key>timeStoppedRecording</key>
-			<real>726914233.30049598</real>
+			<real>726981191.70112395</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>4C96D939-0D04-4E61-951E-564FA8F82235</string>
+			<string>383EFE33-58A5-42E8-84F5-A903536B568B</string>
 		</dict>
-		<key>5228C556-D2B4-458D-B269-AFC04F641523</key>
+		<key>3CEBED8F-1BEC-44D9-9A53-97DDD513205C</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -519,7 +393,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>5228C556-D2B4-458D-B269-AFC04F641523.xcactivitylog</string>
+			<string>3CEBED8F-1BEC-44D9-9A53-97DDD513205C.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -544,15 +418,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726912887.99506104</real>
+			<real>726982518.94778597</real>
 			<key>timeStoppedRecording</key>
-			<real>726912889.08230996</real>
+			<real>726982520.20387197</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>5228C556-D2B4-458D-B269-AFC04F641523</string>
+			<string>3CEBED8F-1BEC-44D9-9A53-97DDD513205C</string>
 		</dict>
-		<key>5487B606-572C-4955-8D93-3AECDC1EFA67</key>
+		<key>4A9149EC-14E8-4C67-B192-F4B884914D06</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -561,7 +435,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>5487B606-572C-4955-8D93-3AECDC1EFA67.xcactivitylog</string>
+			<string>4A9149EC-14E8-4C67-B192-F4B884914D06.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -575,7 +449,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
+				<integer>56</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -586,15 +460,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726915105.55075598</real>
+			<real>726988479.51537597</real>
 			<key>timeStoppedRecording</key>
-			<real>726915106.72039902</real>
+			<real>726988480.07107794</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>5487B606-572C-4955-8D93-3AECDC1EFA67</string>
+			<string>4A9149EC-14E8-4C67-B192-F4B884914D06</string>
 		</dict>
-		<key>587E74AB-0EAE-4CEC-8125-D836D4EE9192</key>
+		<key>563B1DAF-9645-475E-AE47-18CBC7B1C24F</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -603,7 +477,301 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>587E74AB-0EAE-4CEC-8125-D836D4EE9192.xcactivitylog</string>
+			<string>563B1DAF-9645-475E-AE47-18CBC7B1C24F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>39</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>726992742.28659403</real>
+			<key>timeStoppedRecording</key>
+			<real>726992754.04711497</real>
+			<key>title</key>
+			<string>Build InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>563B1DAF-9645-475E-AE47-18CBC7B1C24F</string>
+		</dict>
+		<key>5D7E3A0F-B458-4E2B-B723-73B83EC46890</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5D7E3A0F-B458-4E2B-B723-73B83EC46890.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>56</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>726992143.43527603</real>
+			<key>timeStoppedRecording</key>
+			<real>726992144.91591704</real>
+			<key>title</key>
+			<string>Build InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>5D7E3A0F-B458-4E2B-B723-73B83EC46890</string>
+		</dict>
+		<key>606E7560-42B2-4EB8-9EED-0C64740E9860</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>606E7560-42B2-4EB8-9EED-0C64740E9860.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>56</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>726998649.17143703</real>
+			<key>timeStoppedRecording</key>
+			<real>726998649.62910903</real>
+			<key>title</key>
+			<string>Build InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>606E7560-42B2-4EB8-9EED-0C64740E9860</string>
+		</dict>
+		<key>60D2DF89-A629-4008-B3AB-2FBF01CC8E2C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>60D2DF89-A629-4008-B3AB-2FBF01CC8E2C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>57</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>726993507.739218</real>
+			<key>timeStoppedRecording</key>
+			<real>726993509.18565905</real>
+			<key>title</key>
+			<string>Build InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>60D2DF89-A629-4008-B3AB-2FBF01CC8E2C</string>
+		</dict>
+		<key>66BF44A7-9A8D-4288-8629-492B7E40A70D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>66BF44A7-9A8D-4288-8629-492B7E40A70D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>56</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>726982903.71633399</real>
+			<key>timeStoppedRecording</key>
+			<real>726982904.00133204</real>
+			<key>title</key>
+			<string>Build InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>66BF44A7-9A8D-4288-8629-492B7E40A70D</string>
+		</dict>
+		<key>738C7E73-C99C-431A-B7C8-D3334D760D2D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>738C7E73-C99C-431A-B7C8-D3334D760D2D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>56</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>726982830.790874</real>
+			<key>timeStoppedRecording</key>
+			<real>726982832.022138</real>
+			<key>title</key>
+			<string>Build InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>738C7E73-C99C-431A-B7C8-D3334D760D2D</string>
+		</dict>
+		<key>77B5B45A-CE3A-4A7D-9E4D-AD08B196FB67</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>77B5B45A-CE3A-4A7D-9E4D-AD08B196FB67.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>56</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>726983159.38840902</real>
+			<key>timeStoppedRecording</key>
+			<real>726983160.57869005</real>
+			<key>title</key>
+			<string>Build InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>77B5B45A-CE3A-4A7D-9E4D-AD08B196FB67</string>
+		</dict>
+		<key>7ACDF98F-7C62-4148-B626-9DF91DD144F0</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7ACDF98F-7C62-4148-B626-9DF91DD144F0.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -617,7 +785,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>48</integer>
+				<integer>49</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -628,15 +796,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726912363.642066</real>
+			<real>726982353.31006396</real>
 			<key>timeStoppedRecording</key>
-			<real>726912364.30985796</real>
+			<real>726982354.07998502</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>587E74AB-0EAE-4CEC-8125-D836D4EE9192</string>
+			<string>7ACDF98F-7C62-4148-B626-9DF91DD144F0</string>
 		</dict>
-		<key>60416503-1D3C-48C3-8885-A9A7B528A0CC</key>
+		<key>8684E1D7-6254-4D93-BCC0-4D8798034757</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -645,7 +813,133 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>60416503-1D3C-48C3-8885-A9A7B528A0CC.xcactivitylog</string>
+			<string>8684E1D7-6254-4D93-BCC0-4D8798034757.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>57</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>726993081.467417</real>
+			<key>timeStoppedRecording</key>
+			<real>726993082.51111805</real>
+			<key>title</key>
+			<string>Build InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>8684E1D7-6254-4D93-BCC0-4D8798034757</string>
+		</dict>
+		<key>AB46B855-545F-4A0E-9F78-38A4D2A06D0A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AB46B855-545F-4A0E-9F78-38A4D2A06D0A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>56</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>726982982.93316996</real>
+			<key>timeStoppedRecording</key>
+			<real>726982983.33250904</real>
+			<key>title</key>
+			<string>Build InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>AB46B855-545F-4A0E-9F78-38A4D2A06D0A</string>
+		</dict>
+		<key>B4C2D33C-511C-42BF-9D29-69C4AD738A82</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B4C2D33C-511C-42BF-9D29-69C4AD738A82.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>56</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>726992204.87312901</real>
+			<key>timeStoppedRecording</key>
+			<real>726992206.20248497</real>
+			<key>title</key>
+			<string>Build InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>B4C2D33C-511C-42BF-9D29-69C4AD738A82</string>
+		</dict>
+		<key>B4FBF835-090F-4C45-83A8-4051FBF06B7F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B4FBF835-090F-4C45-83A8-4051FBF06B7F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -670,15 +964,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726914945.98822701</real>
+			<real>726992954.20187902</real>
 			<key>timeStoppedRecording</key>
-			<real>726914946.90264595</real>
+			<real>726992955.85911298</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>60416503-1D3C-48C3-8885-A9A7B528A0CC</string>
+			<string>B4FBF835-090F-4C45-83A8-4051FBF06B7F</string>
 		</dict>
-		<key>825811B4-E5AF-451A-92F1-EBCB4F43BA56</key>
+		<key>B6A951EE-9678-4EAF-94F2-33315BCC5756</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -687,7 +981,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>825811B4-E5AF-451A-92F1-EBCB4F43BA56.xcactivitylog</string>
+			<string>B6A951EE-9678-4EAF-94F2-33315BCC5756.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -712,15 +1006,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726912124.11296999</real>
+			<real>726981742.09399104</real>
 			<key>timeStoppedRecording</key>
-			<real>726912125.50051403</real>
+			<real>726981742.91203201</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>825811B4-E5AF-451A-92F1-EBCB4F43BA56</string>
+			<string>B6A951EE-9678-4EAF-94F2-33315BCC5756</string>
 		</dict>
-		<key>835B072C-BA9D-4F56-8647-7EE0F382F86B</key>
+		<key>B73FEB8F-5C4D-4F69-9DDB-DEE07C29D271</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -729,385 +1023,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>835B072C-BA9D-4F56-8647-7EE0F382F86B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726914013.39880097</real>
-			<key>timeStoppedRecording</key>
-			<real>726914014.47267699</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>835B072C-BA9D-4F56-8647-7EE0F382F86B</string>
-		</dict>
-		<key>857FB202-3000-4930-B4DA-1A06903A3D76</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>857FB202-3000-4930-B4DA-1A06903A3D76.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726911587.88567495</real>
-			<key>timeStoppedRecording</key>
-			<real>726911588.16344798</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>857FB202-3000-4930-B4DA-1A06903A3D76</string>
-		</dict>
-		<key>869C56C5-DDDE-47AB-833F-91F6E1A174A5</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>869C56C5-DDDE-47AB-833F-91F6E1A174A5.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726911792.25975299</real>
-			<key>timeStoppedRecording</key>
-			<real>726911793.61702704</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>869C56C5-DDDE-47AB-833F-91F6E1A174A5</string>
-		</dict>
-		<key>8A75D782-6425-418A-97DE-1360D3848B3A</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>8A75D782-6425-418A-97DE-1360D3848B3A.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726909964.63839996</real>
-			<key>timeStoppedRecording</key>
-			<real>726909965.69276798</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>8A75D782-6425-418A-97DE-1360D3848B3A</string>
-		</dict>
-		<key>8DBF83C8-641E-4F5C-BB74-2303378ED7BF</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>8DBF83C8-641E-4F5C-BB74-2303378ED7BF.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726914790.11811697</real>
-			<key>timeStoppedRecording</key>
-			<real>726914791.50488698</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>8DBF83C8-641E-4F5C-BB74-2303378ED7BF</string>
-		</dict>
-		<key>93588980-348E-43EF-B2D6-2C8B7FD606A2</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>93588980-348E-43EF-B2D6-2C8B7FD606A2.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726910065.95435405</real>
-			<key>timeStoppedRecording</key>
-			<real>726910067.55572903</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>93588980-348E-43EF-B2D6-2C8B7FD606A2</string>
-		</dict>
-		<key>93927C7C-0593-46B0-9277-1AF56910C046</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>93927C7C-0593-46B0-9277-1AF56910C046.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726914915.18654394</real>
-			<key>timeStoppedRecording</key>
-			<real>726914916.238482</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>93927C7C-0593-46B0-9277-1AF56910C046</string>
-		</dict>
-		<key>96DC35CF-0074-466D-A8D7-6B416EE7ECA2</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>96DC35CF-0074-466D-A8D7-6B416EE7ECA2.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726914970.28698206</real>
-			<key>timeStoppedRecording</key>
-			<real>726914971.36260402</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>96DC35CF-0074-466D-A8D7-6B416EE7ECA2</string>
-		</dict>
-		<key>96E350A9-57FC-4CCC-8F41-64FEBB793A8D</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>96E350A9-57FC-4CCC-8F41-64FEBB793A8D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726914936.882393</real>
-			<key>timeStoppedRecording</key>
-			<real>726914937.79556596</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>96E350A9-57FC-4CCC-8F41-64FEBB793A8D</string>
-		</dict>
-		<key>9B10C0CF-07D6-48C6-BE94-FE3352A60F5B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>9B10C0CF-07D6-48C6-BE94-FE3352A60F5B.xcactivitylog</string>
+			<string>B73FEB8F-5C4D-4F69-9DDB-DEE07C29D271.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1121,7 +1037,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>48</integer>
+				<integer>46</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -1132,15 +1048,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726912382.63928294</real>
+			<real>726981728.57239699</real>
 			<key>timeStoppedRecording</key>
-			<real>726912383.16192496</real>
+			<real>726981729.27770102</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>9B10C0CF-07D6-48C6-BE94-FE3352A60F5B</string>
+			<string>B73FEB8F-5C4D-4F69-9DDB-DEE07C29D271</string>
 		</dict>
-		<key>9B86FC90-BFAB-43D9-B0E6-6EFA19A7321F</key>
+		<key>BA81ABCD-3EFB-49E0-88EE-F3CD95C0A903</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1149,7 +1065,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>9B86FC90-BFAB-43D9-B0E6-6EFA19A7321F.xcactivitylog</string>
+			<string>BA81ABCD-3EFB-49E0-88EE-F3CD95C0A903.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1163,7 +1079,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
+				<integer>57</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -1174,15 +1090,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726913769.08419597</real>
+			<real>726993110.91578197</real>
 			<key>timeStoppedRecording</key>
-			<real>726913770.11754704</real>
+			<real>726993112.05087101</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>9B86FC90-BFAB-43D9-B0E6-6EFA19A7321F</string>
+			<string>BA81ABCD-3EFB-49E0-88EE-F3CD95C0A903</string>
 		</dict>
-		<key>A02621AA-B5BC-449C-8249-34A2E94F127D</key>
+		<key>C31D81D9-4468-4967-A328-CC7D4736C20E</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1191,7 +1107,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>A02621AA-B5BC-449C-8249-34A2E94F127D.xcactivitylog</string>
+			<string>C31D81D9-4468-4967-A328-CC7D4736C20E.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1205,7 +1121,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
+				<integer>56</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -1216,15 +1132,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726913631.334306</real>
+			<real>726983071.57998502</real>
 			<key>timeStoppedRecording</key>
-			<real>726913632.70023</real>
+			<real>726983071.86604202</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>A02621AA-B5BC-449C-8249-34A2E94F127D</string>
+			<string>C31D81D9-4468-4967-A328-CC7D4736C20E</string>
 		</dict>
-		<key>A0681464-52D1-4C9C-9B3C-49A0807FAA94</key>
+		<key>CAA7CD0B-B871-4A93-AEB6-DC9B5B4E15DD</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1233,7 +1149,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>A0681464-52D1-4C9C-9B3C-49A0807FAA94.xcactivitylog</string>
+			<string>CAA7CD0B-B871-4A93-AEB6-DC9B5B4E15DD.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1247,7 +1163,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
+				<integer>56</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -1258,15 +1174,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726914399.69555497</real>
+			<real>726981413.28005898</real>
 			<key>timeStoppedRecording</key>
-			<real>726914400.72511101</real>
+			<real>726981415.77093804</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>A0681464-52D1-4C9C-9B3C-49A0807FAA94</string>
+			<string>CAA7CD0B-B871-4A93-AEB6-DC9B5B4E15DD</string>
 		</dict>
-		<key>A3D32DFD-646C-486F-B2E6-6FB3753D8304</key>
+		<key>CD45D947-5D6B-41FB-AD73-58E5CFC763ED</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1275,7 +1191,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>A3D32DFD-646C-486F-B2E6-6FB3753D8304.xcactivitylog</string>
+			<string>CD45D947-5D6B-41FB-AD73-58E5CFC763ED.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1289,7 +1205,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
+				<integer>57</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -1300,15 +1216,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726913252.22530401</real>
+			<real>726992989.89375603</real>
 			<key>timeStoppedRecording</key>
-			<real>726913253.31030095</real>
+			<real>726992991.08205402</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>A3D32DFD-646C-486F-B2E6-6FB3753D8304</string>
+			<string>CD45D947-5D6B-41FB-AD73-58E5CFC763ED</string>
 		</dict>
-		<key>ADE1AC3F-4521-4BB3-872D-95D9854B6E80</key>
+		<key>D19BD259-65AD-4E67-B101-D36B3D82CBD1</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1317,7 +1233,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>ADE1AC3F-4521-4BB3-872D-95D9854B6E80.xcactivitylog</string>
+			<string>D19BD259-65AD-4E67-B101-D36B3D82CBD1.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1331,7 +1247,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>59</integer>
+				<integer>55</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -1342,15 +1258,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726909393.50009596</real>
+			<real>726992186.98138201</real>
 			<key>timeStoppedRecording</key>
-			<real>726909394.87457204</real>
+			<real>726992188.27357197</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>ADE1AC3F-4521-4BB3-872D-95D9854B6E80</string>
+			<string>D19BD259-65AD-4E67-B101-D36B3D82CBD1</string>
 		</dict>
-		<key>B7B11163-1811-4CC4-A4A6-25385139177F</key>
+		<key>D412B0A9-1DD7-4A75-8B0C-58BBBB29E00D</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1359,7 +1275,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>B7B11163-1811-4CC4-A4A6-25385139177F.xcactivitylog</string>
+			<string>D412B0A9-1DD7-4A75-8B0C-58BBBB29E00D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1373,7 +1289,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
+				<integer>56</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -1384,15 +1300,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726911073.30681205</real>
+			<real>726992012.97069502</real>
 			<key>timeStoppedRecording</key>
-			<real>726911074.72061503</real>
+			<real>726992014.46779394</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>B7B11163-1811-4CC4-A4A6-25385139177F</string>
+			<string>D412B0A9-1DD7-4A75-8B0C-58BBBB29E00D</string>
 		</dict>
-		<key>B9842396-B2A9-4060-AD3E-BD0940F11EB2</key>
+		<key>D72E708B-6B3F-4284-A9F0-D81BDB654534</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1401,7 +1317,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>B9842396-B2A9-4060-AD3E-BD0940F11EB2.xcactivitylog</string>
+			<string>D72E708B-6B3F-4284-A9F0-D81BDB654534.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1415,7 +1331,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
+				<integer>57</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -1426,15 +1342,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726911563.17216599</real>
+			<real>726993356.528736</real>
 			<key>timeStoppedRecording</key>
-			<real>726911564.06194699</real>
+			<real>726993356.82961297</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>B9842396-B2A9-4060-AD3E-BD0940F11EB2</string>
+			<string>D72E708B-6B3F-4284-A9F0-D81BDB654534</string>
 		</dict>
-		<key>BEAD62C4-299A-439D-9B5F-11747B58725E</key>
+		<key>E4126EE9-5924-4C9D-AC4F-DCF72A65C85E</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1443,7 +1359,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>BEAD62C4-299A-439D-9B5F-11747B58725E.xcactivitylog</string>
+			<string>E4126EE9-5924-4C9D-AC4F-DCF72A65C85E.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1457,7 +1373,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>48</integer>
+				<integer>46</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -1468,15 +1384,15 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726914829.12433696</real>
+			<real>726981598.63569105</real>
 			<key>timeStoppedRecording</key>
-			<real>726914829.67779398</real>
+			<real>726981599.39631295</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>BEAD62C4-299A-439D-9B5F-11747B58725E</string>
+			<string>E4126EE9-5924-4C9D-AC4F-DCF72A65C85E</string>
 		</dict>
-		<key>C50DC292-99DF-4504-9282-1BC32BD170E2</key>
+		<key>EA828C3F-4EED-4ED8-A6E9-67FAF356290C</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -1485,7 +1401,91 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>C50DC292-99DF-4504-9282-1BC32BD170E2.xcactivitylog</string>
+			<string>EA828C3F-4EED-4ED8-A6E9-67FAF356290C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>57</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>726981603.78792</real>
+			<key>timeStoppedRecording</key>
+			<real>726981604.89438701</real>
+			<key>title</key>
+			<string>Build InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>EA828C3F-4EED-4ED8-A6E9-67FAF356290C</string>
+		</dict>
+		<key>F2AD622D-4792-4DE8-8195-72D09804EC06</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F2AD622D-4792-4DE8-8195-72D09804EC06.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>57</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>726993350.25183904</real>
+			<key>timeStoppedRecording</key>
+			<real>726993351.26697099</real>
+			<key>title</key>
+			<string>Build InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>F2AD622D-4792-4DE8-8195-72D09804EC06</string>
+		</dict>
+		<key>F65FFF84-BEE1-4B4A-B749-E6088EADA423</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F65FFF84-BEE1-4B4A-B749-E6088EADA423.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1510,391 +1510,13 @@
 			<key>signature</key>
 			<string>Build InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>726914833.71757901</real>
+			<real>726982056.21824396</real>
 			<key>timeStoppedRecording</key>
-			<real>726914834.74172401</real>
+			<real>726982057.47112298</real>
 			<key>title</key>
 			<string>Build InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>C50DC292-99DF-4504-9282-1BC32BD170E2</string>
-		</dict>
-		<key>D1254C5B-C6B4-4B66-8E77-BAA6C804F7F6</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>D1254C5B-C6B4-4B66-8E77-BAA6C804F7F6.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>40</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726908086.30148005</real>
-			<key>timeStoppedRecording</key>
-			<real>726908092.93343401</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>D1254C5B-C6B4-4B66-8E77-BAA6C804F7F6</string>
-		</dict>
-		<key>D16942FE-9D2B-45DE-BD2C-214F7DC60227</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>D16942FE-9D2B-45DE-BD2C-214F7DC60227.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726912537.39129901</real>
-			<key>timeStoppedRecording</key>
-			<real>726912538.63636005</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>D16942FE-9D2B-45DE-BD2C-214F7DC60227</string>
-		</dict>
-		<key>D2356A68-CC38-4488-832C-A6404E2BF058</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>D2356A68-CC38-4488-832C-A6404E2BF058.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726911548.44105899</real>
-			<key>timeStoppedRecording</key>
-			<real>726911549.43553305</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>D2356A68-CC38-4488-832C-A6404E2BF058</string>
-		</dict>
-		<key>D4E759B0-3FC1-4B50-B79F-1325C75484A6</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>D4E759B0-3FC1-4B50-B79F-1325C75484A6.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726914928.794348</real>
-			<key>timeStoppedRecording</key>
-			<real>726914929.82238495</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>D4E759B0-3FC1-4B50-B79F-1325C75484A6</string>
-		</dict>
-		<key>DAA20679-1FD7-4C19-8740-4523F1993906</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>DAA20679-1FD7-4C19-8740-4523F1993906.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726910418.74594498</real>
-			<key>timeStoppedRecording</key>
-			<real>726910419.80849302</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>DAA20679-1FD7-4C19-8740-4523F1993906</string>
-		</dict>
-		<key>E1576619-E942-4598-A1BC-9FE97DBC895F</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>E1576619-E942-4598-A1BC-9FE97DBC895F.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726914573.639238</real>
-			<key>timeStoppedRecording</key>
-			<real>726914574.694947</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>E1576619-E942-4598-A1BC-9FE97DBC895F</string>
-		</dict>
-		<key>E4C258C8-F878-49A1-AB38-90A26AA35B85</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>E4C258C8-F878-49A1-AB38-90A26AA35B85.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726912396.51893497</real>
-			<key>timeStoppedRecording</key>
-			<real>726912397.55834401</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>E4C258C8-F878-49A1-AB38-90A26AA35B85</string>
-		</dict>
-		<key>EC6204B6-2101-42F2-9AC3-32A54E3AD56B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>EC6204B6-2101-42F2-9AC3-32A54E3AD56B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726910324.88401699</real>
-			<key>timeStoppedRecording</key>
-			<real>726910325.30170703</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>EC6204B6-2101-42F2-9AC3-32A54E3AD56B</string>
-		</dict>
-		<key>F513A208-35BD-4ADD-8EE1-DFB80ADB6590</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>F513A208-35BD-4ADD-8EE1-DFB80ADB6590.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>58</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>726911526.92966294</real>
-			<key>timeStoppedRecording</key>
-			<real>726911527.84433901</real>
-			<key>title</key>
-			<string>Build InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>F513A208-35BD-4ADD-8EE1-DFB80ADB6590</string>
+			<string>F65FFF84-BEE1-4B4A-B749-E6088EADA423</string>
 		</dict>
 	</dict>
 </dict>

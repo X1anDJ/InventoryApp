@@ -19,7 +19,9 @@ class BackCardView: UIView {
     let increaseQuantityButton = UIButton()
     
     var daysValue: Int = 0 {
-        didSet { daysCircleLabel.text = "\(daysValue)d" }
+        didSet {
+            daysCircleLabel.text = "\(daysValue)d"
+        }
     }
     
     var quantityValue: Int = 0 {
@@ -40,11 +42,11 @@ class BackCardView: UIView {
     
     private func setupViewElements() {
     
-        backgroundColor = .systemBackground
+        backgroundColor = .tertiarySystemBackground
         
         // Set up UI elements here
         setupCircleLabel(daysCircleLabel, backgroundColor: .systemGreen)
-        setupCircleLabel(quantityCircleLabel, backgroundColor: .systemCyan)
+        setupCircleLabel(quantityCircleLabel, backgroundColor: .darkGray)
         setupButton(decreaseDaysButton, title: "-")
         setupButton(increaseDaysButton, title: "+")
         setupButton(decreaseQuantityButton, title: "-")
@@ -67,9 +69,9 @@ class BackCardView: UIView {
     private func setupButton(_ button: UIButton, title: String) {
         button.setTitle(title, for: .normal)
         button.setTitleColor(UIColor.systemGray, for: .normal)
-        button.backgroundColor = UIColor.systemBackground
+        button.backgroundColor = UIColor.tertiarySystemBackground
         button.layer.cornerRadius = 15
-        button.layer.borderWidth = 1
+        button.layer.borderWidth = 1.5
         button.layer.borderColor = UIColor.systemGray4.cgColor
         
         button.clipsToBounds = true
@@ -130,5 +132,13 @@ class BackCardView: UIView {
                 decreaseQuantityButton.heightAnchor.constraint(equalToConstant: buttonSize)
             ])
         }
+    
+    func configure(with viewModel: CardViewModel) {
+        // Configure the view with data from the view model
+        daysCircleLabel.text = viewModel.remainingDays
+        quantityCircleLabel.text = viewModel.quantity
+
+        daysCircleLabel.backgroundColor = viewModel.remainingDaysInNumber > 6 ? .systemGreen : viewModel.remainingDaysInNumber > 0 ? .systemOrange : .systemRed
+    }
 
 }

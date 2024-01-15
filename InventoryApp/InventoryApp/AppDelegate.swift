@@ -44,19 +44,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         loginViewController.delegate = self
         onboardingViewController.delegate = self
-        //        window?.rootViewController = loginViewController
         
-        //===============Front card testing=================
-        let product = Product() // Initialize your product model
-        cardViewModel = CardViewModel(product: product)
-        // Fetch product data
-        cardViewModel.fetchProductData()
-        
-        // Initialize and configure child view controllers
-        frontCardViewController = FrontCardViewController(viewModel: cardViewModel)
-        backCardViewController  = BackCardViewController(viewModel: cardViewModel)
-        //================================
-        
+//        //===============Front card testing=================
+//        let product = Product() // Initialize your product model
+//        cardViewModel = CardViewModel(product: product)
+//        // Fetch product data
+//        cardViewModel.fetchProductData()
+//        
+//        // Initialize and configure child view controllers
+//        frontCardViewController = FrontCardViewController(viewModel: cardViewModel)
+//        backCardViewController  = BackCardViewController(viewModel: cardViewModel)
+//        //================================
+//        
         let navigationController = UINavigationController(rootViewController: loginViewController)
         window?.rootViewController = navigationController
         
@@ -67,11 +66,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.rootViewController = mainViewController
             //window?.rootViewController = navigationController
             //window?.rootViewController = smsController
+            //window?.rootViewController = loginViewController
             //window?.rootViewController = frontCardViewController
             //window?.rootViewController = backCardViewController
             //window?.rootViewController = storageController
             //window?.rootViewController = productCardController
         }
+        
+        
         
         return true
     }

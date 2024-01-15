@@ -17,8 +17,8 @@ class ProductCardViewController: UIViewController {
         super.viewDidLoad()
         
         // Initialize product data and fetch
-        let product = Product()
-        cardViewModel = CardViewModel(product: product)
+//        let product = Product()
+        cardViewModel = CardViewModel()
         cardViewModel.fetchProductData()
         
         // Initialize and configure child view controllers
@@ -27,6 +27,7 @@ class ProductCardViewController: UIViewController {
         
         setupChildViewController(frontCardViewController, in: self.view)
         setupChildViewController(backCardViewController, in: self.view)
+        
         backCardViewController.view.isHidden = true
 
         // Bind ViewModel updates to UI updates
