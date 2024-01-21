@@ -7,16 +7,17 @@
 
 import UIKit
 class MainViewController: UITabBarController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         setupTabBar()
-        
     }
 
     private func setupViews() {
-        let inventoryVC = InventoryViewController()
+        
+        let inventoryVC = InventoryViewController(userViewModel: UserViewModel())
         let recipeVC = RecipeViewController()
 
         inventoryVC.setTabBarImage(imageName: "shippingbox.fill", title: "我的库存")
@@ -24,10 +25,6 @@ class MainViewController: UITabBarController {
         
         let inventoryNC = UINavigationController(rootViewController: inventoryVC)
         let recipeNC = UINavigationController(rootViewController: recipeVC)
-//
-//        inventoryNC.navigationBar.barTintColor = .systemBlue
-//        hideNavigationBarLine(inventoryNC.navigationBar)
-//        hideNavigationBarLine(recipeNC.navigationBar)
         
         let tabBarList = [inventoryNC, recipeNC]
 
@@ -39,3 +36,4 @@ class MainViewController: UITabBarController {
         tabBar.isTranslucent = false
     }
 }
+

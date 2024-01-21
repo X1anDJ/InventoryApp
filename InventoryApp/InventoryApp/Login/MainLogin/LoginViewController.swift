@@ -59,6 +59,7 @@ extension LoginViewController : AuthenticationButtonsViewDelegate{
 
     @objc func phoneButtonTapped(sender: UIButton) {
         // Handle Phone sign-in
+        print("phoneTapped")
         let phoneViewController = PhoneNumberController()
         self.navigationController?.pushViewController(phoneViewController, animated: true)
     }
@@ -92,6 +93,7 @@ extension LoginViewController : AuthenticationButtonsViewDelegate{
             Auth.auth().signIn(with: credential) { result, error in
                 if let error = error {
                     // Handle error
+                    print("Auth failed")
                     return
                 }
                 // User is signed in

@@ -7,39 +7,60 @@
 import Foundation
 import UIKit
 
+/*
+ - InventoryViewController : has var sectionViewControllers: [SectionViewController] = []
+    - ScrollView
+        - inventoryStackView
+            - sectionViewController.view
+ 
+ */
 class InventoryViewController: UIViewController, UIScrollViewDelegate {
+    
+    var userViewModel: UserViewModel!
     let scrollView = UIScrollView()
     let inventoryStackView = UIStackView()
     let inventoryLabel = UILabel()
     var sectionViewControllers: [SectionViewController] = [] // Array of SectionViewController instances
-
+    
+    init(userViewModel: UserViewModel!) {
+        super.init(nibName: nil, bundle: nil)
+        self.userViewModel = userViewModel
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.delegate = self
-
-        // Create SectionViewControllers and add them to the array
-        for _ in 0...2 {
-            let sectionViewController = SectionViewController()
-            sectionViewControllers.append(sectionViewController)
-        }
-        
+        fetchUserDataAndSetupSections()
         style() // Setup styles for the UI elements
         layout() // Layout the UI elements
-        addSectionViewControllers() // Add SectionViewControllers to the stack view
-        
-        if let barBackgroundView = navigationController?.navigationBar.subviews.first(where: { String(describing: type(of: $0)) == "_UIBarBackground" }) {
-            if let backgroundImageView = barBackgroundView.subviews.first(where: { $0 is UIImageView }) as? UIImageView {
-                // Now you have a reference to the UIImageView
-                // Apply your custom modifications here, for example:
-                backgroundImageView.alpha = 0.5 // Set to 50% transparency
-            }
-        }
-        
-        
+
     }
     
-    
 
+    func fetchUserDataAndSetupSections() {
+        userViewModel.fetchUserAndSections { [weak self] success in
+            guard let self = self, success else {
+                print("fetch failed")
+                return
+            }
+            self.setupSectionViewControllers()
+        }
+    }
+
+    func setupSectionViewControllers() {
+        sectionViewControllers = userViewModel.sections.map { section in
+            let sectionViewModel = SectionViewModel(section: section)
+            return SectionViewController(viewModel: sectionViewModel)
+        }
+        addSectionViewControllers()
+    }
+
+
+    
     func style() {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
 

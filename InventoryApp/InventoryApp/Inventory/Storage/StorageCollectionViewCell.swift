@@ -8,12 +8,11 @@ import UIKit
 
 class StorageCollectionViewCell: UICollectionViewCell {
     var productCardViewController: ProductCardViewController!
-
+    var cardViewModel: CardViewModel!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupProductCardViewController()
-
-
     }
 
     required init?(coder: NSCoder) {
@@ -22,12 +21,14 @@ class StorageCollectionViewCell: UICollectionViewCell {
 
     private func setupProductCardViewController() {
         // Initialize ProductCardViewController and add it as a child view controller
-        productCardViewController = ProductCardViewController()
+        productCardViewController = ProductCardViewController(cardViewModel: cardViewModel)
         contentView.addSubview(productCardViewController.view)
         productCardViewController.view.frame = contentView.frame
     }
     
-
+    private func configure(with viewModel: CardViewModel) {
+        self.cardViewModel = viewModel
+    }
 
     // Helper function to find parent view controller
     private func parentViewController() -> UIViewController? {

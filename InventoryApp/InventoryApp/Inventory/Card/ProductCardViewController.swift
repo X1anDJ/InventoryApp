@@ -7,19 +7,29 @@
 import UIKit
 
 class ProductCardViewController: UIViewController {
-    
+    var cardViewModel: CardViewModel!
     var frontCardViewController: FrontCardViewController!
     var backCardViewController: BackCardViewController!
-    var cardViewModel: CardViewModel!
+
     let containerView = UIView()
+    
+    init(cardViewModel: CardViewModel) {
+        super.init(nibName: nil, bundle: nil)
+        self.cardViewModel = cardViewModel
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Initialize product data and fetch
-//        let product = Product()
-        cardViewModel = CardViewModel()
-        cardViewModel.fetchProductData()
+//        // Initialize product data and fetch-------------
+////        let product = Product()
+//        cardViewModel = CardViewModel()
+//        cardViewModel.fetchProductData()
         
         // Initialize and configure child view controllers
         frontCardViewController = FrontCardViewController(viewModel: cardViewModel)

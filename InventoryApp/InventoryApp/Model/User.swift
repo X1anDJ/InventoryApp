@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class User {
+    var id: UUID = UUID()
+    var name: String = "未命名"
+    var sections: [Section] = []
+}

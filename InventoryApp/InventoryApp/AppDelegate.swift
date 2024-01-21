@@ -16,14 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     let loginViewController = LoginViewController()
-    let smsController = VerificationController()
+//    let smsController = VerificationController()
     let onboardingViewController = OnboardingContainerViewController()
     let mainViewController = MainViewController()
-    let productCardController = ProductCardViewController()
-    var cardViewModel: CardViewModel!
-    var frontCardViewController: FrontCardViewController!
-    var backCardViewController: BackCardViewController!
-    let storageController = StorageCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
+    //let productCardController = ProductCardViewController()
+//    var cardViewModel: CardViewModel!
+//    var frontCardViewController: FrontCardViewController!
+//    var backCardViewController: BackCardViewController!
+   //let storageController = StorageCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
     
     /*
      
@@ -63,8 +63,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.rootViewController = navigationController
             //window?.rootViewController = smsController
         } else {
-            window?.rootViewController = mainViewController
-            //window?.rootViewController = navigationController
+            //window?.rootViewController = mainViewController
+            window?.rootViewController = navigationController
             //window?.rootViewController = smsController
             //window?.rootViewController = loginViewController
             //window?.rootViewController = frontCardViewController

@@ -11,15 +11,22 @@ import UIKit
 
 class SectionViewController: UIViewController {
     
+    var viewModel: SectionViewModel!
     let sectionStackView = UIStackView()
-    
     let titleStackView = UIStackView()
     let titleLabel = UILabel()
-    
     let ruleStackView = UIStackView()
     let ruleLabel = UILabel()
-    
     let storageCollectionContainerView = UIView()
+    
+    init(viewModel: SectionViewModel!) {
+        super.init(nibName: nil, bundle: nil)
+        self.viewModel = viewModel
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,7 +101,8 @@ extension SectionViewController {
 
     
     func addStorageCollectionViewController() {
-        let storageCollectionVC = StorageCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
+        let storageCollectionVC = StorageCollectionViewController(viewModel: viewModel)
+        
         addChild(storageCollectionVC)
         storageCollectionContainerView.addSubview(storageCollectionVC.view)
 
