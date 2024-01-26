@@ -24,7 +24,7 @@ class UserRepository {
                 // Return the existing user
                 return user
             } else {
-                // No users found in the database, create a new one
+                print("No user founded. Creating new user")
                 return createUser(id: UUID(), name: "Default Name")
             }
         } catch {
@@ -36,6 +36,7 @@ class UserRepository {
 
     // Create a new user
     func createUser(id: UUID, name: String) -> CDUser {
+        removeAllUsers()
         let newUser = CDUser(context: coreDataStack.context)
         newUser.id = id
         newUser.name = name
@@ -55,5 +56,20 @@ class UserRepository {
         coreDataStack.saveContext()
     }
 
-    // Additional helper methods can be added here as needed.
+    // Function to remove all users
+    func removeAllUsers() {
+        let request: NSFetchRequest<CDUser> = CDUser.fetchRequest()
+        
+        do {
+            let users = try coreDataStack.context.fetch(request)
+            for user in users {
+                coreDataStack.context.delete(user)
+            }
+            coreDataStack.saveContext()
+            print("All users have been removed.")
+        } catch {
+            print("Error fetching users for deletion: \(error)")
+        }
+    }
+
 }

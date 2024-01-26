@@ -15,14 +15,21 @@ class SectionRepository {
     }
 
     func createSection(for userId: UUID, with section: Section) {
-        guard let user = fetchCDUserById(id: userId) else { return }
+        guard let user = fetchCDUserById(id: userId) else {
+            print("fetchCDUserById(id: \(userId)) failed")
+            return
+        }
 
         let cdSection = CDSection(context: coreDataStack.context)
         cdSection.id = section.id
         cdSection.title = section.title
         cdSection.rule = Int16(section.rule)
-        user.addToSections(cdSection)
+        
+        // Map and add products to the CDSection
+        mapProductsToCDProducts(products: section.products, section: cdSection)
 
+        user.addToSections(cdSection)
+        print("Section \(section.title) created for user: \(userId)")
         coreDataStack.saveContext()
     }
 
@@ -32,6 +39,7 @@ class SectionRepository {
     }
 
     // Other CRUD operations...
+    
 
     private func fetchCDUserById(id: UUID) -> CDUser? {
         let request: NSFetchRequest<CDUser> = CDUser.fetchRequest()
@@ -57,6 +65,20 @@ class SectionRepository {
         let products = mapCDProductsToProducts(cdProducts: cdSection.products)
         return Section(id: id, name: title, rule: rule, products: products)
     }
+    
+    
+    private func mapProductsToCDProducts(products: [Product], section: CDSection) {
+        products.forEach { product in
+            let cdProduct = CDProduct(context: coreDataStack.context)
+            cdProduct.id = product.id
+            cdProduct.title = product.title
+            cdProduct.picture = product.picture
+            cdProduct.quantity = Int16(product.quantity)
+            cdProduct.remainingDays = Int16(product.remainingDays)
+            section.addToProducts(cdProduct)
+        }
+    }
+
     
     func updateSection(_ section: Section) {
         guard let cdSection = fetchCDSectionById(id: section.id) else { return }

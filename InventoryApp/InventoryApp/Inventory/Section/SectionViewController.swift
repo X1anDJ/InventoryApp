@@ -51,11 +51,12 @@ extension SectionViewController {
         ruleStackView.spacing = 0
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.text = "保鲜区"
+        titleLabel.text = viewModel.getSectionTitle()
         titleLabel.font = UIFont.preferredFont(forTextStyle: .title1)
         
         ruleLabel.translatesAutoresizingMaskIntoConstraints = false
-        ruleLabel.text = "放入起31日提醒"
+        var rule = viewModel.getSectionRule()
+        ruleLabel.text = "放入起\(rule)日提醒"
         ruleLabel.font = UIFont.preferredFont(forTextStyle: .caption1)
         
         storageCollectionContainerView.translatesAutoresizingMaskIntoConstraints = false
@@ -101,7 +102,28 @@ extension SectionViewController {
 
     
     func addStorageCollectionViewController() {
-        let storageCollectionVC = StorageCollectionViewController(viewModel: viewModel)
+        
+        var itemsPerRow: CGFloat {
+            // Check if the device is an iPad
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                return 6 // For iPad
+            } else {
+                return 3 // For iPhone
+            }
+        }
+        
+        let layout = UICollectionViewFlowLayout()
+        let spacing: CGFloat = 10
+        let totalSpacing = spacing * (itemsPerRow + 1)
+        let cellWidth = (UIScreen.main.bounds.width - totalSpacing) / itemsPerRow
+
+        layout.itemSize = CGSize(width: cellWidth, height: cellWidth + 30)
+        layout.minimumInteritemSpacing = spacing
+        layout.minimumLineSpacing = spacing
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 0)
+
+        
+        let storageCollectionVC = StorageCollectionViewController(viewModel: viewModel, layout: layout)
         
         addChild(storageCollectionVC)
         storageCollectionContainerView.addSubview(storageCollectionVC.view)

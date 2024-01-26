@@ -16,8 +16,9 @@ class MainViewController: UITabBarController {
     }
 
     private func setupViews() {
-        
-        let inventoryVC = InventoryViewController(userViewModel: UserViewModel())
+        let userMetaData = UserMetadata()
+        let userViewModel = userMetaData.userViewModel
+        let inventoryVC = InventoryViewController(userViewModel: userViewModel)
         let recipeVC = RecipeViewController()
 
         inventoryVC.setTabBarImage(imageName: "shippingbox.fill", title: "我的库存")

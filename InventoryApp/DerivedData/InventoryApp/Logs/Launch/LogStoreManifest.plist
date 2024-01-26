@@ -6,193 +6,10 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>041959D4-916B-49D8-A92D-BD7A12FD8D9B</key>
+		<key>2CF07E3C-3C25-4178-8300-9575D1109ED7</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>57917D26-1ED9-4B2A-916D-67D46A14D157</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>56</integer>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-InventoryApp-2024.01.20_20-56-57--0800.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>49</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>727505817.29866803</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>041959D4-916B-49D8-A92D-BD7A12FD8D9B</string>
-		</dict>
-		<key>11539B41-3547-4992-BECF-0780146BECA9</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>B139C315-94C3-48D6-836A-F3FAE99BB933</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>11662</integer>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-InventoryApp-2024.01.20_16-09-28--0800.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>54</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>727488568.75810802</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>11539B41-3547-4992-BECF-0780146BECA9</string>
-		</dict>
-		<key>33217392-4E65-43C6-AD24-8F05393AA18E</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>3B5FA482-7C67-4301-BC0A-ED21DD963165</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>38</integer>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-InventoryApp-2024.01.20_16-10-04--0800.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>30</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>727488604.678653</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>33217392-4E65-43C6-AD24-8F05393AA18E</string>
-		</dict>
-		<key>7D221BC4-B7A6-4ABF-9B67-21C9CF1D2BDA</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>45A0E3BF-A952-4AA9-8737-31B6FB8A19FF</string>
+			<string>11CC2267-3796-4AD5-83D0-8AC96731827C</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -213,7 +30,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-InventoryApp-2024.01.20_18-26-43--0800.xcresult</string>
+			<string>Run-InventoryApp-2024.01.25_16-13-18--0800.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -242,79 +59,18 @@
 			<key>signature</key>
 			<string>Run InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>727496803.81393695</real>
+			<real>727920798.15353894</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>7D221BC4-B7A6-4ABF-9B67-21C9CF1D2BDA</string>
+			<string>2CF07E3C-3C25-4178-8300-9575D1109ED7</string>
 		</dict>
-		<key>801E6651-CEBC-475B-974E-032FAA1EF5C0</key>
+		<key>3A3FB532-5121-41E6-8547-C2A2891EBABB</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>5A4DD95E-3E90-456B-A78B-29A04C3E1851</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>2</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>11654</integer>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-InventoryApp-2024.01.20_16-08-03--0800.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>2</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>49</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>727488483.26001203</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>801E6651-CEBC-475B-974E-032FAA1EF5C0</string>
-		</dict>
-		<key>9C822EBA-0807-4595-9F3A-9F2D2CA19DDD</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>2B5964FE-9524-4C4E-A2D7-20E7D30B799E</string>
+			<string>1F3596A8-34E3-414D-8A74-C435391A74CD</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -326,7 +82,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>18684</integer>
+				<integer>57</integer>
 			</dict>
 			<key>className</key>
 			<string>IDESchemeActionsInvocationRecord</string>
@@ -335,7 +91,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-InventoryApp-2024.01.15_23-13-33--0800.xcresult</string>
+			<string>Run-InventoryApp-2024.01.25_16-15-02--0800.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -353,7 +109,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>38</integer>
+				<integer>50</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -364,79 +120,18 @@
 			<key>signature</key>
 			<string>Run InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>727082013.24688303</real>
+			<real>727920902.89597201</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>9C822EBA-0807-4595-9F3A-9F2D2CA19DDD</string>
+			<string>3A3FB532-5121-41E6-8547-C2A2891EBABB</string>
 		</dict>
-		<key>A342C81D-144A-4E85-8380-CF8BF5AE5C6A</key>
+		<key>6F2CAF6A-2577-4200-AC54-724852C46962</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>E632D8D3-F6CB-457C-9DA7-F085490E4D32</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>1</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>47</integer>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-InventoryApp-2024.01.20_18-26-38--0800.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>1</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>43</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>InventoryApp project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>InventoryApp</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run InventoryApp</string>
-			<key>timeStartedRecording</key>
-			<real>727496798.65267801</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run InventoryApp</string>
-			<key>uniqueIdentifier</key>
-			<string>A342C81D-144A-4E85-8380-CF8BF5AE5C6A</string>
-		</dict>
-		<key>B5872467-2884-4CF8-8C86-302C1D83B604</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>858E4591-74FA-44A5-91A7-05FDA6494D81</string>
+			<string>6F88F683-CF0C-4B47-A30A-134054EC8212</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -448,7 +143,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>56</integer>
+				<integer>39</integer>
 			</dict>
 			<key>className</key>
 			<string>IDESchemeActionsInvocationRecord</string>
@@ -457,7 +152,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-InventoryApp-2024.01.20_18-27-26--0800.xcresult</string>
+			<string>Run-InventoryApp-2024.01.25_16-17-03--0800.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -475,7 +170,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>49</integer>
+				<integer>31</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -486,18 +181,18 @@
 			<key>signature</key>
 			<string>Run InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>727496846.875103</real>
+			<real>727921023.04585099</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>B5872467-2884-4CF8-8C86-302C1D83B604</string>
+			<string>6F2CAF6A-2577-4200-AC54-724852C46962</string>
 		</dict>
-		<key>BA5BD6DF-2EE6-472E-9D38-EE91BA0805EA</key>
+		<key>7059C130-C1FD-4CC4-A99F-548C2580B1BF</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>3A29F834-233E-4837-A322-715ECDC09106</string>
+			<string>F5815F76-465F-45BA-8FB9-87EC7AA2146E</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -509,7 +204,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>56</integer>
+				<integer>57</integer>
 			</dict>
 			<key>className</key>
 			<string>IDESchemeActionsInvocationRecord</string>
@@ -518,7 +213,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-InventoryApp-2024.01.20_20-36-08--0800.xcresult</string>
+			<string>Run-InventoryApp-2024.01.21_19-52-25--0800.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -536,7 +231,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>49</integer>
+				<integer>50</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -547,18 +242,18 @@
 			<key>signature</key>
 			<string>Run InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>727504568.35597897</real>
+			<real>727588345.87305903</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>BA5BD6DF-2EE6-472E-9D38-EE91BA0805EA</string>
+			<string>7059C130-C1FD-4CC4-A99F-548C2580B1BF</string>
 		</dict>
-		<key>BE14C94C-F918-4561-ADB8-B1855C89FA91</key>
+		<key>980EAFF4-DA37-4817-9C46-ED32126A80A6</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>A9366893-5E7C-4ADE-8A7B-5ECC32FC08D6</string>
+			<string>52B6C38E-34D3-43C8-839A-D7DE4643B731</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -570,7 +265,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>59</integer>
+				<integer>57</integer>
 			</dict>
 			<key>className</key>
 			<string>IDESchemeActionsInvocationRecord</string>
@@ -579,7 +274,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-InventoryApp-2024.01.20_18-25-30--0800.xcresult</string>
+			<string>Run-InventoryApp-2024.01.25_16-06-18--0800.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -597,7 +292,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>51</integer>
+				<integer>50</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -608,18 +303,18 @@
 			<key>signature</key>
 			<string>Run InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>727496730.48808503</real>
+			<real>727920378.113047</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>BE14C94C-F918-4561-ADB8-B1855C89FA91</string>
+			<string>980EAFF4-DA37-4817-9C46-ED32126A80A6</string>
 		</dict>
-		<key>CDA3F02B-7E20-4622-8016-818D5ECB338D</key>
+		<key>A2803955-61C8-4936-A9CC-3D2AFD853A7A</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>93DAA267-AC4A-44C0-8260-21197DA7D441</string>
+			<string>075D9B83-6D0C-4E6F-9B1C-8618EFCC349F</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -631,7 +326,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>56</integer>
+				<integer>57</integer>
 			</dict>
 			<key>className</key>
 			<string>IDESchemeActionsInvocationRecord</string>
@@ -640,7 +335,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-InventoryApp-2024.01.20_20-35-07--0800.xcresult</string>
+			<string>Run-InventoryApp-2024.01.25_16-13-31--0800.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -658,7 +353,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>49</integer>
+				<integer>50</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -669,30 +364,30 @@
 			<key>signature</key>
 			<string>Run InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>727504507.15217805</real>
+			<real>727920811.92587304</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>CDA3F02B-7E20-4622-8016-818D5ECB338D</string>
+			<string>A2803955-61C8-4936-A9CC-3D2AFD853A7A</string>
 		</dict>
-		<key>D0A67577-D148-4606-84DE-0A29EA1F6588</key>
+		<key>A7BDBC47-04D5-4193-8968-ED1DB9E88874</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>B1BB4BF7-F5DE-4B8C-88FB-650FDDAA8D5B</string>
+			<string>E79F9A33-E047-4F8B-A10E-791C9F199582</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>E</string>
+				<string>W</string>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
-				<integer>9</integer>
+				<integer>0</integer>
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>18678</integer>
+				<integer>57</integer>
 			</dict>
 			<key>className</key>
 			<string>IDESchemeActionsInvocationRecord</string>
@@ -701,7 +396,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-InventoryApp-2024.01.20_15-43-43--0800.xcresult</string>
+			<string>Run-InventoryApp-2024.01.25_16-15-29--0800.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -711,15 +406,15 @@
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>E</string>
+				<string>W</string>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
-				<integer>6</integer>
+				<integer>0</integer>
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>35</integer>
+				<integer>50</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>InventoryApp project</string>
@@ -730,13 +425,196 @@
 			<key>signature</key>
 			<string>Run InventoryApp</string>
 			<key>timeStartedRecording</key>
-			<real>727487023.44508803</real>
+			<real>727920929.09460998</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run InventoryApp</string>
 			<key>uniqueIdentifier</key>
-			<string>D0A67577-D148-4606-84DE-0A29EA1F6588</string>
+			<string>A7BDBC47-04D5-4193-8968-ED1DB9E88874</string>
+		</dict>
+		<key>C33C1B8D-C125-4458-ADF0-E97C9E844014</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>249B64BD-91F3-4D4F-956D-B1CC48346DC2</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>57</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-InventoryApp-2024.01.25_16-02-08--0800.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>50</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>727920128.49528694</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>C33C1B8D-C125-4458-ADF0-E97C9E844014</string>
+		</dict>
+		<key>D2E5C4C8-CB43-4C42-A8C2-F377FA6ED425</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>03B8BF1A-F3C6-4B8D-8ADA-05158511C767</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>57</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-InventoryApp-2024.01.25_15-45-57--0800.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>50</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>727919157.93941796</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>D2E5C4C8-CB43-4C42-A8C2-F377FA6ED425</string>
+		</dict>
+		<key>F952E22C-7C1D-4159-A7F0-7ACB0E9BBBD7</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>1B0FA094-F323-4385-93F3-F7A7CD55260C</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>57</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-InventoryApp-2024.01.25_15-56-14--0800.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>50</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>InventoryApp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>InventoryApp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run InventoryApp</string>
+			<key>timeStartedRecording</key>
+			<real>727919774.65444601</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run InventoryApp</string>
+			<key>uniqueIdentifier</key>
+			<string>F952E22C-7C1D-4159-A7F0-7ACB0E9BBBD7</string>
 		</dict>
 	</dict>
 </dict>

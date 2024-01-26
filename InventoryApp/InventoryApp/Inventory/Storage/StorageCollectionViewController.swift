@@ -19,8 +19,8 @@ class StorageCollectionViewController: UICollectionViewController {
         }
     }
     
-    init(viewModel: SectionViewModel!) {
-        super.init(nibName: nil, bundle: nil)
+    init(viewModel: SectionViewModel!, layout: UICollectionViewLayout) {
+        super.init(collectionViewLayout: layout)
         self.viewModel = viewModel
     }
     
@@ -58,17 +58,25 @@ class StorageCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print("Number of Items: \(viewModel.getNumberOfProducts())")
         return viewModel.getNumberOfProducts()
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! StorageCollectionViewCell
+        
+        print("collection view cell for item at")
 
         if let product = viewModel.getProduct(at: indexPath.row) {
+            print("SectionViewModel.getProduct: \(product.title)")
             let cardViewModel = CardViewModel(product: product)
             cell.cardViewModel = cardViewModel
+            cell.updateProductCardViewController()
+        } else {
+            print("Product not found for indexPath: \(indexPath)")
         }
 
+         
         return cell
     }
 }

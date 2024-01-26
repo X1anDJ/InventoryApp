@@ -49,6 +49,7 @@ class ProductRepository {
         }
     }
 
+    
 
     private func mapCDProductToProduct(cdProduct: CDProduct?) -> Product? {
         guard let cdProduct = cdProduct,
@@ -62,4 +63,27 @@ class ProductRepository {
         return Product(id: id, title: title, picture: picture, quantity: quantity, remainingDays: remainingDays)
     }
 
+    func updateProduct(_ product: Product) {
+        guard let cdProduct = fetchCDProductById(id: product.id) else { return }
+
+        cdProduct.title = product.title
+        cdProduct.picture = product.picture
+        cdProduct.quantity = Int16(product.quantity)
+        cdProduct.remainingDays = Int16(product.remainingDays)
+
+        coreDataStack.saveContext()
+    }
+
+    private func fetchCDProductById(id: UUID) -> CDProduct? {
+        let request: NSFetchRequest<CDProduct> = CDProduct.fetchRequest()
+        request.predicate = NSPredicate(format: "id == %@", id as CVarArg)
+
+        do {
+            let results = try coreDataStack.context.fetch(request)
+            return results.first
+        } catch {
+            print("Error fetching CDProduct by id: \(error)")
+            return nil
+        }
+    }
 }

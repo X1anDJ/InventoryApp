@@ -25,6 +25,8 @@ class InventoryViewController: UIViewController, UIScrollViewDelegate {
     init(userViewModel: UserViewModel!) {
         super.init(nibName: nil, bundle: nil)
         self.userViewModel = userViewModel
+        
+        print("InventoryViewController initialized")
     }
     
     required init?(coder: NSCoder) {
@@ -48,12 +50,15 @@ class InventoryViewController: UIViewController, UIScrollViewDelegate {
                 return
             }
             self.setupSectionViewControllers()
+            print("userViewModel.fetchUserAndSections Successful")
         }
     }
 
     func setupSectionViewControllers() {
+        
         sectionViewControllers = userViewModel.sections.map { section in
             let sectionViewModel = SectionViewModel(section: section)
+            print("Section: \(section.title) has \(section.products.count) number of items")
             return SectionViewController(viewModel: sectionViewModel)
         }
         addSectionViewControllers()

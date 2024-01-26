@@ -7,9 +7,9 @@
 import Foundation
 
 class UserViewModel {
-    private let userRepository: UserRepository
-    private let sectionRepository: SectionRepository
-    private var user: CDUser?
+    let userRepository: UserRepository
+    let sectionRepository: SectionRepository
+    var user: CDUser?
     var sections: [Section] = []
     
     // Properties for the view
@@ -34,12 +34,19 @@ class UserViewModel {
         }
     }
 
-    // Fetch User and Sections
     func fetchUserAndSections(completion: @escaping (Bool) -> Void) {
-        let fetchedUser = userRepository.fetchUser()
-        
+        guard let fetchedUser = userRepository.fetchUser() else {
+            completion(false)
+            return
+        }
+
         self.user = fetchedUser
-        //self.sections = sectionRepository.fetchSections(for: fetchedUser?)
+        // Assuming `id` is a non-optional UUID property of CDUser
+        // Fetch sections for the user
+        let userId = fetchedUser.id ?? UUID()  // Provide a default UUID if `id` is nil
+        print(self.user?.name ?? "No user founded")
+        self.sections = sectionRepository.fetchSections(for: userId)
+        print("UserViewModel [section] count = \(sections.count)")
         completion(true)
     }
     

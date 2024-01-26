@@ -394,11 +394,11 @@
 				DCDB90992B4BD3B60047E52C /* Onboarding */,
 				DCDB90962B4BD2BC0047E52C /* Inventory */,
 				DCDB90A02B4BD8320047E52C /* Recipe */,
-				DCDB908B2B4B96FC0047E52C /* Files */,
 				DCDB90912B4BD1C90047E52C /* Util */,
 				DCDB90772B4B93FC0047E52C /* AppDelegate.swift */,
 				DCDB90942B4BD21A0047E52C /* MainViewController.swift */,
 				DCC5F7E02B5CDCA800CEDE28 /* UserMetadata.swift */,
+				DCDB908B2B4B96FC0047E52C /* Files */,
 			);
 			path = InventoryApp;
 			sourceTree = "<group>";

@@ -9,9 +9,11 @@ import UIKit
 class CardViewModel {
     private var product: Product {
         didSet {
+            productRepository.updateProduct(product)
             onProductUpdated?(product)
         }
     }
+    let productRepository: ProductRepository
     
     var productName: String {
         product.title
@@ -40,35 +42,17 @@ class CardViewModel {
     
     var onProductUpdated: ((Product) -> Void)?
     
-    init(product: Product) {
+    init(product: Product, productRepository: ProductRepository = ProductRepository()) {
         self.product = product
+        self.productRepository = productRepository
     }
-    
-//    init(product: Product) {
-//        let mockProduct = Product(productID: "12345", productName: "香蕉", productPicture: "新鲜香蕉", quantity: 10, remainingDay: 5)
-//        self.product = mockProduct
-//    }
     
     func updateProduct(remainingDay: Int, quantity: Int) {
         product.remainingDays = remainingDay
         product.quantity = quantity
         onProductUpdated?(product)
     }
-//    
-//    func fetchProductData() {
-//        // Simulate a network delay
-//        DispatchQueue.global().asyncAfter(deadline: .now() + 0.1) { [weak self] in
-//            // Simulate fetched product data
-//            let mockProduct = Product(productID: "12345", productName: "恩佐法拉利牌新鲜非洲香蕉", productPicture: "新鲜香蕉", quantity: 99, remainingDay: 9)
-//
-//            // Update the product on the main thread
-//            DispatchQueue.main.async {
-//                self?.product = mockProduct
-//                self?.onProductUpdated?(mockProduct)
-//            }
-//        }
-//    }
-//    
+    
     func getProduct() -> Product {
         return product
     }
