@@ -135,7 +135,7 @@ class BackCardView: UIView {
     
     func configure(with viewModel: CardViewModel) {
         // Configure the view with data from the view model
-        print("Configure the view with data , viewModel.remainingDays: \(viewModel.remainingDays) ,viewModel.quantity: \(viewModel.quantity)")
+//        print("Configure the view with data , viewModel.remainingDays: \(viewModel.remainingDays) ,viewModel.quantity: \(viewModel.quantity)")
         daysCircleLabel.text = viewModel.remainingDays
         quantityCircleLabel.text = viewModel.quantity
 

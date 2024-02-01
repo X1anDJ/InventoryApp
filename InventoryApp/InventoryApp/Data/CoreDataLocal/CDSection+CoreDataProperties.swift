@@ -18,6 +18,7 @@ extension CDSection {
 
     @NSManaged public var id: UUID?
     @NSManaged public var rule: Int16
+    @NSManaged public var sortingRule: Int16
     @NSManaged public var title: String?
     @NSManaged public var products: NSSet?
     @NSManaged public var user: CDUser?

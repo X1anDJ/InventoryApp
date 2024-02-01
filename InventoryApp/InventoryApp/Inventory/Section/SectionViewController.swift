@@ -54,7 +54,7 @@ extension SectionViewController {
         titleLabel.font = UIFont.preferredFont(forTextStyle: .title1)
         
         ruleLabel.translatesAutoresizingMaskIntoConstraints = false
-        var rule = viewModel.getSectionRule()
+        let rule = viewModel.getSectionRule()
         ruleLabel.text = "放入起\(rule)日提醒"
         ruleLabel.font = UIFont.preferredFont(forTextStyle: .caption1)
         

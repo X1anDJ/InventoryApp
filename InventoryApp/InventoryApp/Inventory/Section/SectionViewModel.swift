@@ -8,7 +8,7 @@
 class SectionViewModel {
     ///Mark:
     ///section: initialize by mapping each section of userViewModel
-    ///sectionRepository: use current section or id  to pass in the repository to manage the local data.
+    ///sectionRepository: use current section or id to pass in the repository to manage the local data.
     private var section: Section
     private var sectionRepository: SectionRepository
 
@@ -16,6 +16,7 @@ class SectionViewModel {
         self.section = section
         self.sectionRepository = sectionRepository
         print("Initializing SectionViewModel with \(section.products.count) products.")
+        //print("using sorting rule: \(rule)")
     }
 
     // GET:
@@ -39,6 +40,7 @@ class SectionViewModel {
             print("Index out of range or no product at index: \(index)")
             return nil
         }
+        print("Get product called")
         return section.products[index]
     }
 
@@ -64,5 +66,18 @@ class SectionViewModel {
 
     func updateSection() {
         sectionRepository.updateSection(section)
+    }
+    
+    
+    // Sort
+    func sortProducts(rule: SortingRule) {
+        sectionRepository.sortSection(sectionId: section.id, rule: rule)
+        fetchUpdatedSection()
+    }
+    
+    private func fetchUpdatedSection() {
+        if let updatedSection = sectionRepository.fetchSectionById(section.id) {
+            self.section = updatedSection
+        }
     }
 }

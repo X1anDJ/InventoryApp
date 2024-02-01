@@ -65,6 +65,7 @@ class StorageCollectionViewController: UICollectionViewController {
                 let cardViewModel = CardViewModel(product: product)
                 cell.cardViewModel = cardViewModel
                 cell.updateProductCardViewController()
+                print("product remaining days: \(product.remainingDays) in indexPath.row: \(indexPath.row)")
             }
             return cell
         }

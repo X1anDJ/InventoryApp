@@ -24,6 +24,7 @@ class SectionRepository {
         cdSection.id = section.id
         cdSection.title = section.title
         cdSection.rule = Int16(section.rule)
+        cdSection.sortingRule = section.sortingRule.rawValue // Set initial sorting rule
         
         // Map and add products to the CDSection
         mapProductsToCDProducts(products: section.products, section: cdSection)
@@ -62,9 +63,28 @@ class SectionRepository {
             return nil
         }
         let rule = Int(cdSection.rule)
-        let products = mapCDProductsToProducts(cdProducts: cdSection.products)
-        return Section(id: id, name: title, rule: rule, products: products)
+        let sortingRuleValue = Int(cdSection.sortingRule)
+        guard let sortingRule = SortingRule(rawValue: Int16(sortingRuleValue)) else {
+            return nil
+        }
+
+        let products = mapCDProductsToProducts(cdProducts: cdSection.products).sorted {
+            switch sortingRule {
+            case .newestToOldest:
+                return $0.remainingDays > $1.remainingDays
+            case .oldestToNewest:
+                return $0.remainingDays < $1.remainingDays
+            case .quantityLowToHigh:
+                return $0.quantity < $1.quantity
+            case .quantityHighToLow:
+                return $0.quantity > $1.quantity
+            }
+        }
+        
+        return Section(id: id, name: title, rule: rule, sortingRule: sortingRule, products: products)
     }
+
+
     
     
     private func mapProductsToCDProducts(products: [Product], section: CDSection) {
@@ -85,10 +105,18 @@ class SectionRepository {
 
         cdSection.title = section.title
         cdSection.rule = Int16(section.rule)
+        cdSection.sortingRule = section.sortingRule.rawValue
 
         coreDataStack.saveContext()
     }
 
+    func fetchSectionById(_ id: UUID) -> Section? {
+        guard let cdSection = fetchCDSectionById(id: id) else {
+            return nil
+        }
+        return mapCDSectionToSection(cdSection: cdSection)
+    }
+    
     private func fetchCDSectionById(id: UUID) -> CDSection? {
         let request: NSFetchRequest<CDSection> = CDSection.fetchRequest()
         request.predicate = NSPredicate(format: "id == %@", id as CVarArg)
@@ -113,4 +141,43 @@ class SectionRepository {
         }
     }
 
+}
+
+extension SectionRepository {
+
+    func sortSection(sectionId: UUID, rule: SortingRule) {
+        guard let cdSection = fetchCDSectionById(id: sectionId), let products = cdSection.products as? Set<CDProduct> else {
+            return
+        }
+
+        // Update the sorting rule in Core Data
+        cdSection.sortingRule = rule.rawValue
+
+        let sortedProducts: [CDProduct] = {
+            switch rule {
+            case .newestToOldest:
+                return products.sorted { $0.remainingDays > $1.remainingDays }
+            case .oldestToNewest:
+                return products.sorted { $0.remainingDays < $1.remainingDays }
+            case .quantityLowToHigh:
+                return products.sorted { $0.quantity < $1.quantity }
+            case .quantityHighToLow:
+                return products.sorted { $0.quantity > $1.quantity }
+            }
+        }()
+
+        if let existingProducts = cdSection.products {
+            cdSection.removeFromProducts(existingProducts)
+        }
+        sortedProducts.forEach { cdSection.addToProducts($0) }
+
+        coreDataStack.saveContext()
+    }
+}
+
+enum SortingRule: Int16 {
+    case newestToOldest = 0
+    case oldestToNewest = 1
+    case quantityLowToHigh = 2
+    case quantityHighToLow = 3
 }
