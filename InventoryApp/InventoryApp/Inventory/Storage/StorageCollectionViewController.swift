@@ -10,16 +10,10 @@ class StorageCollectionViewController: UICollectionViewController {
     
     var viewModel: SectionViewModel!
     
-    private var itemsPerRow: CGFloat {
-        // Check if the device is an iPad
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            return 6 // For iPad
-        } else {
-            return 3 // For iPhone
-        }
-    }
     
-    init(viewModel: SectionViewModel!, layout: UICollectionViewLayout) {
+    init(viewModel: SectionViewModel!) {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
         super.init(collectionViewLayout: layout)
         self.viewModel = viewModel
     }
@@ -30,53 +24,62 @@ class StorageCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView.register(StorageCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-
-        // Set layout
-        setupLayout()
+        self.collectionView.register(StorageCollectionViewCell.self, forCellWithReuseIdentifier: "StorageCell")
+        self.collectionView.register(ShowMoreCollectionViewCell.self, forCellWithReuseIdentifier: "ShowMoreCell")
+        configureLayout()
+        self.collectionView.showsHorizontalScrollIndicator = false
     }
 
-    private func setupLayout() {
-        let layout = UICollectionViewFlowLayout()
+    private func configureLayout() {
+        guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { return }
         let spacing: CGFloat = 10
-
-        let totalSpacing = spacing * (itemsPerRow + 1) // Spacing on both sides
+        let itemsPerRow: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 6 : 3
+        let totalSpacing = spacing * (itemsPerRow + 1)
         let cellWidth = (UIScreen.main.bounds.width - totalSpacing) / itemsPerRow
-        
-        
- 
-        layout.itemSize = CGSize(width: cellWidth, height: cellWidth + 30)
+        let cellHeight = cellWidth + 30 // Adjust as needed
+
+        layout.itemSize = CGSize(width: cellWidth, height: cellHeight)
         layout.minimumInteritemSpacing = spacing
         layout.minimumLineSpacing = spacing
-        
-        // Add spacing around the edges of the collection view
-        let edgeSpacing: CGFloat = 10 // Adjust this value as needed for edge spacing
-        layout.sectionInset = UIEdgeInsets(top: edgeSpacing, left: edgeSpacing, bottom: edgeSpacing, right: 0)
-
-        collectionView.collectionViewLayout = layout
-
+        layout.sectionInset = UIEdgeInsets(top: 15, left: 10, bottom: 15, right: 10)
     }
+
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("Number of Items: \(viewModel.getNumberOfProducts())")
-        return viewModel.getNumberOfProducts()
+        let productCount = viewModel.getNumberOfProducts()
+        return productCount > 8 ? 9 : productCount + 1
     }
+
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! StorageCollectionViewCell
+        let productCount = viewModel.getNumberOfProducts()
         
-        print("collection view cell for item at")
-
-        if let product = viewModel.getProduct(at: indexPath.row) {
-            print("SectionViewModel.getProduct: \(product.title)")
-            let cardViewModel = CardViewModel(product: product)
-            cell.cardViewModel = cardViewModel
-            cell.updateProductCardViewController()
+        // Check if this is the "Show More" cell
+        if (productCount > 8 && indexPath.row == 8) || (productCount <= 8 && indexPath.row == productCount) {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShowMoreCell", for: indexPath) as! ShowMoreCollectionViewCell
+            // Configure the "Show More" cell
+            return cell
         } else {
-            print("Product not found for indexPath: \(indexPath)")
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StorageCell", for: indexPath) as! StorageCollectionViewCell
+            if let product = viewModel.getProduct(at: indexPath.row) {
+                let cardViewModel = CardViewModel(product: product)
+                cell.cardViewModel = cardViewModel
+                cell.updateProductCardViewController()
+            }
+            return cell
         }
-
-         
-        return cell
     }
+
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let productCount = viewModel.getNumberOfProducts()
+        
+        if (productCount > 8 && indexPath.row == 8) || (productCount <= 8 && indexPath.row == productCount) {
+            // Handle "Show More" cell selection
+        }
+    }
+
+
+
+    
 }

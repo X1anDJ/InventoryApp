@@ -12,7 +12,6 @@ class BackCardView: UIView {
     
     let daysCircleLabel = UILabel()
     let quantityCircleLabel = UILabel()
-    
     let decreaseDaysButton = UIButton()
     let increaseDaysButton = UIButton()
     let decreaseQuantityButton = UIButton()
@@ -32,6 +31,7 @@ class BackCardView: UIView {
         super.init(frame: frame)
         setupViewElements()
         setupConstraints()
+        
     }
     
     required init?(coder: NSCoder) {
@@ -135,6 +135,7 @@ class BackCardView: UIView {
     
     func configure(with viewModel: CardViewModel) {
         // Configure the view with data from the view model
+        print("Configure the view with data , viewModel.remainingDays: \(viewModel.remainingDays) ,viewModel.quantity: \(viewModel.quantity)")
         daysCircleLabel.text = viewModel.remainingDays
         quantityCircleLabel.text = viewModel.quantity
 

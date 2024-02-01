@@ -66,11 +66,15 @@ class CardViewModel {
         onProductUpdated?(product)
     }
     func decreaseQuantity() {
-        product.quantity -= 1
+        if product.quantity > 0 {
+            product.quantity -= 1
+        } else {
+            print("Remove this item")
+        }
         onProductUpdated?(product)
     }
     func increaseQuantity() {
-        product.quantity -= 1
+        product.quantity += 1
         onProductUpdated?(product)
     }
     

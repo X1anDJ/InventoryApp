@@ -6,6 +6,9 @@
 //
 
 class SectionViewModel {
+    ///Mark:
+    ///section: initialize by mapping each section of userViewModel
+    ///sectionRepository: use current section or id  to pass in the repository to manage the local data.
     private var section: Section
     private var sectionRepository: SectionRepository
 

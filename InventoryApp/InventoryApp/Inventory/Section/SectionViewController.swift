@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Foundation
 import UIKit
 
 class SectionViewController: UIViewController {
@@ -103,27 +102,7 @@ extension SectionViewController {
     
     func addStorageCollectionViewController() {
         
-        var itemsPerRow: CGFloat {
-            // Check if the device is an iPad
-            if UIDevice.current.userInterfaceIdiom == .pad {
-                return 6 // For iPad
-            } else {
-                return 3 // For iPhone
-            }
-        }
-        
-        let layout = UICollectionViewFlowLayout()
-        let spacing: CGFloat = 10
-        let totalSpacing = spacing * (itemsPerRow + 1)
-        let cellWidth = (UIScreen.main.bounds.width - totalSpacing) / itemsPerRow
-
-        layout.itemSize = CGSize(width: cellWidth, height: cellWidth + 30)
-        layout.minimumInteritemSpacing = spacing
-        layout.minimumLineSpacing = spacing
-        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 0)
-
-        
-        let storageCollectionVC = StorageCollectionViewController(viewModel: viewModel, layout: layout)
+        let storageCollectionVC = StorageCollectionViewController(viewModel: viewModel)
         
         addChild(storageCollectionVC)
         storageCollectionContainerView.addSubview(storageCollectionVC.view)

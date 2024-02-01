@@ -36,9 +36,10 @@ class InventoryViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.delegate = self
-        fetchUserDataAndSetupSections()
         style() // Setup styles for the UI elements
         layout() // Layout the UI elements
+        fetchUserDataAndSetupSections()
+
 
     }
     

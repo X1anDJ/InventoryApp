@@ -85,8 +85,6 @@ class SectionRepository {
 
         cdSection.title = section.title
         cdSection.rule = Int16(section.rule)
-        // Update products if necessary
-        // ...
 
         coreDataStack.saveContext()
     }

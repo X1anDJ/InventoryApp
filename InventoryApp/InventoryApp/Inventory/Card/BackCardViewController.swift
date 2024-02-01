@@ -4,8 +4,6 @@
 //
 //  Created by Dajun Xian on 2024/1/12.
 //
-
-import Foundation
 import UIKit
 
 class BackCardViewController: UIViewController {
@@ -23,14 +21,6 @@ class BackCardViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-//    var daysValue: Int = 0 {
-//        didSet { backCardView.daysValue = daysValue }
-//    }
-//    
-//    var quantityValue: Int = 0 {
-//        didSet { backCardView.quantityValue = quantityValue }
-//    }
-//    
     override func loadView() {
         backCardView = BackCardView()
         view = backCardView
@@ -38,7 +28,7 @@ class BackCardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        configure(with: viewModel)
         // Set up a listener for ViewModel updates
         viewModel.onProductUpdated = { [weak self] _ in
             DispatchQueue.main.async {
@@ -70,10 +60,7 @@ class BackCardViewController: UIViewController {
     }
 
     
-    // Method to configure the view with current product values
-    func configure(with viewModel:
-                   CardViewModel) {
+    func configure(with viewModel: CardViewModel) {
         backCardView?.configure(with: viewModel)
-        
     }
 }

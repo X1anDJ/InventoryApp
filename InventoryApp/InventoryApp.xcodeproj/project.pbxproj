@@ -42,6 +42,8 @@
 		DC5FE5062B52AB20006BABAF /* StorageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5FE5052B52AB20006BABAF /* StorageCollectionViewCell.swift */; };
 		DC5FE5082B52AB47006BABAF /* StorageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5FE5072B52AB47006BABAF /* StorageCollectionViewController.swift */; };
 		DC5FE50B2B53738B006BABAF /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5FE50A2B53738B006BABAF /* SectionViewController.swift */; };
+		DC82D00A2B6A1B3C00D21619 /* ShowMoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82D0092B6A1B3C00D21619 /* ShowMoreCollectionViewCell.swift */; };
+		DC82D00C2B6AC74000D21619 /* CustomHorizontalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC82D00B2B6AC74000D21619 /* CustomHorizontalLayout.swift */; };
 		DCC5F7E12B5CDCA800CEDE28 /* UserMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5F7E02B5CDCA800CEDE28 /* UserMetadata.swift */; };
 		DCD7396D2B55E8FB00B36705 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD7396C2B55E8FB00B36705 /* Product.swift */; };
 		DCD7396F2B55E94100B36705 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD7396E2B55E94100B36705 /* User.swift */; };
@@ -112,6 +114,8 @@
 		DC5FE5052B52AB20006BABAF /* StorageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC5FE5072B52AB47006BABAF /* StorageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCollectionViewController.swift; sourceTree = "<group>"; };
 		DC5FE50A2B53738B006BABAF /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
+		DC82D0092B6A1B3C00D21619 /* ShowMoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		DC82D00B2B6AC74000D21619 /* CustomHorizontalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHorizontalLayout.swift; sourceTree = "<group>"; };
 		DCC5F7E02B5CDCA800CEDE28 /* UserMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMetadata.swift; sourceTree = "<group>"; };
 		DCD7396C2B55E8FB00B36705 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		DCD7396E2B55E94100B36705 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -340,6 +344,8 @@
 				DCEA877E2B5A9AE300172BB7 /* StorageCollectionViewModel.swift */,
 				DC5FE5072B52AB47006BABAF /* StorageCollectionViewController.swift */,
 				DC5FE5052B52AB20006BABAF /* StorageCollectionViewCell.swift */,
+				DC82D00B2B6AC74000D21619 /* CustomHorizontalLayout.swift */,
+				DC82D00D2B6B045400D21619 /* ShowMore */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -351,6 +357,14 @@
 				DC5FE50A2B53738B006BABAF /* SectionViewController.swift */,
 			);
 			path = Section;
+			sourceTree = "<group>";
+		};
+		DC82D00D2B6B045400D21619 /* ShowMore */ = {
+			isa = PBXGroup;
+			children = (
+				DC82D0092B6A1B3C00D21619 /* ShowMoreCollectionViewCell.swift */,
+			);
+			path = ShowMore;
 			sourceTree = "<group>";
 		};
 		DCD739842B5602C700B36705 /* CoreDataLocal */ = {
@@ -609,6 +623,7 @@
 				DC245D432B4E856C005A3280 /* Utilities.swift in Sources */,
 				DC245D3B2B4E856C005A3280 /* PhoneNumberController.swift in Sources */,
 				DC245CEB2B4CD193005A3280 /* SMSCodeViewController.swift in Sources */,
+				DC82D00C2B6AC74000D21619 /* CustomHorizontalLayout.swift in Sources */,
 				DCEA876F2B561A2100172BB7 /* CDSection+CoreDataProperties.swift in Sources */,
 				DC245D3E2B4E856C005A3280 /* VerificationCodeViewController.swift in Sources */,
 				DC484FE52B52656000D6BB1C /* BackCardViewController.swift in Sources */,
@@ -653,6 +668,7 @@
 				DC484FD92B52557B00D6BB1C /* ProductCardViewController.swift in Sources */,
 				DCDB909D2B4BD3F10047E52C /* OnboardingViewController.swift in Sources */,
 				DC484FDD2B52574E00D6BB1C /* FrontCardView.swift in Sources */,
+				DC82D00A2B6A1B3C00D21619 /* ShowMoreCollectionViewCell.swift in Sources */,
 				DCEA87702B561A2100172BB7 /* CDUser+CoreDataClass.swift in Sources */,
 				DCEA87792B5A549B00172BB7 /* ProductRepository.swift in Sources */,
 				DCDB909B2B4BD3D20047E52C /* OnboardingContainerViewController.swift in Sources */,

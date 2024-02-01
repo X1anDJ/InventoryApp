@@ -63,8 +63,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.rootViewController = navigationController
             //window?.rootViewController = smsController
         } else {
-            //window?.rootViewController = mainViewController
-            window?.rootViewController = navigationController
+            window?.rootViewController = mainViewController
+            //window?.rootViewController = navigationController
             //window?.rootViewController = smsController
             //window?.rootViewController = loginViewController
             //window?.rootViewController = frontCardViewController
