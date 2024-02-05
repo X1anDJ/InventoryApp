@@ -180,4 +180,17 @@ enum SortingRule: Int16 {
     case oldestToNewest = 1
     case quantityLowToHigh = 2
     case quantityHighToLow = 3
+    
+    var description: String {
+        switch self {
+        case .newestToOldest:
+            return "Newest to Oldest"
+        case .oldestToNewest:
+            return "Oldest to Newest"
+        case .quantityLowToHigh:
+            return "Quantity Low to High"
+        case .quantityHighToLow:
+            return "Quantity High to Low"
+        }
+    }
 }

@@ -11,7 +11,10 @@ class SectionViewModel {
     ///sectionRepository: use current section or id to pass in the repository to manage the local data.
     private var section: Section
     private var sectionRepository: SectionRepository
-
+    var sortingRule: SortingRule {
+        return section.sortingRule
+    }
+    
     init(section: Section, sectionRepository: SectionRepository = SectionRepository()) {
         self.section = section
         self.sectionRepository = sectionRepository
@@ -40,7 +43,7 @@ class SectionViewModel {
             print("Index out of range or no product at index: \(index)")
             return nil
         }
-        print("Get product called")
+        //print("Get product called")
         return section.products[index]
     }
 

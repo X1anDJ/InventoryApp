@@ -24,12 +24,12 @@ class UserRepository {
                 // Return the existing user
                 return user
             } else {
-                print("No user founded. Creating new user")
+                //print("No user founded. Creating new user")
                 return createUser(id: UUID(), name: "Default Name")
             }
         } catch {
             // Handle the fetch error appropriately
-            print("Error fetching user: \(error)")
+            //print("Error fetching user: \(error)")
             return nil
         }
     }

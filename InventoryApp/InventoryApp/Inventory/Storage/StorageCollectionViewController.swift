@@ -45,6 +45,8 @@ class StorageCollectionViewController: UICollectionViewController {
     }
 
 
+
+
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let productCount = viewModel.getNumberOfProducts()
         return productCount > 8 ? 9 : productCount + 1
@@ -65,7 +67,7 @@ class StorageCollectionViewController: UICollectionViewController {
                 let cardViewModel = CardViewModel(product: product)
                 cell.cardViewModel = cardViewModel
                 cell.updateProductCardViewController()
-                print("product remaining days: \(product.remainingDays) in indexPath.row: \(indexPath.row)")
+                //print("product remaining days: \(product.remainingDays) in indexPath.row: \(indexPath.row)")
             }
             return cell
         }

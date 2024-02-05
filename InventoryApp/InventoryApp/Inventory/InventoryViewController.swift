@@ -127,7 +127,7 @@ class InventoryViewController: UIViewController, UIScrollViewDelegate {
             NSLayoutConstraint.activate([
                 sectionViewController.view.leadingAnchor.constraint(equalTo: inventoryStackView.leadingAnchor),
                 sectionViewController.view.trailingAnchor.constraint(equalTo: inventoryStackView.trailingAnchor),
-                sectionViewController.view.heightAnchor.constraint(equalToConstant: 430)
+                sectionViewController.view.heightAnchor.constraint(equalToConstant: 440)
                 // Height constraint is not set, assuming the content sizes itself
             ])
 
