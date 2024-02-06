@@ -28,6 +28,7 @@ class StorageCollectionViewController: UICollectionViewController {
         self.collectionView.register(ShowMoreCollectionViewCell.self, forCellWithReuseIdentifier: "ShowMoreCell")
         configureLayout()
         self.collectionView.showsHorizontalScrollIndicator = false
+        
     }
 
     private func configureLayout() {
@@ -56,7 +57,6 @@ class StorageCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let productCount = viewModel.getNumberOfProducts()
         
-        // Check if this is the "Show More" cell
         if (productCount > 8 && indexPath.row == 8) || (productCount <= 8 && indexPath.row == productCount) {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShowMoreCell", for: indexPath) as! ShowMoreCollectionViewCell
             // Configure the "Show More" cell
@@ -67,7 +67,6 @@ class StorageCollectionViewController: UICollectionViewController {
                 let cardViewModel = CardViewModel(product: product)
                 cell.cardViewModel = cardViewModel
                 cell.updateProductCardViewController()
-                //print("product remaining days: \(product.remainingDays) in indexPath.row: \(indexPath.row)")
             }
             return cell
         }

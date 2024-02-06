@@ -11,14 +11,21 @@ class UserMetadata {
     var userViewModel = UserViewModel()
     
     init() {
-        let section1 = createOneSection1()
-        let section2 = createOneSection2()
-       // let section3 = createOneSection3()
-        
-        let user = userViewModel.userRepository.createUser(id: UUID(), name: "Dajun Xian")
-        print("Welcome, \(String(describing: user.name))")
-        userViewModel.sectionRepository.createSection(for: user.id!, with: section1)
-        userViewModel.sectionRepository.createSection(for: user.id!, with: section2)
+        if userViewModel.userRepository.userExists() {
+            print("User already exists.")
+//            guard let user = userViewModel.userRepository.fetchUser() else {
+//                return
+//            }
+        } else {
+            let user = userViewModel.userRepository.createUser(id: UUID(), name: "Dajun Xian")
+            let section1 = createOneSection1()
+            let section2 = createOneSection2()
+            userViewModel.sectionRepository.createSection(for: user.id!, with: section1)
+            userViewModel.sectionRepository.createSection(for: user.id!, with: section2)
+            
+            print("Creating new user: \(String(describing: user.name))")
+        }
+
         //userViewModel.sectionRepository.createSection(for: user.id!, with: section3)
     }
     

@@ -14,7 +14,19 @@ class UserRepository {
     init(coreDataStack: CoreDataStack = .shared) {
         self.coreDataStack = coreDataStack
     }
-
+    
+    // Check if any user exists
+    func userExists() -> Bool {
+        let request: NSFetchRequest<CDUser> = CDUser.fetchRequest()
+        do {
+            let count = try coreDataStack.context.count(for: request)
+            return count > 0
+        } catch {
+            print("Error checking for user existence: \(error)")
+            return false
+        }
+    }
+    
     // Fetch the user
     func fetchUser() -> CDUser? {
         let request: NSFetchRequest<CDUser> = CDUser.fetchRequest()
@@ -25,7 +37,7 @@ class UserRepository {
                 return user
             } else {
                 //print("No user founded. Creating new user")
-                return createUser(id: UUID(), name: "Default Name")
+                return createUser(id: UUID(), name: "Ray")
             }
         } catch {
             // Handle the fetch error appropriately
@@ -36,7 +48,7 @@ class UserRepository {
 
     // Create a new user
     func createUser(id: UUID, name: String) -> CDUser {
-        removeAllUsers()
+        //removeAllUsers()
         let newUser = CDUser(context: coreDataStack.context)
         newUser.id = id
         newUser.name = name

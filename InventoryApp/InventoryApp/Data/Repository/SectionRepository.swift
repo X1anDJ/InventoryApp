@@ -36,7 +36,13 @@ class SectionRepository {
 
     func fetchSections(for userId: UUID) -> [Section] {
         guard let user = fetchCDUserById(id: userId) else { return [] }
-        return user.sections?.allObjects.compactMap { mapCDSectionToSection(cdSection: $0 as? CDSection) } ?? []
+        if let sections = user.sections as? Set<CDSection> {
+            print("Number of sections for user \(userId): \(sections.count)")
+            return sections.compactMap { mapCDSectionToSection(cdSection: $0) }
+        } else {
+            print("No sections found for user \(userId)")
+            return []
+        }
     }
 
     // Other CRUD operations...
@@ -48,12 +54,19 @@ class SectionRepository {
 
         do {
             let results = try coreDataStack.context.fetch(request)
-            return results.first
+            if let user = results.first {
+                print("User found: \(user.name ?? "Unnamed"), ID: \(user.id?.uuidString ?? "No ID")")
+                return user
+            } else {
+                print("No user found with ID: \(id.uuidString)")
+                return nil
+            }
         } catch {
             print("Error fetching CDUser by id: \(error)")
             return nil
         }
     }
+
 
 
     private func mapCDSectionToSection(cdSection: CDSection?) -> Section? {
@@ -80,7 +93,7 @@ class SectionRepository {
                 return $0.quantity > $1.quantity
             }
         }
-        
+        print("Mapped section: \(title), Sorting Rule: \(sortingRule.description)")
         return Section(id: id, name: title, rule: rule, sortingRule: sortingRule, products: products)
     }
 
@@ -145,35 +158,19 @@ class SectionRepository {
 
 extension SectionRepository {
 
-    func sortSection(sectionId: UUID, rule: SortingRule) {
-        guard let cdSection = fetchCDSectionById(id: sectionId), let products = cdSection.products as? Set<CDProduct> else {
+    func setSectionSortingRule(sectionId: UUID, rule: SortingRule) {
+        guard let cdSection = fetchCDSectionById(id: sectionId) else {
+            print("Failed to fetch CDSection or its products for sectionId: \(sectionId)")
             return
         }
-
-        // Update the sorting rule in Core Data
+        print("Setting sorting rule for sectionId: \(sectionId) to \(rule.description)")
         cdSection.sortingRule = rule.rawValue
-
-        let sortedProducts: [CDProduct] = {
-            switch rule {
-            case .newestToOldest:
-                return products.sorted { $0.remainingDays > $1.remainingDays }
-            case .oldestToNewest:
-                return products.sorted { $0.remainingDays < $1.remainingDays }
-            case .quantityLowToHigh:
-                return products.sorted { $0.quantity < $1.quantity }
-            case .quantityHighToLow:
-                return products.sorted { $0.quantity > $1.quantity }
-            }
-        }()
-
-        if let existingProducts = cdSection.products {
-            cdSection.removeFromProducts(existingProducts)
-        }
-        sortedProducts.forEach { cdSection.addToProducts($0) }
-
+        
         coreDataStack.saveContext()
+        print("Context saved after setting sorting rule")
     }
 }
+
 
 enum SortingRule: Int16 {
     case newestToOldest = 0

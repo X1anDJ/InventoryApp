@@ -56,14 +56,21 @@ class InventoryViewController: UIViewController, UIScrollViewDelegate {
     }
 
     func setupSectionViewControllers() {
-        
-        sectionViewControllers = userViewModel.sections.map { section in
+        guard let userId = userViewModel.user?.id else {
+            print("User ID not found")
+            return
+        }
+
+        let sections = userViewModel.sectionRepository.fetchSections(for: userId)
+        sectionViewControllers = sections.map { section in
             let sectionViewModel = SectionViewModel(section: section)
             print("Section: \(section.title) has \(section.products.count) number of items")
             return SectionViewController(viewModel: sectionViewModel)
         }
+        
         addSectionViewControllers()
     }
+
 
 
     

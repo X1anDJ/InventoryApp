@@ -8,7 +8,7 @@
 import UIKit
 class SectionViewController: UIViewController {
     
-    var viewModel: SectionViewModel!
+    var sectionViewModel: SectionViewModel!
     
     // UI Elements
     let sectionStackView = UIStackView()
@@ -23,7 +23,7 @@ class SectionViewController: UIViewController {
     // MARK: - Initialization
     init(viewModel: SectionViewModel!) {
         super.init(nibName: nil, bundle: nil)
-        self.viewModel = viewModel
+        self.sectionViewModel = viewModel
     }
     
     required init?(coder: NSCoder) {
@@ -51,10 +51,10 @@ class SectionViewController: UIViewController {
     // MARK: - UI Configuration
 
     private func style() {
-        titleLabel.text = viewModel.getSectionTitle()
+        titleLabel.text = sectionViewModel.getSectionTitle()
         titleLabel.font = UIFont.preferredFont(forTextStyle: .title1)
         
-        sectionRuleLabel.text = "放入起\(viewModel.getSectionRule())日提醒"
+        sectionRuleLabel.text = "放入起\(sectionViewModel.getSectionRule())日提醒"
         //sectionRuleLabel.font = UIFont.preferredFont(forTextStyle: .caption1)
 
         [sectionStackView, titleStackView, ruleStackView, storageCollectionContainerView, sortDateButton, sortQuantityButton].forEach {
@@ -148,27 +148,27 @@ class SectionViewController: UIViewController {
     
     
     private func updateButtonAppearanceAndSymbols() {
-        switch viewModel.sortingRule {
+        switch sectionViewModel.sortingRule {
         case .newestToOldest, .oldestToNewest:
-            setActiveAppearance(for: sortDateButton, isActive: true, imageName: viewModel.sortingRule == .newestToOldest ? "upArrow" : "downArrow")
+            setActiveAppearance(for: sortDateButton, isActive: true, imageName: sectionViewModel.sortingRule == .newestToOldest ? "upArrow" : "downArrow")
             setActiveAppearance(for: sortQuantityButton, isActive: false, imageName: "grayArrow")
         case .quantityLowToHigh, .quantityHighToLow:
             setActiveAppearance(for: sortDateButton, isActive: false, imageName: "grayArrow")
-            setActiveAppearance(for: sortQuantityButton, isActive: true, imageName: viewModel.sortingRule == .quantityLowToHigh ? "upArrow" : "downArrow")
+            setActiveAppearance(for: sortQuantityButton, isActive: true, imageName: sectionViewModel.sortingRule == .quantityLowToHigh ? "upArrow" : "downArrow")
         }
         view.layoutIfNeeded()
     }
 
     @objc func sortDateButtonTapped() {
-        viewModel.sortProducts(rule: viewModel.sortingRule == .newestToOldest ? .oldestToNewest : .newestToOldest)
-        setActiveAppearance(for: sortDateButton, isActive: true, imageName: viewModel.sortingRule == .newestToOldest ? "upArrow" : "downArrow")
+        sectionViewModel.sortProducts(rule: sectionViewModel.sortingRule == .newestToOldest ? .oldestToNewest : .newestToOldest)
+        setActiveAppearance(for: sortDateButton, isActive: true, imageName: sectionViewModel.sortingRule == .newestToOldest ? "upArrow" : "downArrow")
         setActiveAppearance(for: sortQuantityButton, isActive: false, imageName: "grayArrow")
         reloadCollectionView()
     }
 
     @objc func sortQuantityButtonTapped() {
-        viewModel.sortProducts(rule: viewModel.sortingRule == .quantityLowToHigh ? .quantityHighToLow : .quantityLowToHigh)
-        setActiveAppearance(for: sortQuantityButton, isActive: true, imageName: viewModel.sortingRule == .quantityLowToHigh ? "upArrow" : "downArrow")
+        sectionViewModel.sortProducts(rule: sectionViewModel.sortingRule == .quantityLowToHigh ? .quantityHighToLow : .quantityLowToHigh)
+        setActiveAppearance(for: sortQuantityButton, isActive: true, imageName: sectionViewModel.sortingRule == .quantityLowToHigh ? "upArrow" : "downArrow")
         setActiveAppearance(for: sortDateButton, isActive: false, imageName: "grayArrow")
         reloadCollectionView()
     }
@@ -196,7 +196,7 @@ class SectionViewController: UIViewController {
 
     // MARK: - Adding Child View Controllers
     private func addStorageCollectionViewController() {
-        let storageCollectionVC = StorageCollectionViewController(viewModel: viewModel)
+        let storageCollectionVC = StorageCollectionViewController(viewModel: sectionViewModel)
         addChild(storageCollectionVC)
         storageCollectionContainerView.addSubview(storageCollectionVC.view)
 

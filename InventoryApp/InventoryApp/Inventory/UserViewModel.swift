@@ -41,15 +41,16 @@ class UserViewModel {
         }
 
         self.user = fetchedUser
-        // Assuming `id` is a non-optional UUID property of CDUser
-        // Fetch sections for the user
         let userId = fetchedUser.id ?? UUID()  // Provide a default UUID if `id` is nil
-        print(self.user?.name ?? "No user founded")
+        print("User name: \(self.user?.name ?? "No user name")")
         self.sections = sectionRepository.fetchSections(for: userId)
         print("UserViewModel [section] count = \(sections.count)")
+        for section in sections {
+            print("Section \(section.title) has sorting rule: \(section.sortingRule.description)")
+        }
         completion(true)
     }
-    
+
     // Update User
     func updateUser(name: String, completion: (Bool) -> Void) {
         guard let user = self.user else {

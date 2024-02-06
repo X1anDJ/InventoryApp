@@ -10,16 +10,16 @@ class SectionViewModel {
     ///section: initialize by mapping each section of userViewModel
     ///sectionRepository: use current section or id to pass in the repository to manage the local data.
     private var section: Section
-    private var sectionRepository: SectionRepository
+    private var sectionRepository: SectionRepository = SectionRepository()
     var sortingRule: SortingRule {
         return section.sortingRule
     }
     
-    init(section: Section, sectionRepository: SectionRepository = SectionRepository()) {
+    init(section: Section) {
         self.section = section
-        self.sectionRepository = sectionRepository
-        print("Initializing SectionViewModel with \(section.products.count) products.")
-        //print("using sorting rule: \(rule)")
+        //self.sectionRepository = sectionRepository
+        print("Initializing SectionViewModel with \(section.products.count) products. Title: \(section.title), Sorting Rule: \(section.sortingRule.description)")
+        fetchUpdatedSection()
     }
 
     // GET:
@@ -74,13 +74,17 @@ class SectionViewModel {
     
     // Sort
     func sortProducts(rule: SortingRule) {
-        sectionRepository.sortSection(sectionId: section.id, rule: rule)
+        print("Sorting products with rule: \(rule.description)")
+        sectionRepository.setSectionSortingRule(sectionId: section.id, rule: rule)
         fetchUpdatedSection()
     }
     
     private func fetchUpdatedSection() {
         if let updatedSection = sectionRepository.fetchSectionById(section.id) {
+            print("Updated section fetched successfully. Old title: \(self.section.title), New title: \(updatedSection.title)")
             self.section = updatedSection
+        } else {
+            print("Failed to fetch updated section for sectionId: \(section.id)")
         }
     }
 }
