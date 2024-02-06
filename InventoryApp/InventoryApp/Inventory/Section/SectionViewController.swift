@@ -83,14 +83,15 @@ class SectionViewController: UIViewController {
         ruleStackView.addArrangedSubview(sortQuantityButton)
         ruleStackView.alignment = .fill
         NSLayoutConstraint.activate([
-            ruleStackView.heightAnchor.constraint(equalToConstant: 15)
+            ruleStackView.heightAnchor.constraint(equalToConstant: 15),
+            sortDateButton.heightAnchor.constraint(equalToConstant: 15),
+            sortQuantityButton.heightAnchor.constraint(equalToConstant: 15),
         ])
         
         sectionRuleLabel.setContentHuggingPriority(UILayoutPriority.defaultHigh, for: .vertical)
         sectionRuleLabel.setContentCompressionResistancePriority(UILayoutPriority.required, for: .vertical)
-
-        sortDateButton.setContentHuggingPriority(UILayoutPriority.defaultLow, for: .vertical)
-        sortDateButton.setContentCompressionResistancePriority(UILayoutPriority.defaultLow, for: .vertical)
+        
+        
 
     }
 
@@ -131,7 +132,7 @@ class SectionViewController: UIViewController {
 
     private func setupButton(_ button: UIButton, title: String, imageName: String) {
         if let image = UIImage(named: imageName) {
-            let scaledImage = image.withRenderingMode(.alwaysOriginal) 
+            let scaledImage = image.withRenderingMode(.alwaysOriginal)
 
             var config = UIButton.Configuration.plain()
             config.title = title
@@ -175,8 +176,8 @@ class SectionViewController: UIViewController {
     private func setActiveAppearance(for button: UIButton, isActive: Bool, imageName: String) {
         if let image = UIImage(named: imageName)?.withRenderingMode(.alwaysOriginal) {
             button.setImage(image, for: .normal)
-            button.imageView?.clipsToBounds = true
-            button.imageView?.contentMode = .scaleAspectFill
+//            button.imageView?.clipsToBounds = true
+//            button.imageView?.contentMode = .scaleAspectFill
 
         }
 
